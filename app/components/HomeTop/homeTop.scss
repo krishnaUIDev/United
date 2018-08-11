@@ -1,0 +1,129 @@
+@import "../../styles/tools";
+
+.homeTop {
+  width: 100%;
+  max-width: $site-max-width;
+  margin: 0 auto;
+
+  @media (min-width: $break-point-b) {
+    min-height: 668px;
+  }
+
+  @media (min-width: $break-point-c) {
+    min-height: 662px;
+    padding-left: 30px;
+  }
+}
+
+.gridParent {
+  @include grid-parent;
+}
+
+.bookerContainer {
+  position: relative;
+  @include grid-child(1,13,2,3);
+  background-color: white;
+  z-index: 1;
+
+  @media (min-width: $break-point-b) {
+    min-height: 720px;
+  }
+
+  @media (min-width: $break-point-c) {
+    @include grid-child(1,10,1,2);
+    align-self: center;
+    background-color: transparent;
+    height: 100%;
+    min-height: auto;
+    margin-top: 0;
+  }
+
+  &.bookerContainerExpanded {
+    @media (min-width: $break-point-c) {
+      @include grid-child(1,8,1,1);
+    }
+
+    @media (min-width: $break-point-d) {
+      @include grid-child(1,10,1,1);
+    }
+  }
+
+  &.bookerContainerNotExpanded {
+    @media (min-width: $break-point-c) {
+      @include grid-child(1,8,1,1);
+    }
+
+    @media (min-width: $break-point-d) {
+      @include grid-child(1,7,1,1);
+    }
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 1; }
+  to   { opacity: 0.5; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 1; }
+    to   { opacity: 0.5; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 1; }
+  to { opacity: 0.5; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 1; }
+    to   { opacity: 0.5; }
+}
+
+.rightPanelStyle {
+  @include grid-child(1,12,1,2);
+  z-index: 4;
+
+  @media (min-width: $break-point-c) {
+    @include grid-child(8,13,1,1);
+  }
+  @media (min-width: $break-point-d) {
+    @include grid-child(7,13,1,1);
+  }
+}
+
+.rightPanelStyleForCarousel {
+  @include grid-child(1,13,1,2);
+  position: relative;
+  padding: 0 40px;
+  min-height: 300px;
+  align-items: center;
+
+  @media (min-width: $break-point-b) {
+    height: 373px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $break-point-c) {
+    @include grid-child(9,13,1,1);
+    position: static;
+    padding-left: 0;
+    padding-right: 10%;
+    height: auto;
+  }
+
+  @media (min-width: $break-point-d) {
+    @include grid-child(10,13,1,1);
+    padding-right: 0;
+  }
+}
+
+.modalOpenDisplay {
+  visibility: hidden;
+}
+
+.modalClosedDisplay {
+  visibility: visible;
+}

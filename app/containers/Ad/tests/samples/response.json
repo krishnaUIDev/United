@@ -1,0 +1,60 @@
+{
+  "data":{
+    "ads":[
+      {
+        "name":"Sample Title",
+        "type":"featured",
+        "location":"BTWI",
+        "linkText":"Amenities",
+        "linkUrl":"https://www.united.com/web/en-US/content/travel/airport/lounge/amenities.aspx",
+        "isExternalLink":true,
+        "imageAltText":"Sample Image Alt text",
+        "images":[
+          {
+            "title":"76-um-01F92F70!2D;6874!2D;470F!2D;B1F5!2D;4125B0A1C8C0-img-file.ecl",
+            "url":"https://media.united.com/images/Media%20Database/UA-airTRFX-albany.jpg",
+            "width":0,
+            "height":0
+          }
+        ]
+      },
+      {
+        "name":"Other Sample Title",
+        "type":"large",
+        "location":"BTWI",
+        "linkText":"Amenities",
+        "linkUrl":"https://www.united.com/web/en-US/content/travel/airport/lounge/amenities.aspx",
+        "isExternalLink":true,
+        "imageAltText":"Other Sample Image Alt text",
+        "images":[
+          {
+            "title":"76-um-197C0DCD!2D;765E!2D;4D68!2D;AD39!2D;8E7E331EDAC9-img-file.ecl",
+            "url":"https://media.united.com/images/Media%20Database/UA-airTRFX-allentown.jpg",
+            "width":0,
+            "height":0
+          }
+        ]
+      },
+      {
+        "name":"Sample Promo Title",
+        "type":"featured",
+        "location":"HPIT",
+        "linkText":"United Polaris℠",
+        "linkUrl":"https://www.united.com/polaris",
+        "isExternalLink":true,
+        "imageAltText":"Sample Promo Image Alt Text",
+        "images":[
+          {
+            "title":"76-um-01F92F70!2D;6874!2D;470F!2D;B1F5!2D;4125B0A1C8C0-img-file.ecl",
+            "url":"https://media.united.com/images/Media%20Database/UA-airTRFX-albany.jpg",
+            "width":0,
+            "height":0
+          }
+        ]
+      }
+    ],
+    "promos":[
+
+    ]
+  }
+}

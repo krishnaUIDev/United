@@ -1,0 +1,663 @@
+@import "../../styles/tools";
+@import "../../styles/global/forms";
+
+.rightPanelParentContainer {
+  @include grid-parent;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  background: $link-blue;
+  z-index: 4;
+  @media (min-width: $break-point-b) {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+  @media (min-width: $break-point-c) {
+    background: none;
+    width: 40vw; // virtual width accounts for smaller browser sizes
+    height: auto;
+    max-height: 644px;
+    padding-left: 2px;
+    padding-right: 8px;
+  }
+  @media (min-width: $break-point-d) {
+    padding-right: 0px;
+    width: 536px;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.loaderContainer {
+  @include grid-child(1,13,1,2);
+  text-align: center;
+  margin-top: 50%;
+  @media (min-width: $break-point-c) {
+    overflow: hidden;
+    margin-top: 25%;
+  }
+}
+
+.loadingModal {
+  background: $link-blue;
+}
+
+
+.rightPanelLoaderContainer {
+  text-align: center;
+}
+
+
+.panelModal {
+  width: 100%;
+  overflow-y: auto;
+  height: 100%;
+  background: $link-blue;
+}
+
+.closeButton {
+  @include grid-child(11,13,1,2);
+  text-align: right;
+  @media (min-width: $break-point-b) {
+    margin-top: -88px;
+  }
+}
+
+.flightNumber {
+  @include grid-child(1,11,1,2);
+  letter-spacing: 0.6px;
+  font-size: 10px;
+  opacity: 0.7;
+  color: white;
+  margin-top: 16px;
+  text-align: left;
+  &:focus {
+    outline-color: transparent;
+  }
+  @media (min-width: $break-point-b) {
+    letter-spacing: 1.26px;
+    font-size: 14px;
+    margin-top: 96px;
+  }
+  @media (min-width: $break-point-c) {
+    @include grid-child(1,4,1,2);
+    margin-top: 0px;
+  }
+}
+
+.CTAbuttonContainer {
+  @include grid-child(1,13,10,11);
+  @media (min-width: $break-point-b) {
+    @include grid-child(9,13,1,2);
+    text-align: right;
+  }
+  @media (min-width: $break-point-c) {
+    @include grid-child(8,13,1,2);
+  }
+}
+
+.CTAbuttonMain {
+  height: 52px;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  @media (min-width: $break-point-b) {
+    @include grid-child(10,13,1,2);
+    margin-top: 96px;
+    width: 216px;
+    height: 80px;
+  }
+  @media (min-width: $break-point-c) {
+    @include grid-child(8,11,1,2);
+    line-height: 18px;
+    width: 144px;
+    height: 46px;
+    margin-top: 8px;
+  }
+  @media (min-width: $break-point-d) {
+    margin-top: 8px;
+    width: 184px;
+    height: 64px;
+  }
+}
+
+.CTAbuttonNoOtherTxt {
+  @include grid-child(1,13,10,11);
+  @extend .CTAbuttonMain;
+  margin-bottom: 32px;
+}
+
+.CTAbutton {
+  @include grid-child(1,13,13,14);
+  @extend .CTAbuttonMain;
+}
+
+.flightStatus {
+  @include grid-child(1,13,2,3);
+  color: white;
+  font-size: 28px;
+  line-height: 30px;
+  margin-bottom: 4px;
+  text-align: left;
+  @media (min-width: $break-point-b) {
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: 40px;
+    margin-top: -40px;
+  }
+  @media (min-width: $break-point-c) {
+    margin-bottom: 0px;
+  }
+  @media (min-width: $break-point-d) {
+    margin-top: -50px;
+  }
+}
+
+
+.lineText {
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 12px;
+  color: white;
+  text-align: left;
+  @media (min-width: $break-point-c) {
+    font-size: 14px;
+  }
+}
+
+.threeLineTxtStatusStyle {
+  @include grid-child(1,13,3,4);
+}
+
+.threeLineTxtCheckinStyle {
+  @extend .threeLineTxtStatusStyle;
+  background-color: white;
+  border: 1px solid  $error-red ;
+}
+
+.threeLineTextNoStatus {
+  margin-top: -16px;
+  @media (min-width: $break-point-b) {
+    margin-top: -120px;
+  }
+  @media (min-width: $break-point-c) {
+    margin-top: -64px;
+  }
+}
+
+.firstLineTxt {
+  text-decoration: none;
+  margin-bottom: 8px;
+  @media (min-width: $break-point-b) {
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+  @media (min-width: $break-point-c) {
+    margin-top: 4px;
+    margin-bottom: 16px;
+  }
+  @media (min-width: $break-point-d) {
+    font-size: 16px;
+  }
+}
+
+.firstLineCheckinTxt {
+  color: black;
+  font-weight: bold;
+  margin-left: 42px;
+  line-height: 20px;
+  margin-bottom: 7px;
+  @media (min-width: $break-point-b) {
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+  @media (min-width: $break-point-c) {
+    margin-top: 4px;
+    margin-bottom: 11px;
+  }
+  @media (min-width: $break-point-d) {
+    font-size: 16px;
+  }
+}
+
+_::-webkit-full-page-media, _:future, :root .firstLineStatusTxt {
+  @media (min-width: $break-point-b) {
+    margin-top: 16px;
+  }  
+  @media (orientation: landscape){
+    margin-top: 16px;
+  }
+}
+
+.alertIcon{
+  position: relative;
+  top: 33px;
+  left: 8px;
+}
+
+.alertMsg{
+  position: relative;
+  bottom: 4px;
+  @media (min-width: $break-point-d) {
+    bottom: 10px;
+  }
+}
+
+.secondLineTxt {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.6px;
+  margin-top: 4px;
+  @media (min-width: $break-point-b) {
+    margin-bottom: 16px;
+    line-height: 16px;
+  }
+  @media (min-width: $break-point-c) {
+    font-size: 14px;
+    text-transform: none;
+    opacity: auto;
+    font-size: auto;
+    letter-spacing: auto;
+    margin-bottom: 8px;
+  }
+}
+
+.thirdLineTxtContainer {
+  text-align: left;
+}
+
+.thirdLineTxt {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 8px;
+  @media (min-width: $break-point-b) {
+    margin-bottom: 16px;
+  }
+  @media (min-width: $break-point-c) {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+}
+
+.secondSectionContainer {
+  @include grid-child(1,13,4,5);
+  @media (min-width: $break-point-b) {
+    margin-top: 8px;
+  }
+}
+
+.secondSectionContainerNoTopTxt {
+  @include grid-child(1,13,3,4);
+  @media (min-width: $break-point-b) {
+    margin-top: 8px;
+  }
+}
+
+.thirdSectionContainer {
+  @include grid-child(1,13,5,6);
+}
+
+.thirdSectionContainerNoTopTxt {
+  @include grid-child(1,13,4,5);
+}
+
+.bottomHeader {
+  font-size: 12px;
+  color: white;
+  letter-spacing: 1.08px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.bottomHeaderGrid {
+  @include grid-child(1,13,6,7);
+}
+
+.bottomHeaderNoTopTxtGrid {
+  @include grid-child(1,13,5,6);
+}
+
+.bottomHeader {
+  font-size: 12px;
+  color: white;
+  letter-spacing: 1.08px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.linksStyle {
+  line-height: 9px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  @media (min-width: $break-point-c) {
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+  @media (min-width: $break-point-d) {
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+}
+
+.bottomTxtAndLinkStyle {
+  @media (min-width: $break-point-b) {
+    text-align: left;
+  }
+}
+
+.bottomLinkStyleA1 {
+  @include grid-child(1,7,7,8);
+  @media (min-width: $break-point-b) {
+    @include grid-child(1,5,7,8);
+  }
+}
+
+.bottomLinkStyleA2 {
+  @include grid-child(1,7,6,7);
+  @media (min-width: $break-point-b) {
+    @include grid-child(1,5,6,7);
+  }
+}
+
+.bottomTxtStyleA1 {
+  @include grid-child(1,7,7,8);
+  @media (min-width: $break-point-b) {
+    text-align: left;
+    @include grid-child(1,4,7,8);
+  }
+}
+
+.bottomTxtStyleA2 {
+  @include grid-child(1,5,6,7);
+  @media (min-width: $break-point-b) {
+    @include grid-child(1,5,6,7);
+  }
+}
+
+a.bottomLinkAstyle,
+a.bottomLinkBstyle,
+a.bottomLinkStyleB1,
+a.bottomLinkStyleB2,
+a.bottomLinkCstyle,
+a.bottomLinkDstyle {
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:after {
+    @include linkArrow;
+    border-color: white;
+  }
+
+  &:hover:after {
+    border-color: white;
+  }
+}
+
+
+.bottomLinkAstyle {
+  @media (min-width: $break-point-d) {
+    margin-left: 32px;
+  }
+}
+
+.bottomLinkStyleB1 {
+  @include grid-child(7,13,7,8);
+  @media (min-width: $break-point-b) {
+    @include grid-child(4,7,7,8);
+  }
+}
+
+.bottomLinkStyleB2 {
+  @include grid-child(7,13,6,7);
+  @media (min-width: $break-point-b) {
+    @include grid-child(4,7,6,7);
+  }
+}
+
+.bottomTxtBstyleContainer {
+  @media (min-width: $break-point-b) {
+    margin-left: 0px;
+  }
+}
+
+.bottomTxtStyleB1 {
+  @include grid-child(7,13,7,8);
+  @media (min-width: $break-point-b) {
+    text-align: left;
+    @include grid-child(4,7,7,8);
+  }
+}
+
+.bottomTxtStyleB2 {
+  @include grid-child(5,10,6,7);
+  @media (min-width: $break-point-b) {
+    @include grid-child(4,7,6,7);
+  }
+}
+
+.bottomLinkBstyle {
+  @media (min-width: $break-point-d) {
+    margin-left: 32px;
+  }
+}
+
+.bottomTxtstyle {
+  font-size: 14px;
+  color: white;
+  line-height: 24px;
+  &:focus {
+    outline: 1px dotted $modern-gold;
+  }
+}
+
+.bottomLinkStyleC1 {
+  @include grid-child(1,7,8,9);
+  @media (min-width: $break-point-b) {
+    @include grid-child(7,10,7,8);
+  }
+}
+
+.bottomLinkStyleC2 {
+  @include grid-child(1,7,7,8);
+  @media (min-width: $break-point-b) {
+    @include grid-child(7,10,6,7);
+  }
+}
+
+.bottomTxtStyleC1 {
+  @include grid-child(1,7,8,9);
+  @media (min-width: $break-point-b) {
+    text-align: left;
+    @include grid-child(7,10,7,8);
+  }
+}
+
+.bottomTxtStyleC2 {
+  @include grid-child(10,13,6,7);
+  @media (min-width: $break-point-b) {
+    @include grid-child(7,10,6,7);
+  }
+}
+
+.bottomLinkCstyle {
+  @media (min-width: $break-point-d) {
+    margin-left: 32px;
+  }
+}
+
+.bottomTxtStyleD1 {
+  @include grid-child(7,13,8,9);
+  @media (min-width: $break-point-b) {
+    text-align: left;
+    @include grid-child(10,13,7,8);
+  }
+}
+
+.bottomTxtStyleD2 {
+  @include grid-child(7,13,7,8);
+  @media (min-width: $break-point-b) {
+    text-align: left;
+    @include grid-child(10,13,6,7);
+  }
+}
+
+.bottomLinkDstyle {
+  @media (min-width: $break-point-d) {
+    margin-left: 16px;
+  }
+}
+
+.bottomAppAdd {
+  text-align: left;
+  @media (min-width: $break-point-c) {
+    margin-top: 64px;
+  }
+  @media (min-width: $break-point-c) {
+    margin-top: 24px;
+  }
+}
+
+.bottomAppAddWithAboveTxt {
+  @include grid-child(1,13,9,10);
+  @media (min-width: $break-point-c) {
+    @include grid-child(1,13,9,10);
+  }
+}
+
+.bottomAppAddNoAboveTxt {
+  @include grid-child(1,13,8,9);
+  @media (min-width: $break-point-c) {
+    @include grid-child(1,13,8,9);
+  }
+}
+
+.iconStyle {
+  margin-right: 8px;
+  margin-bottom: 2px;
+}
+
+.bottompadding {
+  @media (min-width: $break-point-b) {
+    @include grid-child(1,13,8,9);
+    height: 256px;
+  }
+}
+
+.appImg {
+  height: 108px;
+  @media (min-width: $break-point-b) {
+    position: absolute;
+    left: 72px;
+    margin-top: 24px;
+  }
+  @media (min-width: $break-point-c) {
+    left: auto;
+    margin-top: auto;
+  }
+}
+
+.appTxtContainerStyle {
+  color: white;
+  @media (min-width: $break-point-b) {
+    position: absolute;
+    left: 144px;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 24px;
+    margin-right: 72px;
+    padding-bottom: 16px;
+    margin-bottom: 136px;
+    margin-top: 24px;
+  }
+  @media (min-width: $break-point-c) {
+    left: auto;
+    margin-bottom: auto;
+    padding-left: 80px;
+    margin-right: 0;
+    margin-top: auto;
+  }
+  @media (min-width: $break-point-d) {
+    width: 488px;
+  }
+}
+
+
+a.appLinkStyle {
+  @media (min-width: $break-point-b) {
+    color: $modern-gold;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 18px;
+    margin-top: 32px;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: white;
+    text-decoration: underline;
+  }
+
+  &:after {
+    @include linkArrow;
+    border-color: $modern-gold;
+  }
+
+  &:hover:after {
+    border-color: $white;
+  }
+}
+
+.appIcon {
+  height: 112px;
+}
+
+.linkcontainer{
+  @include grid-child(1,13,8,9);
+  color: white;
+  @media (min-width: $break-point-b) {
+    @include grid-child(1,13,8,9);
+  }
+}
+
+.linkcontainerNoTopTxt {
+  @include grid-child(1,13,9,10);
+  color: white;
+  @media (min-width: $break-point-b) {
+    @include grid-child(1,13,9,10);
+  }
+}
+
+.threeLineMarginA {
+  margin-bottom: auto;
+}
+
+.threeLineMarginB {
+  margin-bottom: 0px;
+}
+
+.srOnly {
+  @include visually-hidden;
+  text-transform: none;
+  font-size: .5px;
+  line-height: 0;
+  height: 0;
+}

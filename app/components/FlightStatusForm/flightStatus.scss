@@ -1,0 +1,246 @@
+@import "../../styles/tools";
+@import "../../styles/global/forms";
+
+.statusForm {
+  @include grid-parent;
+  // Overrides for react-select classes
+  :global {
+    .Select-value-label {
+      font-size: 30px;
+      transition: color 0.4s;
+
+      &:hover {
+        color: $link-blue !important;
+      }
+    }
+
+    .Select-multi-value-wrapper {
+      display: inline-block;
+      width: 85%;
+    }
+    .Select-menu-outer {
+      @media screen and (min-width: $break-point-c) {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+      }
+    }
+    .Select-arrow-zone {
+      width: 10%;
+      padding-left: 15px;
+    }
+
+    .Select-control {
+      border: none;
+    }
+
+    .Select.is-focused > .Select-control {
+      background-color: transparent;
+    }
+
+    .Select--single > .Select-control .Select-value {
+      padding-left: 0;
+    }
+  }
+}
+
+.flightStatusHeader {
+  @include grid-child(1,13,1,2);
+  font-size: 24px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  &:focus {
+    outline: 1px dotted $modern-gold;
+  }
+  @media screen and (min-width: $break-point-c) {
+    margin-bottom: 8px;
+  }
+}
+
+.flightStatusHeaderAriaStyle {
+  color: transparent;
+  height: 1px;
+  width: 1px;
+  font-size: 1px;
+}
+
+.fromLocationContainer {
+  @include grid-child(1,13,2,3);
+
+  @media screen and (min-width: $break-point-b) {
+    @include grid-child(1,7,2,3);
+    padding-right: 15px;
+  }
+}
+
+.fromLocation {
+  background: #F7F7F7;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  overflow-y: auto;
+  display: inline;
+  @media screen and (min-width: $break-point-c) {
+    background: white;
+    z-index: auto;
+    height: auto;
+    width: auto;
+  }
+  // IE only
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    padding-right: 8px;
+  }
+}
+
+.toLocationContainer {
+  @include grid-child(1,13,3,4);
+  @media screen and (min-width: $break-point-b) {
+    @include grid-child(7,13,2,3);
+    padding-left: 15px;
+  }
+}
+
+.toLocation {
+  background: #F7F7F7;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  overflow-y: auto;
+  display: inline;
+  @media screen and (min-width: $break-point-c) {
+    background: white;
+    z-index: auto;
+    height: auto;
+    width: auto;
+  }
+}
+
+.andOr {
+  font-size: 14px;
+  margin-bottom: 16px;
+  @include grid-child(1,13,4,5);
+  @media screen and (min-width: $break-point-b) {
+    @include grid-child(1,13,3,4);
+  }
+}
+
+.flightNumber {
+  @include grid-child(1,13,5,6);
+  @media screen and (min-width: $break-point-b) {
+    @include grid-child(1,7,4,5);
+    padding-right: 15px;
+  }
+  // IE only
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    padding-right: 8px;
+  }
+}
+
+.datesContainer {
+  @include grid-child(1,13,6,7);
+  @media screen and (min-width: $break-point-b) {
+    @include grid-child(7,13,4,5);
+    padding-left: 15px;
+  }
+}
+
+.dateField {
+  margin-top: 3px;
+  margin-bottom: 30px;
+  padding-bottom: 8px;
+  position: relative;
+
+  @media screen and (min-width: $break-point-c) {
+    margin-top: 0px;
+  }
+
+  label {
+    margin-bottom: 3px;
+    margin-top: 5px;
+    transition: color 0.4s;
+
+    @media screen and (min-width: $break-point-c) {
+      padding-bottom: 1px;
+    }
+  }
+
+  &:hover {
+    label {
+      color: $link-blue;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    border-bottom: $default-border;
+    transition: border-color 0.4s;
+  }
+
+  &:hover:after {
+    border-bottom: 2px solid $link-blue;
+  }
+}
+
+
+
+.findFlightStatusBtn {
+  @include grid-child(1,13,7,8);
+  @media (min-width: $break-point-b) {
+    @include grid-child(1,6,5,6);
+  }
+}
+
+.statusNotificationLink {
+  @include grid-child(1,13,8,9);
+  width: 90%;
+  text-align: center;
+  margin-left: 5%;
+
+  @media screen and (min-width: $break-point-b) {
+    @include grid-child(6,12,5,6);
+    width: 100%;
+    text-align: left;
+    margin-left: 60px;
+  }
+
+  @media screen and (min-width: $break-point-c) {
+    margin-left: 30px;
+  }
+
+  @media screen and (min-width: $break-point-d) {
+    margin-left: 40px;
+    width: 172px;
+    text-align: left;
+  }
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: $link-blue;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+
+    &:after {
+      @include linkArrow;
+    }
+  }
+}
+
+.srOnly {
+  @include visually-hidden;
+  text-transform: none;
+  font-size: 0;
+  line-height: 0;
+}

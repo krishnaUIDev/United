@@ -1,0 +1,42 @@
+@import "../../styles/tools";
+
+.prevIcon {
+  @include icon-arrow-left(12px, 12px);
+  display: block;
+}
+
+.nextIcon {
+  @include icon-arrow-right(12px, 12px);
+  display: block;
+}
+
+.srOnly {
+  @include visually-hidden;
+  text-transform: none;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+}
+
+.inputFieldErrorMsg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: $error-color;
+  letter-spacing: 0;
+  width: 100%;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 4px 0;
+
+  @media screen and (min-width: $break-point-c) {
+    font-size: 11px;
+  }
+}
+
+.customErrorMsg {
+  @extend .inputFieldErrorMsg;
+  position: relative;
+  top:0;
+  left:0;
+}

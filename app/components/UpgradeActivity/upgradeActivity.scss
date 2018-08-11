@@ -1,0 +1,101 @@
+@import "../../styles/tools";
+
+
+
+.upgradeheader{
+  font-size: 26px;
+  font-weight: 500;
+}
+.upgradetext{
+  font-size: 14px;
+  font-weight: 500;
+  padding: 1px 0 24px;
+}
+.descColor{
+  color:#2172BA;
+}
+.activityContainer {
+  display: grid;
+  list-style: none;
+  //grid-template-columns: 120px 412px 0px 0px -1px 125px;
+  grid-template-columns: 15% 74% 10%;
+  border-top: 1px solid #666666;
+  padding: 1em 0;
+  font-size: 18px;
+  font-weight: 400;
+  
+}
+.activitymiles {
+  float: right;
+  padding-left: 10px;
+  //float: right;
+}
+
+.containermargin{
+  margin-right:25px;
+}
+
+@media  (min-width: 320px) and (max-width: 767px ) {
+  .actdetails{
+    display:block;
+  }
+  .upgradeheader{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 11px 16px 6px 13px;
+  }
+  .activityContainer{
+    display:grid;
+    padding-left:10px;
+  }
+  .box3 {
+    grid-column: 1;
+    grid-row: 3;
+    width:200px;
+  }
+  .boxes {
+    display: grid;
+    display: -ms-inline-grid;
+  }
+  .box1 {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+  }
+  .box2 {
+    grid-column: 1;
+    grid-row: 1;
+    width:198px;
+  }
+}
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .activityContainer span {
+    display: inline-block;
+  }
+  .transactionDate {
+    width: 15%;
+  }
+  .description {
+    width: 74%;
+  }
+  .miles {
+    width: 10%;
+  }
+}
+@supports (-ms-accelerator:true) {
+  .activityContainer span {
+    display: inline-block;
+  }
+  .transactionDate {
+    width: 15%;
+  }
+  .description {
+    width: 74%;
+  }
+  .miles {
+    width: 10%;
+  }
+}
+

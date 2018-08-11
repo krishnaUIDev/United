@@ -1,0 +1,166 @@
+@import "../../styles/tools";
+
+.bookerBGContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0.8;
+  margin-top: -105px;
+
+  @media (min-width: $break-point-b) {
+    opacity: 1;
+  }
+
+  @media (min-width: $break-point-c) {
+    top: 0;
+    height: 774px;
+    opacity: 1;
+    margin-top: 0;
+  }
+
+  @media (min-width: $break-point-d) {
+    height: 794px;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: $black;
+
+    @media (min-width: $break-point-b) {
+      @include gradient-vertical($black, transparent, 0%, 150px);
+    }
+  }
+}
+.AdvisoriesHeightAdjust {
+  top: 30px;
+  @media (min-width: $break-point-c) {
+    top: 32px;
+  }
+  @media (min-width: $break-point-d) {
+    top: 40px;
+  }
+}
+.bookerAd {
+  color: white;
+  font-size: 50px;
+
+  a, button {
+    color: white;
+    text-decoration: none;
+  }
+
+  a.learnMore {
+    &:after {
+      @include linkArrow;
+      border-color: white;
+    }
+    &:focus, &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  title {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: normal;
+
+    @media (min-width: $break-point-c) {
+      font-size: 24px;
+    }
+
+    @media (min-width: $break-point-d) {
+      font-size: 32px;
+    }
+  }
+}
+
+.navigation {
+  font-size: $dot-base-size;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.bookerAdContent {
+  padding: 16px;
+
+  @media (min-width: $break-point-b) {
+    background-color: rgba($black, 0.5);
+  }
+}
+
+.dot {
+  display: inline-block;
+  font-size: inherit;
+  background: none;
+  border: none;
+  color: $dot-color;
+  width: $button-size-large;
+  height: $button-size-large;
+  padding: $dot-padding-large;
+  margin: 4px 3px;
+
+  &.active {
+    padding: $dot-active-padding-large;
+  }
+
+  @media (min-width: $break-point-a) {
+    width: $button-size;
+    height: $button-size;
+    padding: $dot-padding;
+
+    &.active {
+      padding: $dot-active-padding;
+    }
+  }
+}
+
+.passthroughLink {
+  font-size: inherit;
+}
+
+.playbackControl {
+  position: relative;
+  display: inline-block;
+  font-size: inherit;
+  background: none;
+  margin: 4px 16px 4px 8px;
+  width: $button-size-large;
+  height: $button-size-large;
+  padding: $dot-active-padding-large;
+
+  &:after {
+    content: "";
+    border-right: 1px solid rgba(#FFF, 0.5);
+    position: absolute;
+    top: 1px;
+    bottom: -1px;
+    right: -12px;
+  }
+
+  @media (min-width: $break-point-a) {
+    width: $button-size;
+    height: $button-size;
+    padding: $dot-active-padding;
+  }
+}
+
+.exit {
+  @include visually-hidden();
+}

@@ -1,0 +1,74 @@
+@import "../../styles/tools";
+
+.listItem:hover {
+  color: $dropdown-text-color !important;
+  background: $dropdown-content-hover-background-color;
+}
+
+.listItem {
+  padding-bottom: 8px;
+  padding-top: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: left;
+  &:focus {
+    outline-color: $modern-gold;
+  }
+}
+
+.topLine {
+  padding-left: 24px;
+  line-height: 24px;
+  font-size: 18px;
+  text-indent: 24px;
+  text-overflow: ellipsis;
+  width: 384px;
+  &:hover {
+    color: $dropdown-text-color;
+  }
+}
+
+.bottomLine {
+  padding-left: 24px;
+  line-height: 16px;
+  font-size: 12px;
+  letter-spacing: 0;
+  color: $dropdown-text-color;
+}
+
+
+.locationList {
+  list-style-type: none;
+  padding-top: 8px;
+  padding-bottom: 4px;
+  @media screen and (min-width: $break-point-c) {
+    padding-left: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+}
+
+div.locationList {
+  white-space: nowrap;
+  width: 100%;
+  margin-right: 48px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: $black-60 !important;
+}
+
+.btnImg {
+  position: absolute;
+  display: block;
+  visibility: visible;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  margin-right: 20px;
+}
+
+.hotelTopLine {
+  padding-left: 48px;
+}

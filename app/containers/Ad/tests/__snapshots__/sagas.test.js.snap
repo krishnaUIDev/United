@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`requestAds Saga should call the adsLoadingError action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`requestAds Saga should call the adsLoadingError action if the response errors 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`requestAds Saga should call the adsLoadingError action if the response errors 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/home/ads",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Content-Type": "application/json",
+        },
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`requestAds Saga should dispatch the adsLoaded action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`requestAds Saga should dispatch the adsLoaded action if it requests the data successfully 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`requestAds Saga should dispatch the adsLoaded action if it requests the data successfully 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/home/ads",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Content-Type": "application/json",
+        },
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;

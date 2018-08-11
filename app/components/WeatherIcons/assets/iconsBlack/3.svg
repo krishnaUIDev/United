@@ -1,0 +1,26 @@
+<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Severe Thunderstorm</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-529 -179)">
+<g id="Page 1">
+<g id="Group 3">
+<mask id="mask0_outline" mask-type="alpha">
+<g id="Clip 2">
+<use xlink:href="#path0_fill" transform="translate(529.001 179.001)" fill="#000000"/>
+</g>
+</mask>
+<g id="Fill 1" mask="url(#mask0_outline)">
+<use xlink:href="#path1_fill" transform="translate(529.001 179)" fill="#000000"/>
+</g>
+</g>
+<g id="Fill 4">
+<use xlink:href="#path2_fill" transform="translate(534.435 188.637)" fill="#000000"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 1.6263e-19 5.32907e-15L 23.9994 5.32907e-15L 23.9994 15.8529L 0 15.8529L 0 0L 1.6263e-19 5.32907e-15Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 17.6685 4.446C 17.274 4.446 16.881 4.4805 16.494 4.554L 16.161 4.6155L 15.999 4.3245C 15.621 3.6645 15.153 3.051 14.6025 2.5035C 12.99 0.891 10.8375 0 8.5545 0C 6.267 0 4.122 0.891 2.505 2.5035C 0.888 4.1175 0 6.2655 0 8.544C 0 10.827 0.888 12.972 2.505 14.586C 2.6895 14.7675 2.886 14.94 3.0795 15.1035L 4.02 14.0235C 2.4405 12.717 1.4205 10.7535 1.4205 8.544C 1.4205 4.617 4.62 1.422 8.5545 1.422C 11.6865 1.422 14.4525 3.492 15.369 6.432C 16.074 6.0585 16.857 5.8635 17.6685 5.8635C 20.376 5.8635 22.5765 8.0625 22.5765 10.7685C 22.5765 12.342 21.825 13.7355 20.6685 14.6325L 21.408 15.8535C 22.9755 14.706 24 12.8535 24 10.7685C 24 7.2795 21.156 4.446 17.6685 4.446"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 12.1995 0L 6.4035 0L 0.858 7.074L 5.52 7.0725L 0 14.3625L 12.5415 4.83L 7.584 4.83L 12.1995 0Z"/>
+</defs>
+</svg>

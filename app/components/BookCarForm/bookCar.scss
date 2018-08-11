@@ -1,0 +1,327 @@
+@import "../../styles/tools";
+@import "../../styles/global/forms";
+@import "../../components/SlidingInput/slidingInput";
+
+.bookCarForm {
+  @include grid-parent;
+  padding-top: 34px;
+
+  input:required {
+    box-shadow:none;
+  }
+
+  .inputFieldGroup {
+    padding-top: 0;
+
+    input {
+      height: 45px;
+    }
+  }
+
+  // Overrides for global classes
+  :global {
+    .Select-control {
+      border-color: transparent;
+    }
+
+    .Select-value-label,
+    .Select-placeholder {
+      font-size: 32px;
+    }
+
+    .Select-value-label {
+      transition: color 0.4s;
+
+      &:hover {
+        color: $link-blue !important;
+      }
+    }
+
+    .Select-multi-value-wrapper {
+      display: inline-block;
+      width: 86%;
+    }
+
+    .Select--single > .Select-control .Select-value {
+      padding-left: 0;
+    }
+
+    .Select-menu-outer {
+      @media screen and (min-width: $break-point-c) {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+      }
+    }
+
+    .Select-arrow-zone {
+      width: 14%;
+      padding-left: 20px;
+    }
+
+    .Select.is-focused > .Select-control {
+      background-color: transparent;
+    }
+
+    .DateRangePicker_picker.DateRangePicker_picker__directionLeft {
+      @media screen and (min-width: $break-point-c) {
+        left: 0 !important;
+      }
+    }
+
+    .DateRangePicker {
+      .DateInput {
+        width: 114px;
+
+        &:last-of-type {
+          width: 130px;
+        }
+        .DateInput_input {
+          font-size: 32px;
+
+          &::-webkit-input-placeholder {
+            font-size: 29px;
+          }
+
+          &::-moz-placeholder {
+            font-size: 29px;
+          }
+
+          &:-ms-input-placeholder {
+            font-size: 29px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.topPanel,
+.middlePanel,
+.bottomPanel,
+.submitPanel {
+  @include grid-parent;
+}
+
+.topPanel {
+  @include grid-child(1,13,1,2);
+}
+
+.middlePanel {
+  @include grid-child(1,13,2,3);
+  padding-top: 8px;
+}
+
+.bottomPanel {
+  @include grid-child(1,13,3,4);
+}
+
+.submitPanel {
+  @include grid-child(1,13,4,5);
+  margin-top: 25px;
+  @media screen and (min-width: $break-point-c) {
+    margin-top: 55px;
+  }
+}
+
+.bookCarCalendar,
+.pickUpTime {
+  @include grid-child(1,13,1,2);
+  @media screen and (min-width: $break-point-c) {
+    @include grid-child(1,7,1,2);
+    padding-right: 15px;
+  }
+}
+
+.pickUpTime,
+.dropOffTime {
+  padding-top: 25px;
+  @media screen and (min-width: $break-point-c) {
+    padding-top: 0;
+  }
+}
+
+.bookCarCalendar {
+  padding-top: 25px;
+  @media screen and (min-width: $break-point-c) {
+    padding-top: 0;
+  }
+
+  &:hover {
+    label {
+      color: $link-blue;
+    }
+  }
+}
+
+.carDropoffContainer,
+.bookCarDriverAge,
+.dropOffTime {
+  @include grid-child(1,13,2,3);
+  @media screen and (min-width: $break-point-c) {
+    @include grid-child(7,13,1,2);
+    padding-left: 15px;
+  }
+}
+
+.carDropoffContainer {
+  height: 91px;
+}
+
+.carPickup,
+.carDropoff {
+  position: fixed;
+  background: #F7F7F7;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  z-index: 3;
+  display: inline;
+
+  @media screen and (min-width: $break-point-c) {
+    background: transparent;
+    overflow: visible;
+    padding-bottom: 10px;
+    z-index: auto;
+  }
+}
+
+.carDropoff {
+  > div {
+    padding-top: 4px;
+  }
+}
+
+.carPickupContainer {
+  @include grid-child(1,13,1,2);
+  @media screen and (min-width: $break-point-c) {
+    @include grid-child(1,7,1,2);
+    padding-right: 15px;
+  }
+}
+
+.bookCarDriverAge {
+  input[type="checkbox"] + label{
+    padding-bottom: 12px;
+
+    @media screen and (min-width: $break-point-c) {
+      padding-bottom: 2px;
+    }
+  }
+
+  input[type="checkbox"]:checked + label{
+    padding-bottom: 0;
+  }
+}
+
+.selectInput {
+  margin-top: 3px;
+  position: relative;
+  padding-bottom: 8px;
+
+  &:hover {
+    label {
+      color: $link-blue;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    border-bottom: $default-border;
+    transition: border-color 0.4s;
+  }
+
+  &:hover:after {
+    border-bottom: 2px solid $link-blue;
+  }
+
+  @media screen and (min-width: $break-point-c) {
+    margin-top: 0px;
+  }
+
+  label {
+    margin-bottom: 8px;
+  }
+}
+
+.submitBtnContainer {
+  @include grid-child(1,13,3,4);
+  @media screen and (min-width: $break-point-c) {
+    @include grid-child(1,5,1,2);
+  }
+}
+
+.findCarsBtn {
+  img {
+    width: auto;
+    margin-left: 10px;
+    margin-top: -5px;
+  }
+}
+
+.logoPanelContainer {
+  @include grid-child(1,13,1,2);
+  margin-bottom: 25px;
+  @media screen and (min-width: $break-point-c) {
+    @include grid-child(5,7,1,2);
+    text-align: right;
+    padding-right: 15px;
+    margin-bottom: 0;
+  }
+}
+
+.messagePanelContainer {
+  @include grid-child(1,13,2,3);
+  margin-bottom: 25px;
+  font-size: 12px;
+
+  @media screen and (min-width: $break-point-c) {
+    @include grid-child(7,13,1,2);
+    padding-left: 15px;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+}
+
+.bookCalendar {
+  display: block;
+  padding-bottom: 25px;
+  margin-bottom: 10px;
+  line-height: 1;
+  position: relative;
+}
+
+.inputFieldErrorMsg {
+  color: $error-color;
+  letter-spacing: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 0;
+
+  @media screen and (min-width: $break-point-c) {
+    font-size: 10px;
+  }
+
+  @media screen and (min-width: $break-point-d) {
+    font-size: 11px;
+  }
+}
+
+.srOnly {
+  @include visually-hidden;
+  text-transform: none;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+}
+
+.invisible {
+  @include visually-hidden;
+}

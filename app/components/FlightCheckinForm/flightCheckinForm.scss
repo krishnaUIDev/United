@@ -1,0 +1,97 @@
+@import "../../styles/tools";
+@import "../../styles/global/forms";
+
+.bookCheckinForm {
+  @include grid-parent;
+}
+
+.checkinHeader {
+  @include grid-child(1,13,1,2);
+  font-size: 24px;
+  margin-bottom: 16px;
+  margin-top: 4px;
+  @media screen and (min-width: $break-point-c) {
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
+}
+
+.confirmationNumberField {
+  @include grid-child(1,13,2,3);
+  margin-bottom: 54px;
+  @media screen and (min-width: $break-point-c) {
+    margin-bottom: 16px;
+  }
+}
+
+.lastNameField {
+  @include grid-child(1,13,3,4);
+  margin-bottom: 32px;
+  @media screen and (min-width: $break-point-c) {
+    margin-bottom: 8px;
+  }
+}
+
+.checkinWithMPlinkContainer {
+  @include grid-child(1,13,5,6);
+  margin-bottom: 24px;
+  margin-top: 32px;
+  @media screen and (min-width: $break-point-c) {
+    @include grid-child(1,13,4,5);
+    margin-top: auto;
+  }
+}
+
+.checkinWithMPlink {
+  text-decoration: none;
+  font-size: 14px;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:after {
+    @include linkArrow;
+  }
+}
+
+.submitCheckinBtnContainer {
+  @include grid-child(1,13,4,5);
+  @media screen and (min-width: $break-point-c) {
+    @include grid-child(1,6,5,6);
+  }
+}
+
+.submitCheckinBtn {
+  &:hover {
+    margin-bottom: auto;
+  }
+  @media screen and (min-width: $break-point-c) {
+    margin-bottom: 0px;
+  }
+}
+
+.checkinDetails {
+  @include grid-child(1,13,6,7);
+  font-size: 12px;
+  color: $black-80;
+
+  &:focus {
+    outline: 1px dotted $modern-gold;
+  }
+
+  @media screen and (min-width: $break-point-c) {
+    @include grid-child(6,13,5,6);
+  }
+}
+
+.checkinDetailsLink {
+  font-size: 12px;
+  color: $black-80;
+  text-decoration: underline;
+
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}

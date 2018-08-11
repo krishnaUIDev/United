@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getCarouselSlides Saga should call the carouselLoadingError action if the response errors with status 403 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getCarouselSlides Saga should call the carouselLoadingError action if the response errors with status 403 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getCarouselSlides Saga should call the carouselLoadingError action if the response errors with status 403 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/home/heroCarousel",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer 1234abc",
+          "Content-Type": "application/json",
+        },
+        "timeout": 5000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getCarouselSlides Saga should dispatch the carouselSlidesLoaded action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getCarouselSlides Saga should dispatch the carouselSlidesLoaded action if it requests the data successfully 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getCarouselSlides Saga should dispatch the carouselSlidesLoaded action if it requests the data successfully 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/home/heroCarousel",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer 1234abc",
+          "Content-Type": "application/json",
+        },
+        "timeout": 5000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;

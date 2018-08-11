@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="45---Semantic-order-for-book-car-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-231.000000, -641.000000)">
+        <g id="Group-5" transform="translate(231.000000, 641.000000)">
+            <path d="M9.5,4.5 L4.5,8.5" id="Line" stroke="#FFFFFF" stroke-linecap="square"></path>
+            <path d="M0.5,2.5 L0.5,11.5 L9.5,11.5 L9.5,2.5 L0.5,2.5 Z" id="Rectangle-28" stroke="#FFFFFF"></path>
+            <polygon id="Triangle-2" fill="#FFFFFF" points="13.4319805 0.189339828 12 6 7.62132034 1.62132034"></polygon>
+        </g>
+    </g>
+</svg>

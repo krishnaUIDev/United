@@ -1,0 +1,40 @@
+.menuWrapper {
+  height: 72px;
+  width: 100%;
+  background: #021E46;
+}
+
+.menuGridContainer{
+  max-width: 1136px;
+  margin: 0 auto 32px;
+  padding: 0 30px;
+  display: grid;
+  height: 100%;
+  
+}
+.navGrid > li > a{
+  color: #FFFFFF;
+  font-size: 16px;
+}
+.navGrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 8px);
+  //grid-template-rows: 24px 76px;
+  padding: 0px;
+  align-content: center;
+}
+
+.menuItem1{
+  grid-column: 1 / 15;
+}
+.menuItem2{
+  grid-column: 22 / 40;
+}
+
+.menuItem3{
+  grid-column: 49 / 75;
+}
+
+.menuItem4{
+  grid-column: 80 / 100;
+}

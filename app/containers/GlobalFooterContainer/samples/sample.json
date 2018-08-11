@@ -1,0 +1,849 @@
+{
+  "data": {
+      "headerFooter": {
+          "headerLogoUrl": "https://media.united.com/images/Media%20Database/SDL/Header%20and%20Footer/unitedLogo-white.png",
+          "headerLogoAltText": "United logo link to homepage",
+          "headerNav": [
+              {
+                  "menuTitle": "Reservation",
+                  "menuLink": "/web/en-US/content/reservations/default.aspx",
+                  "isExternalLink": false,
+                  "subMenu": [
+                      {
+                          "menuTitle": "Book a flight",
+                          "menuLink": "",
+                          "isExternalLink": false,
+                          "subMenu": [
+                              {
+                                  "menuTitle": "Round trip",
+                                  "menuLink": "/ual/en/us/flight-search/book-a-flight/advancedsearch/rev",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "One-way",
+                                  "menuLink": "/ual/en/us/flight-search/book-a-flight/oneway/rev",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Multiple destinations",
+                                  "menuLink": "/ual/en/us/flight-search/book-a-flight/multipledestination/rev",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Award travel",
+                                  "menuLink": "/ual/en/us/flight-search/book-a-flight/redeemmiles/rev",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Set your search preference",
+                                  "menuLink": "/web/en-US/apps/account/preference/searchpreference.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              }
+                          ]
+                      },
+                      {
+                          "menuTitle": "Manage reservations",
+                          "menuLink": "",
+                          "isExternalLink": false,
+                          "subMenu": [
+                              {
+                                  "menuTitle": "Change or view reservations",
+                                  "menuLink": "/web/en-US/apps/reservation/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Check in for a flight",
+                                  "menuLink": "/travel/checkin/start.aspx?LangCode=",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Refund/cancellation policy",
+                                  "menuLink": "/web/en-US/content/reservations/refunds/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Empty",
+                                  "menuLink": "",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Using united.com",
+                                  "menuLink": "/web/en-US/content/reservations/online/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              }
+                          ]
+                      },
+                      {
+                          "menuTitle": "Make other reservations",
+                          "menuLink": "",
+                          "isExternalLink": false,
+                          "subMenu": [
+                              {
+                                  "menuTitle": "Hotel reservations",
+                                  "menuLink": "https://hotels.united.com/?locale=en_US&POS=UNITED_US&wapb3=|c.496751|l.en_US|t.site|s.header",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Car reservations",
+                                  "menuLink": "/web/en-US/content/reservations/car.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Cruise reservations",
+                                  "menuLink": "/web/en-US/apps/vendors/out.aspx?i=cruisesmenu",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Vacation packages",
+                                  "menuLink": "/web/en-US/apps/vendors/out.aspx?i=vacationsmenu",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "menuTitle": "Travel information",
+                  "menuLink": "/web/en-US/content/travel/default.aspx",
+                  "isExternalLink": false,
+                  "subMenu": [
+                      {
+                          "menuTitle": "00 Column",
+                          "menuLink": "",
+                          "isExternalLink": false,
+                          "subMenu": [
+                              {
+                                  "menuTitle": "Flight status &amp; information",
+                                  "menuLink": "/web/en-US/apps/travel/flightstatus/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Timetable",
+                                  "menuLink": "/web/en-US/apps/travel/timetable/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Baggage information",
+                                  "menuLink": "/web/en-US/content/travel/baggage/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Traveling with animals",
+                                  "menuLink": "/web/en-US/content/travel/animals/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              }
+                          ]
+                      },
+                      {
+                          "menuTitle": "Column",
+                          "menuLink": "",
+                          "isExternalLink": false,
+                          "subMenu": [
+                              {
+                                  "menuTitle": "Special travel needs",
+                                  "menuLink": "/web/en-US/content/travel/specialneeds/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Airport information",
+                                  "menuLink": "/web/en-US/content/travel/airport/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Inflight services",
+                                  "menuLink": "/web/en-US/content/travel/inflight/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Route maps",
+                                  "menuLink": "/CMS/en-US/travel/pages/routemaps.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              }
+                          ]
+                      },
+                      {
+                          "menuTitle": "02 Column",
+                          "menuLink": "",
+                          "isExternalLink": false,
+                          "subMenu": [
+                              {
+                                  "menuTitle": "Destination information",
+                                  "menuLink": "/web/en-US/content/travel/destination/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Popular travel destinations",
+                                  "menuLink": "/CMS/en-US/content/deals/populartravel/Pages/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Mobile tools",
+                                  "menuLink": "/web/en-US/content/travel/wireless/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "FAQs and helpful information",
+                                  "menuLink": "/web/en-US/content/help/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "menuTitle": "Deals & offers",
+                  "menuLink": "/web/en-US/content/deals/default.aspx",
+                  "isExternalLink": false,
+                  "subMenu": [
+                      {
+                          "menuTitle": "00 Deals and Offers Column 1",
+                          "menuLink": "",
+                          "isExternalLink": false,
+                          "subMenu": [
+                              {
+                                  "menuTitle": "United Specials",
+                                  "menuLink": "/web/en-US/apps/booking/specials/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Email subscriptions",
+                                  "menuLink": "/web/en-US/apps/account/email/subscription/emailsubscription.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "MileagePlus deals &amp; offers",
+                                  "menuLink": "/web/en-US/apps/mileageplus/promotions/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Special offers",
+                                  "menuLink": "/CMS/en-US/content/deals/offers/pages/specialoffers.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              }
+                          ]
+                      },
+                      {
+                          "menuTitle": "01 Deals and Offers Column 2",
+                          "menuLink": "",
+                          "isExternalLink": false,
+                          "subMenu": [
+                              {
+                                  "menuTitle": "Veterans Advantage discount",
+                                  "menuLink": "/web/en-US/content/deals/veterans/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "RSS subscriptions",
+                                  "menuLink": "/web/en-US/content/deals/rss/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Promotional programs &amp; certificates",
+                                  "menuLink": "/web/en-US/apps/booking/specials/certificates/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Vacation packages",
+                                  "menuLink": "http://vacations.united.com/?cmpid=UA-Dealsnav",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "menuTitle": "MileagePlus<sup>&reg;</sup>",
+                  "menuLink": "/web/en-US/content/mileageplus/default.aspx",
+                  "isExternalLink": false,
+                  "subMenu": [
+                      {
+                          "menuTitle": "Program information",
+                          "menuLink": "",
+                          "isExternalLink": false,
+                          "subMenu": [
+                              {
+                                  "menuTitle": "MileagePlus program",
+                                  "menuLink": "/web/en-US/content/mileageplus/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Join MileagePlus",
+                                  "menuLink": "/ual/en/us/account/enroll/default",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Credit Cardmembers",
+                                  "menuLink": "/web/en-US/content/products/cards/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Premier® benefits &amp; more",
+                                  "menuLink": "/web/en-US/content/mileageplus/premier/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Upgrades overview",
+                                  "menuLink": "/web/en-US/content/mileageplus/awards/upgrade/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              }
+                          ]
+                      },
+                      {
+                          "menuTitle": "Earning and using miles",
+                          "menuLink": "",
+                          "isExternalLink": false,
+                          "subMenu": [
+                              {
+                                  "menuTitle": "My account",
+                                  "menuLink": "/web/en-US/apps/account/account.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Earn award miles",
+                                  "menuLink": "/web/en-US/content/mileageplus/earn/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Get credit card or prepaid card",
+                                  "menuLink": "/web/en-US/content/products/chase/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Use award miles",
+                                  "menuLink": "/web/en-US/content/mileageplus/awards/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Book with award miles",
+                                  "menuLink": "/ual/en/us/flight-search/book-a-flight/redeemmiles/rev",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Buy, transfer or give miles",
+                                  "menuLink": "/web/en-US/content/mileageplus/transfer/default.aspx",
+                                  "isExternalLink": true,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "MileagePlus Service Center",
+                                  "menuLink": "/web/en-US/content/contact/mileageplus/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              }
+                          ]
+                      },
+                      {
+                          "menuTitle": "Popular destinations",
+                          "menuLink": "",
+                          "isExternalLink": false,
+                          "subMenu": [
+                              {
+                                  "menuTitle": "My account",
+                                  "menuLink": "/web/en-US/apps/account/account.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ],
+          "footerNav": [
+              {
+                  "menuTitle": "About United",
+                  "menuLink": "",
+                  "isExternalLink": false,
+                  "subMenu": [
+                      {
+                          "menuTitle": "Corporate information",
+                          "menuLink": "",
+                          "isExternalLink": false,
+                          "subMenu": [
+                              {
+                                  "menuTitle": "Shared Purpose & Values",
+                                  "menuLink": "https://hub.united.com/sp/purposes/",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Newsroom",
+                                  "menuLink": "http://newsroom.unitedcontinentalholdings.com/",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Investor relations",
+                                  "menuLink": "http://ir.united.com/",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Leadership team",
+                                  "menuLink": "http://ir.united.com/corporate-governance/company-leadership",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "United Express® partners",
+                                  "menuLink": "/CMS/en-US/AboutUnited/Pages/UnitedExpressPartners.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Global alliances",
+                                  "menuLink": "/CMS/en-US/Marketing/CustComm/Promotions/Pages/AirlinePartners.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Careers",
+                                  "menuLink": "/web/en-US/content/company/career/default.aspx?int_source=hr_career&int_medium=uacom&int_campaign=career_opportunities&asset_type=link&asset_position=homepage&mode=f",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Diversity and inclusion",
+                                  "menuLink": "/web/en-US/content/company/globalcitizenship/diversity.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              }
+                          ]
+                      },
+                      {
+                          "menuTitle": "Media & partners",
+                          "menuLink": "",
+                          "isExternalLink": false,
+                          "subMenu": [
+                              {
+                                  "menuTitle": "Advertise with us",
+                                  "menuLink": "/web/en-US/apps/vendors/out.aspx?i=mediaservices",
+                                  "isExternalLink": true,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Branding",
+                                  "menuLink": "/web/en-US/content/company/advertising/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "United Shop",
+                                  "menuLink": "/web/en-US/apps/vendors/out.aspx?i=unitedshopmenu",
+                                  "isExternalLink": true,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Global citizenship",
+                                  "menuLink": "/web/en-US/content/company/globalcitizenship/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Social media",
+                                  "menuLink": "http://hub.united.com",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              }
+                          ]
+                      },
+                      {
+                          "menuTitle": "Business services",
+                          "menuLink": "",
+                          "isExternalLink": false,
+                          "subMenu": [
+                              {
+                                  "menuTitle": "MileagePlus® Explorer Business Card",
+                                  "menuLink": "https://www.theexplorercard.com/Business50kAFW?cell=6YK&int_source=loyalty&mode=d&int_medium=uacom2&int_campaign=mpbusiness50kafw&alm=121&int_content=50k&partner_category=cc&partner_name=chase_acq&asset_type=link&asset_position=2_0_footer&promo_code=cell_6yk&targeting=general&launch_date=2016-11-3",
+                                  "isExternalLink": true,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "MileagePlus® Club Card for Business",
+                                  "menuLink": "https://www.theexplorercard.com/BusinessClub100SC?cell=YNP&int_source=loyalty&mode=d&int_medium=uacom&int_campaign=mpclub100sc&alm=43&partner_category=cc&partner_name=chase_acq&asset_type=link&asset_position=2_0_footer&promo_code=cell_ynp&targeting=general&launch_date=2016-02-11",
+                                  "isExternalLink": true,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Corporate travel expense management",
+                                  "menuLink": "/web/en-US/content/products/business/uatp.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "United PassPlus&#8480;",
+                                  "menuLink": "/web/en-US/content/products/business/passplus/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "United PerksPlus&#8480;",
+                                  "menuLink": "/web/en-US/content/products/business/perksplus/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "menuTitle": "Products & services",
+                  "menuLink": "",
+                  "isExternalLink": false,
+                  "subMenu": [
+                      {
+                          "menuTitle": "",
+                          "menuLink": "",
+                          "isExternalLink": false,
+                          "subMenu": [
+                              {
+                                  "menuTitle": "Business products",
+                                  "menuLink": "https://www.united.com/web/en-US/content/products/business/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Premier Access benefits",
+                                  "menuLink": "https://www.united.com/web/en-US/content/products/premieraccess/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Credit and prepaid cards",
+                                  "menuLink": "https://www.united.com/web/en-US/content/products/chase/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Gift certificates",
+                                  "menuLink": "https://www.united.com/CMS/en-US/products/travelproducts/pages/giftcertificates.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              }
+                          ]
+                      },
+                      {
+                          "menuTitle": "",
+                          "menuLink": "",
+                          "isExternalLink": false,
+                          "subMenu": [
+                              {
+                                  "menuTitle": "Gift registry",
+                                  "menuLink": "https://www.united.com/CMS/en-US/products/travelproducts/pages/giftregistry.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "United Club™ and lounges",
+                                  "menuLink": "https://www.united.com/web/en-US/content/travel/airport/lounge/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "united.com Club",
+                                  "menuLink": "https://www.united.com/web/en-US/apps/products/travelclub/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Travel for groups & meetings",
+                                  "menuLink": "https://www.united.com/web/en-US/content/products/groups/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              }
+                          ]
+                      },
+                      {
+                          "menuTitle": "",
+                          "menuLink": "",
+                          "isExternalLink": false,
+                          "subMenu": [
+                              {
+                                  "menuTitle": "Travel for U.S. military & government personnel",
+                                  "menuLink": "https://www.united.com/web/en-US/content/products/milgov/default.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "United Travel Options",
+                                  "menuLink": "https://www.united.com/CMS/en-US/products/travelproducts/pages/travelstore.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Trip insurance",
+                                  "menuLink": "https://www.united.com/CMS/en-US/products/travelproducts/pages/tripinsurance.aspx",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "United Subscriptions",
+                                  "menuLink": "https://www.united.com/ual/en/us/subscription/home",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "menuTitle": "Popular destinations",
+                  "menuLink": "",
+                  "isExternalLink": false,
+                  "subMenu": [
+                      {
+                          "menuTitle": "",
+                          "menuLink": "",
+                          "isExternalLink": false,
+                          "subMenu": [
+                              {
+                                  "menuTitle": "United destinations",
+                                  "menuLink": "https://flights.united.com/en-us/",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Flights to Beijing",
+                                  "menuLink": "https://flights.united.com/en-us/flights-to-beijing",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Flights to Chicago",
+                                  "menuLink": "https://flights.united.com/en-us/flights-to-chicago",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Flights to Denver",
+                                  "menuLink": "https://flights.united.com/en-us/flights-to-denver",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Flights to Houston",
+                                  "menuLink": "https://flights.united.com/en-us/flights-to-houston",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Flights to Los Angeles",
+                                  "menuLink": "https://flights.united.com/en-us/flights-to-los-angeles",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Flights to Mexico City",
+                                  "menuLink": "https://flights.united.com/en-us/flights-to-mexico-city",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              }
+                          ]
+                      },
+                      {
+                          "menuTitle": "",
+                          "menuLink": "",
+                          "isExternalLink": false,
+                          "subMenu": [
+                              {
+                                  "menuTitle": "Flights to Munich",
+                                  "menuLink": "https://flights.united.com/en-us/flights-to-munich",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Flights to New York",
+                                  "menuLink": "https://flights.united.com/en-us/flights-to-newark",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Flights to Paris",
+                                  "menuLink": "https://flights.united.com/en-us/flights-to-paris",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Flights to San Francisco",
+                                  "menuLink": "https://flights.united.com/en-us/flights-to-san-francisco",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Flights to Tokyo",
+                                  "menuLink": "https://flights.united.com/en-us/flights-to-tokyo",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              },
+                              {
+                                  "menuTitle": "Flights to Washington, D.C.",
+                                  "menuLink": "https://flights.united.com/en-us/flights-to-washington",
+                                  "isExternalLink": false,
+                                  "subMenu": []
+                              }
+                          ]
+                      }
+                  ]
+              },
+              {
+                  "menuTitle": "Important notices",
+                  "menuLink": "https://www.united.com/CMS/en-US/travel/news/Pages/travelnotices.aspx",
+                  "isExternalLink": false,
+                  "subMenu": []
+              }
+          ],
+          "searchLink": {
+              "linkText": "Site Search",
+              "linkUrl": "/web/en-US/apps/search/results.aspx",
+              "isExternalLink": true
+          },
+          "signInLink": {
+              "linkText": "Sign-in",
+              "linkUrl": "/ual/en/us/account/account/signin",
+              "isExternalLink": true
+          },
+          "footerColumn": [
+              {
+                  "links": [
+                      {
+                          "linkText": "Contract of carriage",
+                          "linkUrl": "/web/en-US/content/contract.aspx",
+                          "isExternalLink": true
+                      },
+                      {
+                          "linkText": "Lengthy tarmac delay plan",
+                          "linkUrl": "/web/en-US/content/tarmacdelay.aspx",
+                          "isExternalLink": true
+                      },
+                      {
+                          "linkText": "Legal information",
+                          "linkUrl": "/web/en-US/content/legal.aspx",
+                          "isExternalLink": true
+                      },
+                      {
+                          "linkText": "Our United Customer Commitment",
+                          "linkUrl": "/web/en-US/content/customerfirst.aspx",
+                          "isExternalLink": true
+                      },
+                      {
+                          "linkText": "Contact us",
+                          "linkUrl": "/web/en-US/content/Contact/default.aspx",
+                          "isExternalLink": true
+                      }
+                  ]
+              },
+              {
+                  "links": [
+                      {
+                          "linkText": "Special travel needs",
+                          "linkUrl": "/web/en-US/content/travel/specialneeds/default.aspx",
+                          "isExternalLink": true
+                      },
+                      {
+                          "linkText": "Privacy Policy",
+                          "linkUrl": "/web/en-US/content/privacy.aspx",
+                          "isExternalLink": true
+                      },
+                      {
+                          "linkText": "Travel agents",
+                          "linkUrl": "https://jetstream.united.com/",
+                          "isExternalLink": true
+                      },
+                      {
+                          "linkText": "Cargo",
+                          "linkUrl": "http://www.unitedcargo.com/",
+                          "isExternalLink": true
+                      },
+                      {
+                          "linkText": "Site map",
+                          "linkUrl": "/web/en-US/apps/search/default.aspx",
+                          "isExternalLink": true
+                      }
+                  ]
+              }
+          ],
+          "socialLinks": [
+              {
+                  "linkText": "Mobile tools",
+                  "linkUrl": "https://www.united.com/web/en-US/content/travel/wireless/default.aspx",
+                  "isExternalLink": true
+              },
+              {
+                  "linkText": "Open UnitedHub.com in a new tab",
+                  "linkUrl": "http://hub.united.com/",
+                  "isExternalLink": true
+              },
+              {
+                  "linkText": "Open United's Facebook page in a new tab",
+                  "linkUrl": "https://www.united.com/web/en-US/apps/vendors/out.aspx?i=facebook",
+                  "isExternalLink": true
+              },
+              {
+                  "linkText": "Open United's Twitter feed in a new tab",
+                  "linkUrl": "https://www.united.com/web/en-US/apps/vendors/out.aspx?i=twitter",
+                  "isExternalLink": true
+              },
+              {
+                  "linkText": "Open United's YouTube page in a new tab",
+                  "linkUrl": "https://www.united.com/web/en-US/apps/vendors/out.aspx?i=youtube",
+                  "isExternalLink": true
+              },
+              {
+                  "linkText": "Open United's Instagram feed in a new tab",
+                  "linkUrl": "https://www.united.com/web/en-US/apps/vendors/out.aspx?i=instagram",
+                  "isExternalLink": true
+              },
+              {
+                  "linkText": "Open United's LinkedIn profile in a new tab",
+                  "linkUrl": "https://www.united.com/web/en-US/apps/vendors/out.aspx?i=linkedin",
+                  "isExternalLink": true
+              }
+          ],
+          "footerLogoUrl": "https://media.united.com/images/Media%20Database/SDL/staralliance.png",
+          "footerLogoAltText": "United is a proud member of Star Alliance"
+      }
+  }
+}

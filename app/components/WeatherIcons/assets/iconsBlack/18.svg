@@ -1,0 +1,34 @@
+<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Sleet</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-529 -717)">
+<g id="Page 1">
+<g id="Group 3">
+<mask id="mask0_outline" mask-type="alpha">
+<g id="Clip 2">
+<use xlink:href="#path0_fill" transform="translate(529.001 717.471)" fill="#000000"/>
+</g>
+</mask>
+<g id="Fill 1" mask="url(#mask0_outline)">
+<use xlink:href="#path1_fill" transform="translate(529.001 717.471)" fill="#000000"/>
+</g>
+</g>
+<g id="Fill 4">
+<use xlink:href="#path2_fill" transform="translate(535.851 726.628)" fill="#000000"/>
+</g>
+<g id="Fill 6">
+<use xlink:href="#path3_fill" transform="translate(542.835 733.361)" fill="#000000"/>
+</g>
+<g id="Fill 8">
+<use xlink:href="#path4_fill" transform="translate(533.897 735.503)" fill="#000000"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 1.6263e-19 0L 23.9993 0L 23.9993 15.9849L 0 15.9849L 1.6263e-19 0Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 24 10.5559C 24 7.13529 21.156 4.35441 17.667 4.35441C 17.277 4.35441 16.881 4.39412 16.4925 4.46176L 16.161 4.52353L 15.9975 4.23971C 15.6195 3.58971 15.156 2.98824 14.6025 2.45294C 12.9885 0.872059 10.8405 0 8.553 0C 6.27 0 4.1205 0.872059 2.505 2.45294C 0.891 4.03529 0 6.13971 0 8.37647C 0 10.6147 0.891 12.7162 2.505 14.2985C 2.925 14.7103 3.384 15.0721 3.8685 15.3838L 4.4595 14.0853C 2.625 12.8206 1.419 10.7353 1.419 8.37647C 1.419 4.525 4.6185 1.39118 8.553 1.39118C 11.685 1.39118 14.4555 3.42206 15.3675 6.30441C 16.0755 5.93824 16.8555 5.74559 17.667 5.74559C 20.376 5.74559 22.5795 7.90294 22.5795 10.5559C 22.5795 12.3853 21.528 13.9809 19.9785 14.7926L 19.9575 14.8441L 20.6955 15.9853C 22.659 14.9353 24 12.9 24 10.5559"/>
+<path id="path2_fill" fill-rule="evenodd" d="M 6.3375 3.10882C 6.3375 4.825 4.9215 6.21765 3.1695 6.21765C 1.4175 6.21765 0 4.825 0 3.10882C 0 1.39265 1.4175 0 3.1695 0C 4.9215 0 6.3375 1.39265 6.3375 3.10882"/>
+<path id="path3_fill" fill-rule="evenodd" d="M 5.721 2.80588C 5.721 4.35735 4.4415 5.61471 2.862 5.61471C 1.278 5.61471 0 4.35735 0 2.80588C 0 1.25735 1.278 0 2.862 0C 4.4415 0 5.721 1.25735 5.721 2.80588"/>
+<path id="path4_fill" fill-rule="evenodd" d="M 5.5875 2.73971C 5.5875 4.25 4.341 5.47647 2.7975 5.47647C 1.251 5.47647 0 4.25 0 2.73971C 0 1.22647 1.251 0 2.7975 0C 4.341 0 5.5875 1.22647 5.5875 2.73971"/>
+</defs>
+</svg>

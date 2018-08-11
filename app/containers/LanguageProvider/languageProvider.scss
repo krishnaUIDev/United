@@ -1,0 +1,16 @@
+select.lang-selector {
+  background-color: transparent;
+  border: none;
+  color: #9d9d9d;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

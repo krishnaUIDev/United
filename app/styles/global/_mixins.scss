@@ -1,0 +1,177 @@
+@mixin grid-parent () {
+  display: -ms-grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+// CSS Grid with Flexbox fallback for IE
+@mixin grid-child ($col-start, $col-end, $row-start, $row-end) {
+  -ms-grid-column: $col-start;
+  -ms-grid-column-span: $col-end - $col-start;
+  -ms-grid-row: $row-start;
+  -ms-grid-row-span: $row-end - $row-start;
+  @supports (display: grid) {
+    grid-column: #{$col-start}/#{$col-end};
+    grid-row: #{$row-start}/#{$row-end};
+  }
+}
+
+@mixin responsive-invisibility($parent) {
+  #{$parent} {
+    display: none !important;
+  }
+}
+
+@mixin visually-hidden() {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Gradients
+@mixin gradient-horizontal($startColor: #555, $endColor: #333) {
+    background-color: $endColor;
+    background-image: linear-gradient(to right, $startColor, $endColor); // Le standard
+    background-repeat: repeat-x;
+    .cssgradients &{
+        background-color: transparent;
+    }
+}
+
+@mixin gradient-vertical($startColor: #555, $endColor: #333, $startColorStop: 0%, $endColorStop: 100%) {
+    background-color: $endColor;
+    background-image: linear-gradient(to bottom, $startColor $startColorStop, $endColor $endColorStop); // The standard
+    background-repeat: repeat-x;
+    .cssgradients &{
+        background-color: transparent;
+    }
+}
+
+@mixin gradient-directional($startColor: #555, $endColor: #333, $deg: 45deg) {
+    background-color: $endColor;
+    background-repeat: repeat-x;
+    background-image: linear-gradient($deg, $startColor, $endColor); // The standard
+}
+
+@mixin gradient-vertical-three-colors($startColor: #00b3ee, $midColor: #7a43b6, $colorStop: 50%, $endColor: #c3325f) {
+    background-color: mix($midColor, $endColor, 80%);
+    background-image: linear-gradient($startColor, $midColor $colorStop, $endColor);
+    background-repeat: no-repeat;
+}
+
+@mixin gradient-radial($innerColor: #555, $outerColor: #333)	 {
+    background-color: $outerColor;
+    background-image: radial-gradient(circle, $innerColor, $outerColor);
+    background-repeat: no-repeat;
+}
+
+@mixin gradient-striped($color, $angle: -45deg) {
+    background-color: $color;
+    background-image: linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+}
+
+@mixin unstyled-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  > li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// Animated transition. Custom animation for if we ever need to use one that is not provided by
+// Material Design
+@mixin fade-animation($color, $zIndex, $width, $height, $bottom, $timeDelay) {
+  color: $color;
+	position: absolute;
+	left: 0;
+	z-index: $zIndex;
+	width: $width;
+	height: $height;
+  bottom: $bottom;
+	transition: $timeDelay ease-in-out;
+}
+
+// To be used with fade-animation()
+@mixin vertical-animation($transitionHeight) {
+  transform: translate3d(0, $transitionHeight, 0);
+}
+
+@mixin horizontal-animation($transitionWidth) {
+  transform: translate3d($transitionWidth, 0, 0);
+}
+
+// Material Design label animation
+@mixin label-animation($top, $left, $fontSize, $color) {
+  color: $color;
+  font-size: $fontSize;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left: $left;
+  top: $top;
+  transition: 0.2s ease all;
+}
+
+@mixin icon-arrow-up($width: 14px, $height: 14px, $border-width: 2px, $border-color: $premier-blue) {
+  border: solid $border-color;
+  border-width: 0 $border-width $border-width 0;
+  -webkit-transform: rotate(230deg);
+  transform: rotate(230deg);
+  width: $width;
+  height: $height;
+}
+
+@mixin icon-arrow-down($width: 14px, $height: 14px, $border-width: 2px, $border-color: $premier-blue) {
+  border: solid $border-color;
+  border-width: 0 $border-width $border-width 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: $width;
+  height: $height;
+}
+
+@mixin icon-arrow-right($width: 14px, $height: 14px, $border-width: 2px, $border-color: $premier-blue) {
+  border: solid $border-color;
+  border-width: 0 $border-width $border-width 0;
+  -webkit-transform: rotate(316deg);
+  transform: rotate(316deg);
+  width: $width;
+  height: $height;
+}
+
+@mixin icon-arrow-left($width: 14px, $height: 14px, $border-width: 2px, $border-color: $premier-blue) {
+  border: solid $border-color;
+  border-width: 0 $border-width $border-width 0;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  width: $width;
+  height: $height;
+}
+
+@mixin eyebrow {
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@mixin linkArrow {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 4px;
+  @include icon-arrow-right(8px, 8px, 2px, $link-blue);
+  transition: border-color 0.4s;
+}

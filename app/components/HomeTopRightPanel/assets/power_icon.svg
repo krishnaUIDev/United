@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="16px" viewBox="0 0 11 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Power</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Display-one-reservations-ready-for-check-in---1-stop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1000.000000, -517.000000)">
+        <g id="RIGHT-SIDE-Copy" transform="translate(662.000000, 127.000000)" fill="#FFFFFF">
+            <g id="Amentities" transform="translate(95.000000, 364.000000)">
+                <path d="M250,30 L250,27 C250,26.4477153 250.447715,26 251,26 C251.552285,26 252,26.4477153 252,27 L252,30 L254,30 L254,34.5 C254,37.0175542 252.308505,39.1400386 250,39.7929675 L250,42 L247,42 L247,39.7929675 C244.691495,39.1400386 243,37.0175542 243,34.5 L243,30 L245,30 L245,27 C245,26.4477153 245.447715,26 246,26 C246.552285,26 247,26.4477153 247,27 L247,30 L250,30 Z" id="Power"></path>
+            </g>
+        </g>
+    </g>
+</svg>

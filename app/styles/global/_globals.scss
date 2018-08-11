@@ -1,0 +1,265 @@
+
+body {
+  background: linear-gradient(180deg, rgba(0,0,0,0.90) 0%, $link-blue 10%);
+  font-size: $body-text;
+  font-family: $body-font-family;
+  line-height: 1.4;
+  color: $black-80;
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+h5 {
+  font-size: $h5-font-size;
+}
+
+h6 {
+  font-size: $h6-font-size;
+}
+
+a {
+  text-transform: none;
+  font-size: $link-font-size;
+  color: $link-blue;
+  text-decoration: underline;
+  transition: color 0.4s;
+
+  &:focus {
+    outline: thin dotted;
+    outline-color: $modern-gold;
+    box-shadow: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Forms
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  &:focus {
+    outline-color: $modern-gold;
+    box-shadow: none;
+    outline: 1px dotted;
+  }
+}
+
+form {
+  outline: none;
+  box-shadow: none;
+  &:focus {
+    outline: 1px dotted;
+    outline-color: $modern-gold;
+  }
+}
+
+label {
+  @include eyebrow;
+}
+
+input[type="checkbox"] + label {
+  font-weight: normal;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+form-input {
+  font-size: $font-size-base;
+  line-height: 24px;
+  letter-spacing: $letter-spacing-base;
+  color: $premier-blue;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"] {
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+  border-style: outset;
+  border: none;
+  border-bottom: $default-border;
+  background: transparent;
+  border-radius: 0;
+  font-size: 28px;
+  color: $premier-blue;
+  letter-spacing: $letter-spacing-base;
+  line-height: 1;
+  transition: border-color 0.4s, color 0.4s;
+  font-family: $font-family;
+
+  @media screen and (min-width: $break-point-b) {
+    font-size: $h3-font-size;
+    height: 50px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $link-blue;
+    box-shadow: none;
+    border-color: $link-blue;
+    border-width: 2px;
+  }
+
+  &:focus {
+    outline: 1px dotted $modern-gold;
+  }
+
+  &:invalid {
+    box-shadow: none;
+    outline: none;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $black-60;
+    opacity: 1;
+    transition: color 0.4s;
+  }
+
+  &::-moz-placeholder {
+    color: $black-60;
+    transition: color 0.4s;
+  } /* FF 19+ */
+
+  &:-ms-input-placeholder {
+    color: $black-60;
+    transition: color 0.4s;
+  } /* IE 10+ */
+
+  &:focus::-webkit-input-placeholder,
+  &:hover::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  &:focus::-webkit-input-placeholder,
+  &:hover::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  &:focus::-moz-placeholder,
+  &:hover::-moz-placeholder {
+    color: transparent;
+  } /* FF 19+ */
+
+  &:focus:-ms-input-placeholder,
+  &:hover:-ms-input-placeholder {
+    color: transparent;
+  } /* IE 10+ */
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+
+  + label {
+    position: relative;
+    text-transform: none;
+    display: inline;
+    margin-right: 30px;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: normal;
+
+    @media screen and (min-width: $break-point-d) {
+      margin-right: 38px;
+      font-size: 14px;
+    }
+
+    &:before {
+      content: "";
+      position: relative;
+      top: 2px;
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+      margin-right: 7px;
+      background: transparent;
+      border: 2px solid $united-blue;
+      border-radius: 8px;
+      box-shadow: inset 0px 0px 0px 2px white;
+
+      @media screen and (min-width: $break-point-d) {
+        box-shadow: inset 0px 0px 0px 3px white;
+      }
+    }
+  }
+
+  &:checked + label:before {
+    background: $united-blue;
+  }
+}
+
+// Remove input clear button
+input::-ms-clear {
+  display: none;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  border: $default-border;
+  border-radius: 2px;
+  color: $united-blue;
+  font-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+
+  @media screen and (min-width: $break-point-d) {
+    border-color: transparent;
+    padding: 5px 10px 5px 0;
+  }
+
+  &:focus {
+    outline: 1px dotted;
+    outline-color: $modern-gold;
+    box-shadow: none;
+  }
+}
+
+button {
+  letter-spacing: $letter-spacing-base;
+  font-size: $font-size-retina-base;
+  font-family: $font-family;
+
+  @media screen and (min-width: $break-point-d) {
+    font-size: $font-size-base;
+  }
+
+  &:disabled {
+    background-color: $button-disabled-bg-color;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: thin dotted;
+    outline-color: $modern-gold;
+  }
+}

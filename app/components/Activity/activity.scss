@@ -1,0 +1,31 @@
+@import "../../styles/tools";
+
+
+
+
+.mainContainer{
+  display: block;
+  width: 100%;
+  background-color:white;
+  }
+
+.headerBodySection{
+  width: 100%;
+  max-width: $site-max-width;
+  margin: 0 auto;
+
+  @media (min-width: $break-point-b) {
+    //min-height: 668px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: $break-point-c) {
+    //min-height: 662px;
+    padding-left: 30px;
+  }
+}
+
+.menuSection{
+  display: block;
+  width: 100%;
+}

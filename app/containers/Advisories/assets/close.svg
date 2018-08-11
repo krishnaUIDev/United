@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Wireframes-by-sprint" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.75">
+        <g id="Advisory-placement-2" transform="translate(-1353.000000, -16.000000)" fill="#000000">
+            <g id="x" transform="translate(1347.000000, 10.000000)">
+                <path d="M11.5509019,11.5509019 L4.27817459,11.5509019 L4.27817459,13.0054473 L11.5509019,13.0054473 L11.5509019,20.2781746 L13.0054473,20.2781746 L13.0054473,13.0054473 L20.2781746,13.0054473 L20.2781746,11.5509019 L13.0054473,11.5509019 L13.0054473,4.27817459 L11.5509019,4.27817459 L11.5509019,11.5509019 Z" transform="translate(12.278175, 12.278175) rotate(45.000000) translate(-12.278175, -12.278175) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

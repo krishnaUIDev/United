@@ -1,0 +1,58 @@
+@import "../../styles/global/forms";
+@import "../../styles/tools";
+
+.tripsContainer {
+  @include grid-parent;
+}
+
+.loaderContainer {
+  height: 100px;
+}
+
+.loadingRing {
+  @include grid-child(1, 13, 1, 2);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 44%;
+  @media (min-width: $break-point-c) {
+    top: 35%;
+  }
+}
+
+.tripsData {
+  @include grid-child(1, 13, 1, 2);
+}
+
+@keyframes ldsRing {
+  0% {
+    transform: rotate(0)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+.ldsRingBlue > div {
+  position: absolute;
+  top: 30%;
+  @media (min-width: $break-point-c) {
+    top: 330%;
+  }
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  border: 2px solid grey;
+  border-color: grey transparent transparent transparent;
+  animation: ldsRing 1.5s cubic-bezier(0.5,0,0.5,1) infinite;
+}
+.ldsRingBlue > div:nth-child(2) {
+  animation-delay: .195s;
+}
+.ldsRingBlue > div:nth-child(3) {
+  animation-delay: .39s;
+}
+.ldsRingBlue > div:nth-child(4) {
+  animation-delay: .585s;
+}

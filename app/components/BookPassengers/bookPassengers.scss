@@ -1,0 +1,80 @@
+@import "../../styles/global/_variables";
+@import "../../styles/global/_mixins";
+
+.passengersB {
+  position: relative;
+  padding-left: 24px;
+  @media screen and (min-width: $break-point-d) {
+    position: absolute;
+    top: 40px;
+    left: auto;
+    width: 300px;
+    height: 166px;
+    bottom: 16px;
+    right: 8px;
+    border-radius: 3px;
+    padding-left: 40px;
+  }
+}
+
+.passengerDropdownClearBtn {
+  position: absolute;
+  font-size: 14px;
+  top: 24px;
+  right: 24px;
+  @media screen and (min-width: $break-point-d) {
+    font-size: 12px;
+    color: $premier-blue;
+    letter-spacing: 0;
+    line-height: 24px;
+    right: 32px;
+    top: 12px;
+  }
+}
+
+.passengerDropdownCloseBtn {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  @media screen and (min-width: $break-point-d) {
+    left: auto; // reset from mobile left positioning
+    right: 12px;
+    top: 14px;
+  }
+}
+
+.divider{
+  position:absolute;
+  left:50%;
+  top:10%;
+  bottom:10%;
+  border-left:1px solid $black-10;
+}
+
+.applyBtnContainer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin-bottom: 24px;
+}
+
+.applyBtn {
+  width: calc(100% - 48px);
+  height: 52px;
+  margin-left: 24px;
+  font-size: 14px;
+  line-height: 11px;
+  background: $link-blue;
+  color: white;
+}
+
+*:not(input) {
+  -ms-user-select: none;
+}
+
+.srOnly {
+  @include visually-hidden;
+  text-transform: none;
+  font-size: 0;
+  line-height: 0;
+}

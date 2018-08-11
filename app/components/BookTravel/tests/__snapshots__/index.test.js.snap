@@ -1,0 +1,987 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BookTravel /> render BookTravel Component 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className=""
+>
+    <div
+        className={undefined}
+    >
+        
+        <Announcements
+            message={undefined}
+        />
+        <AriaTabPanel-Wrapper
+            activeTabId="activeTab"
+            onChange={null}
+            tag="div"
+        >
+            <AriaTabPanel-TabList
+                className={undefined}
+                tag="ul"
+            >
+                <AriaTabPanel-Tab
+                    active={false}
+                    aria-label="Book a flight or trip package. Expanded panel."
+                    className={undefined}
+                    id="travelTab"
+                    name="travelTab"
+                    onClick={[Function]}
+                    tag="li"
+                >
+                    <div
+                        aria-hidden="true"
+                        className={undefined}
+                    >
+                        <img
+                            alt=""
+                            role="presentation"
+                            src="IMAGE_MOCK"
+                            width="30"
+                        />
+                    </div>
+                    <h2>
+                        <FormattedMessage
+                            defaultMessage="Book travel"
+                            id="unitedapp.components.BookTravel.bookMobile"
+                            values={Object {}}
+                        />
+                        <button
+                            className={undefined}
+                            onClick={[Function]}
+                            role="button"
+                        >
+                            <i
+                                aria-hidden="true"
+                                role="presentation"
+                            />
+                        </button>
+                    </h2>
+                </AriaTabPanel-Tab>
+                <AriaTabPanel-TabPanel
+                    active={false}
+                    onFocus={[Function]}
+                    tabId="travelTab"
+                    tag="section"
+                >
+                    <Connect(InjectIntl(BookFlight))
+                        getFlightRequestResponse={[Function]}
+                        onArrowKeyDown={[Function]}
+                        onItemSelected={[Function]}
+                    />
+                </AriaTabPanel-TabPanel>
+                <AriaTabPanel-Tab
+                    active={false}
+                    aria-label="Check flight status"
+                    className={undefined}
+                    id="statusTab"
+                    name="statusTab"
+                    onClick={[Function]}
+                    tag="li"
+                >
+                    <div
+                        aria-hidden="true"
+                        className={undefined}
+                    >
+                        <img
+                            alt=""
+                            role="presentation"
+                            src="IMAGE_MOCK"
+                        />
+                    </div>
+                    <h2>
+                        <FormattedMessage
+                            defaultMessage="Flight status"
+                            id="unitedapp.components.BookTravel.statusMobile"
+                            values={Object {}}
+                        />
+                        <button
+                            className={undefined}
+                            onClick={[Function]}
+                            role="button"
+                        >
+                            <i
+                                aria-hidden="true"
+                                role="presentation"
+                            />
+                        </button>
+                    </h2>
+                </AriaTabPanel-Tab>
+                <AriaTabPanel-TabPanel
+                    active={false}
+                    tabId="statusTab"
+                    tag="section"
+                >
+                    <Connect(FlightStatus)
+                        activeTab="activeTab"
+                        getFlightRequestResponse={[Function]}
+                        onArrowKeyDown={[Function]}
+                        onItemSelected={[Function]}
+                    />
+                </AriaTabPanel-TabPanel>
+                <AriaTabPanel-Tab
+                    active={false}
+                    aria-label="Check in a flight"
+                    className={undefined}
+                    id="checkInTab"
+                    onClick={[Function]}
+                    tag="li"
+                >
+                    <div
+                        aria-hidden="true"
+                        className={undefined}
+                    >
+                        <img
+                            alt=""
+                            role="presentation"
+                            src="IMAGE_MOCK"
+                        />
+                    </div>
+                    <h2>
+                        <FormattedMessage
+                            defaultMessage="Check-in"
+                            id="unitedapp.components.BookTravel.checkin"
+                            values={Object {}}
+                        />
+                        <button
+                            className={undefined}
+                            onClick={[Function]}
+                            role="button"
+                        >
+                            <i
+                                aria-hidden="true"
+                                role="presentation"
+                            />
+                        </button>
+                    </h2>
+                </AriaTabPanel-Tab>
+                <AriaTabPanel-TabPanel
+                    active={false}
+                    tabId="checkInTab"
+                    tag="section"
+                >
+                    <InjectIntl(Connect(FlightCheckin)) />
+                </AriaTabPanel-TabPanel>
+                <AriaTabPanel-Tab
+                    active={false}
+                    aria-label="View and manage current trips"
+                    className={undefined}
+                    id="tripsTab"
+                    onClick={[Function]}
+                    tag="li"
+                >
+                    <div
+                        aria-hidden="true"
+                        className={undefined}
+                    >
+                        <img
+                            alt=""
+                            role="presentation"
+                            src="IMAGE_MOCK"
+                        />
+                    </div>
+                    <h2>
+                        <FormattedMessage
+                            defaultMessage="My trips"
+                            id="unitedapp.components.BookTravel.mytrips"
+                            values={Object {}}
+                        />
+                        <button
+                            className={undefined}
+                            onClick={[Function]}
+                            role="button"
+                        >
+                            <i
+                                aria-hidden="true"
+                                role="presentation"
+                            />
+                        </button>
+                    </h2>
+                </AriaTabPanel-Tab>
+                <AriaTabPanel-TabPanel
+                    active={false}
+                    tabId="tripsTab"
+                    tag="section"
+                >
+                    <Connect(InjectIntl(MyTrips)) />
+                </AriaTabPanel-TabPanel>
+            </AriaTabPanel-TabList>
+        </AriaTabPanel-Wrapper>
+    </div>
+</div>,
+  "nodes": Array [
+    <div
+      className=""
+>
+      <div
+            className={undefined}
+      >
+            
+            <Announcements
+                  message={undefined}
+            />
+            <AriaTabPanel-Wrapper
+                  activeTabId="activeTab"
+                  onChange={null}
+                  tag="div"
+            >
+                  <AriaTabPanel-TabList
+                        className={undefined}
+                        tag="ul"
+                  >
+                        <AriaTabPanel-Tab
+                              active={false}
+                              aria-label="Book a flight or trip package. Expanded panel."
+                              className={undefined}
+                              id="travelTab"
+                              name="travelTab"
+                              onClick={[Function]}
+                              tag="li"
+                        >
+                              <div
+                                    aria-hidden="true"
+                                    className={undefined}
+                              >
+                                    <img
+                                          alt=""
+                                          role="presentation"
+                                          src="IMAGE_MOCK"
+                                          width="30"
+                                    />
+                              </div>
+                              <h2>
+                                    <FormattedMessage
+                                          defaultMessage="Book travel"
+                                          id="unitedapp.components.BookTravel.bookMobile"
+                                          values={Object {}}
+                                    />
+                                    <button
+                                          className={undefined}
+                                          onClick={[Function]}
+                                          role="button"
+                                    >
+                                          <i
+                                                aria-hidden="true"
+                                                role="presentation"
+                                          />
+                                    </button>
+                              </h2>
+                        </AriaTabPanel-Tab>
+                        <AriaTabPanel-TabPanel
+                              active={false}
+                              onFocus={[Function]}
+                              tabId="travelTab"
+                              tag="section"
+                        >
+                              <Connect(InjectIntl(BookFlight))
+                                    getFlightRequestResponse={[Function]}
+                                    onArrowKeyDown={[Function]}
+                                    onItemSelected={[Function]}
+                              />
+                        </AriaTabPanel-TabPanel>
+                        <AriaTabPanel-Tab
+                              active={false}
+                              aria-label="Check flight status"
+                              className={undefined}
+                              id="statusTab"
+                              name="statusTab"
+                              onClick={[Function]}
+                              tag="li"
+                        >
+                              <div
+                                    aria-hidden="true"
+                                    className={undefined}
+                              >
+                                    <img
+                                          alt=""
+                                          role="presentation"
+                                          src="IMAGE_MOCK"
+                                    />
+                              </div>
+                              <h2>
+                                    <FormattedMessage
+                                          defaultMessage="Flight status"
+                                          id="unitedapp.components.BookTravel.statusMobile"
+                                          values={Object {}}
+                                    />
+                                    <button
+                                          className={undefined}
+                                          onClick={[Function]}
+                                          role="button"
+                                    >
+                                          <i
+                                                aria-hidden="true"
+                                                role="presentation"
+                                          />
+                                    </button>
+                              </h2>
+                        </AriaTabPanel-Tab>
+                        <AriaTabPanel-TabPanel
+                              active={false}
+                              tabId="statusTab"
+                              tag="section"
+                        >
+                              <Connect(FlightStatus)
+                                    activeTab="activeTab"
+                                    getFlightRequestResponse={[Function]}
+                                    onArrowKeyDown={[Function]}
+                                    onItemSelected={[Function]}
+                              />
+                        </AriaTabPanel-TabPanel>
+                        <AriaTabPanel-Tab
+                              active={false}
+                              aria-label="Check in a flight"
+                              className={undefined}
+                              id="checkInTab"
+                              onClick={[Function]}
+                              tag="li"
+                        >
+                              <div
+                                    aria-hidden="true"
+                                    className={undefined}
+                              >
+                                    <img
+                                          alt=""
+                                          role="presentation"
+                                          src="IMAGE_MOCK"
+                                    />
+                              </div>
+                              <h2>
+                                    <FormattedMessage
+                                          defaultMessage="Check-in"
+                                          id="unitedapp.components.BookTravel.checkin"
+                                          values={Object {}}
+                                    />
+                                    <button
+                                          className={undefined}
+                                          onClick={[Function]}
+                                          role="button"
+                                    >
+                                          <i
+                                                aria-hidden="true"
+                                                role="presentation"
+                                          />
+                                    </button>
+                              </h2>
+                        </AriaTabPanel-Tab>
+                        <AriaTabPanel-TabPanel
+                              active={false}
+                              tabId="checkInTab"
+                              tag="section"
+                        >
+                              <InjectIntl(Connect(FlightCheckin)) />
+                        </AriaTabPanel-TabPanel>
+                        <AriaTabPanel-Tab
+                              active={false}
+                              aria-label="View and manage current trips"
+                              className={undefined}
+                              id="tripsTab"
+                              onClick={[Function]}
+                              tag="li"
+                        >
+                              <div
+                                    aria-hidden="true"
+                                    className={undefined}
+                              >
+                                    <img
+                                          alt=""
+                                          role="presentation"
+                                          src="IMAGE_MOCK"
+                                    />
+                              </div>
+                              <h2>
+                                    <FormattedMessage
+                                          defaultMessage="My trips"
+                                          id="unitedapp.components.BookTravel.mytrips"
+                                          values={Object {}}
+                                    />
+                                    <button
+                                          className={undefined}
+                                          onClick={[Function]}
+                                          role="button"
+                                    >
+                                          <i
+                                                aria-hidden="true"
+                                                role="presentation"
+                                          />
+                                    </button>
+                              </h2>
+                        </AriaTabPanel-Tab>
+                        <AriaTabPanel-TabPanel
+                              active={false}
+                              tabId="tripsTab"
+                              tag="section"
+                        >
+                              <Connect(InjectIntl(MyTrips)) />
+                        </AriaTabPanel-TabPanel>
+                  </AriaTabPanel-TabList>
+            </AriaTabPanel-Wrapper>
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <BookTravel
+        activeTab="activeTab"
+        airportData={
+                Array [
+                        Object {
+                          "Airport": Object {
+                            "IATACode": "LON",
+                            "Name": "London, England",
+                            "ShortName": "London, England",
+                          },
+                        },
+                      ]
+        }
+        expanded={true}
+        hideAutocompleteLocationDropdown={[Function]}
+        onChangeModel={[Function]}
+        onCollapseInputSelected={[Function]}
+        onFocusModel={[Function]}
+        onInputSelected={[Function]}
+        onSelectCarPickupLocation={[Function]}
+        onSelectFlightCheckinLoad={[Function]}
+        onSelectFlightDestinationLocation={[Function]}
+        onSelectFlightOriginLocation={[Function]}
+        onSelectFlightStatusDestinationLocation={[Function]}
+        onSelectFlightStatusOriginLocation={[Function]}
+        onSelectMyTripsLoad={[Function]}
+        setAriaLiveMessage={[Function]}
+        setDestinationLocationCode={[Function]}
+        setFlightStatusDestinationLocationCode={[Function]}
+        setFlightStatusOriginLocationCode={[Function]}
+        setOriginLocationCode={[Function]}
+        setTab={[Function]}
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": BookTravel {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "activeTab": "activeTab",
+          "airportData": Array [
+            Object {
+              "Airport": Object {
+                "IATACode": "LON",
+                "Name": "London, England",
+                "ShortName": "London, England",
+              },
+            },
+          ],
+          "expanded": true,
+          "hideAutocompleteLocationDropdown": [Function],
+          "onChangeModel": [Function],
+          "onCollapseInputSelected": [Function],
+          "onFocusModel": [Function],
+          "onInputSelected": [Function],
+          "onSelectCarPickupLocation": [Function],
+          "onSelectFlightCheckinLoad": [Function],
+          "onSelectFlightDestinationLocation": [Function],
+          "onSelectFlightOriginLocation": [Function],
+          "onSelectFlightStatusDestinationLocation": [Function],
+          "onSelectFlightStatusOriginLocation": [Function],
+          "onSelectMyTripsLoad": [Function],
+          "setAriaLiveMessage": [Function],
+          "setDestinationLocationCode": [Function],
+          "setFlightStatusDestinationLocationCode": [Function],
+          "setFlightStatusOriginLocationCode": [Function],
+          "setOriginLocationCode": [Function],
+          "setTab": [Function],
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className=""
+>
+          <div
+                    className={undefined}
+          >
+                    
+                    <Announcements
+                              message={undefined}
+                    />
+                    <AriaTabPanel-Wrapper
+                              activeTabId="activeTab"
+                              onChange={null}
+                              tag="div"
+                    >
+                              <AriaTabPanel-TabList
+                                        className={undefined}
+                                        tag="ul"
+                              >
+                                        <AriaTabPanel-Tab
+                                                  active={false}
+                                                  aria-label="Book a flight or trip package. Expanded panel."
+                                                  className={undefined}
+                                                  id="travelTab"
+                                                  name="travelTab"
+                                                  onClick={[Function]}
+                                                  tag="li"
+                                        >
+                                                  <div
+                                                            aria-hidden="true"
+                                                            className={undefined}
+                                                  >
+                                                            <img
+                                                                      alt=""
+                                                                      role="presentation"
+                                                                      src="IMAGE_MOCK"
+                                                                      width="30"
+                                                            />
+                                                  </div>
+                                                  <h2>
+                                                            <FormattedMessage
+                                                                      defaultMessage="Book travel"
+                                                                      id="unitedapp.components.BookTravel.bookMobile"
+                                                                      values={Object {}}
+                                                            />
+                                                            <button
+                                                                      className={undefined}
+                                                                      onClick={[Function]}
+                                                                      role="button"
+                                                            >
+                                                                      <i
+                                                                                aria-hidden="true"
+                                                                                role="presentation"
+                                                                      />
+                                                            </button>
+                                                  </h2>
+                                        </AriaTabPanel-Tab>
+                                        <AriaTabPanel-TabPanel
+                                                  active={false}
+                                                  onFocus={[Function]}
+                                                  tabId="travelTab"
+                                                  tag="section"
+                                        >
+                                                  <Connect(InjectIntl(BookFlight))
+                                                            getFlightRequestResponse={[Function]}
+                                                            onArrowKeyDown={[Function]}
+                                                            onItemSelected={[Function]}
+                                                  />
+                                        </AriaTabPanel-TabPanel>
+                                        <AriaTabPanel-Tab
+                                                  active={false}
+                                                  aria-label="Check flight status"
+                                                  className={undefined}
+                                                  id="statusTab"
+                                                  name="statusTab"
+                                                  onClick={[Function]}
+                                                  tag="li"
+                                        >
+                                                  <div
+                                                            aria-hidden="true"
+                                                            className={undefined}
+                                                  >
+                                                            <img
+                                                                      alt=""
+                                                                      role="presentation"
+                                                                      src="IMAGE_MOCK"
+                                                            />
+                                                  </div>
+                                                  <h2>
+                                                            <FormattedMessage
+                                                                      defaultMessage="Flight status"
+                                                                      id="unitedapp.components.BookTravel.statusMobile"
+                                                                      values={Object {}}
+                                                            />
+                                                            <button
+                                                                      className={undefined}
+                                                                      onClick={[Function]}
+                                                                      role="button"
+                                                            >
+                                                                      <i
+                                                                                aria-hidden="true"
+                                                                                role="presentation"
+                                                                      />
+                                                            </button>
+                                                  </h2>
+                                        </AriaTabPanel-Tab>
+                                        <AriaTabPanel-TabPanel
+                                                  active={false}
+                                                  tabId="statusTab"
+                                                  tag="section"
+                                        >
+                                                  <Connect(FlightStatus)
+                                                            activeTab="activeTab"
+                                                            getFlightRequestResponse={[Function]}
+                                                            onArrowKeyDown={[Function]}
+                                                            onItemSelected={[Function]}
+                                                  />
+                                        </AriaTabPanel-TabPanel>
+                                        <AriaTabPanel-Tab
+                                                  active={false}
+                                                  aria-label="Check in a flight"
+                                                  className={undefined}
+                                                  id="checkInTab"
+                                                  onClick={[Function]}
+                                                  tag="li"
+                                        >
+                                                  <div
+                                                            aria-hidden="true"
+                                                            className={undefined}
+                                                  >
+                                                            <img
+                                                                      alt=""
+                                                                      role="presentation"
+                                                                      src="IMAGE_MOCK"
+                                                            />
+                                                  </div>
+                                                  <h2>
+                                                            <FormattedMessage
+                                                                      defaultMessage="Check-in"
+                                                                      id="unitedapp.components.BookTravel.checkin"
+                                                                      values={Object {}}
+                                                            />
+                                                            <button
+                                                                      className={undefined}
+                                                                      onClick={[Function]}
+                                                                      role="button"
+                                                            >
+                                                                      <i
+                                                                                aria-hidden="true"
+                                                                                role="presentation"
+                                                                      />
+                                                            </button>
+                                                  </h2>
+                                        </AriaTabPanel-Tab>
+                                        <AriaTabPanel-TabPanel
+                                                  active={false}
+                                                  tabId="checkInTab"
+                                                  tag="section"
+                                        >
+                                                  <InjectIntl(Connect(FlightCheckin)) />
+                                        </AriaTabPanel-TabPanel>
+                                        <AriaTabPanel-Tab
+                                                  active={false}
+                                                  aria-label="View and manage current trips"
+                                                  className={undefined}
+                                                  id="tripsTab"
+                                                  onClick={[Function]}
+                                                  tag="li"
+                                        >
+                                                  <div
+                                                            aria-hidden="true"
+                                                            className={undefined}
+                                                  >
+                                                            <img
+                                                                      alt=""
+                                                                      role="presentation"
+                                                                      src="IMAGE_MOCK"
+                                                            />
+                                                  </div>
+                                                  <h2>
+                                                            <FormattedMessage
+                                                                      defaultMessage="My trips"
+                                                                      id="unitedapp.components.BookTravel.mytrips"
+                                                                      values={Object {}}
+                                                            />
+                                                            <button
+                                                                      className={undefined}
+                                                                      onClick={[Function]}
+                                                                      role="button"
+                                                            >
+                                                                      <i
+                                                                                aria-hidden="true"
+                                                                                role="presentation"
+                                                                      />
+                                                            </button>
+                                                  </h2>
+                                        </AriaTabPanel-Tab>
+                                        <AriaTabPanel-TabPanel
+                                                  active={false}
+                                                  tabId="tripsTab"
+                                                  tag="section"
+                                        >
+                                                  <Connect(InjectIntl(MyTrips)) />
+                                        </AriaTabPanel-TabPanel>
+                              </AriaTabPanel-TabList>
+                    </AriaTabPanel-Wrapper>
+          </div>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div
+          className=""
+>
+          <div
+                    className={undefined}
+          >
+                    
+                    <Announcements
+                              message={undefined}
+                    />
+                    <AriaTabPanel-Wrapper
+                              activeTabId="activeTab"
+                              onChange={null}
+                              tag="div"
+                    >
+                              <AriaTabPanel-TabList
+                                        className={undefined}
+                                        tag="ul"
+                              >
+                                        <AriaTabPanel-Tab
+                                                  active={false}
+                                                  aria-label="Book a flight or trip package. Expanded panel."
+                                                  className={undefined}
+                                                  id="travelTab"
+                                                  name="travelTab"
+                                                  onClick={[Function]}
+                                                  tag="li"
+                                        >
+                                                  <div
+                                                            aria-hidden="true"
+                                                            className={undefined}
+                                                  >
+                                                            <img
+                                                                      alt=""
+                                                                      role="presentation"
+                                                                      src="IMAGE_MOCK"
+                                                                      width="30"
+                                                            />
+                                                  </div>
+                                                  <h2>
+                                                            <FormattedMessage
+                                                                      defaultMessage="Book travel"
+                                                                      id="unitedapp.components.BookTravel.bookMobile"
+                                                                      values={Object {}}
+                                                            />
+                                                            <button
+                                                                      className={undefined}
+                                                                      onClick={[Function]}
+                                                                      role="button"
+                                                            >
+                                                                      <i
+                                                                                aria-hidden="true"
+                                                                                role="presentation"
+                                                                      />
+                                                            </button>
+                                                  </h2>
+                                        </AriaTabPanel-Tab>
+                                        <AriaTabPanel-TabPanel
+                                                  active={false}
+                                                  onFocus={[Function]}
+                                                  tabId="travelTab"
+                                                  tag="section"
+                                        >
+                                                  <Connect(InjectIntl(BookFlight))
+                                                            getFlightRequestResponse={[Function]}
+                                                            onArrowKeyDown={[Function]}
+                                                            onItemSelected={[Function]}
+                                                  />
+                                        </AriaTabPanel-TabPanel>
+                                        <AriaTabPanel-Tab
+                                                  active={false}
+                                                  aria-label="Check flight status"
+                                                  className={undefined}
+                                                  id="statusTab"
+                                                  name="statusTab"
+                                                  onClick={[Function]}
+                                                  tag="li"
+                                        >
+                                                  <div
+                                                            aria-hidden="true"
+                                                            className={undefined}
+                                                  >
+                                                            <img
+                                                                      alt=""
+                                                                      role="presentation"
+                                                                      src="IMAGE_MOCK"
+                                                            />
+                                                  </div>
+                                                  <h2>
+                                                            <FormattedMessage
+                                                                      defaultMessage="Flight status"
+                                                                      id="unitedapp.components.BookTravel.statusMobile"
+                                                                      values={Object {}}
+                                                            />
+                                                            <button
+                                                                      className={undefined}
+                                                                      onClick={[Function]}
+                                                                      role="button"
+                                                            >
+                                                                      <i
+                                                                                aria-hidden="true"
+                                                                                role="presentation"
+                                                                      />
+                                                            </button>
+                                                  </h2>
+                                        </AriaTabPanel-Tab>
+                                        <AriaTabPanel-TabPanel
+                                                  active={false}
+                                                  tabId="statusTab"
+                                                  tag="section"
+                                        >
+                                                  <Connect(FlightStatus)
+                                                            activeTab="activeTab"
+                                                            getFlightRequestResponse={[Function]}
+                                                            onArrowKeyDown={[Function]}
+                                                            onItemSelected={[Function]}
+                                                  />
+                                        </AriaTabPanel-TabPanel>
+                                        <AriaTabPanel-Tab
+                                                  active={false}
+                                                  aria-label="Check in a flight"
+                                                  className={undefined}
+                                                  id="checkInTab"
+                                                  onClick={[Function]}
+                                                  tag="li"
+                                        >
+                                                  <div
+                                                            aria-hidden="true"
+                                                            className={undefined}
+                                                  >
+                                                            <img
+                                                                      alt=""
+                                                                      role="presentation"
+                                                                      src="IMAGE_MOCK"
+                                                            />
+                                                  </div>
+                                                  <h2>
+                                                            <FormattedMessage
+                                                                      defaultMessage="Check-in"
+                                                                      id="unitedapp.components.BookTravel.checkin"
+                                                                      values={Object {}}
+                                                            />
+                                                            <button
+                                                                      className={undefined}
+                                                                      onClick={[Function]}
+                                                                      role="button"
+                                                            >
+                                                                      <i
+                                                                                aria-hidden="true"
+                                                                                role="presentation"
+                                                                      />
+                                                            </button>
+                                                  </h2>
+                                        </AriaTabPanel-Tab>
+                                        <AriaTabPanel-TabPanel
+                                                  active={false}
+                                                  tabId="checkInTab"
+                                                  tag="section"
+                                        >
+                                                  <InjectIntl(Connect(FlightCheckin)) />
+                                        </AriaTabPanel-TabPanel>
+                                        <AriaTabPanel-Tab
+                                                  active={false}
+                                                  aria-label="View and manage current trips"
+                                                  className={undefined}
+                                                  id="tripsTab"
+                                                  onClick={[Function]}
+                                                  tag="li"
+                                        >
+                                                  <div
+                                                            aria-hidden="true"
+                                                            className={undefined}
+                                                  >
+                                                            <img
+                                                                      alt=""
+                                                                      role="presentation"
+                                                                      src="IMAGE_MOCK"
+                                                            />
+                                                  </div>
+                                                  <h2>
+                                                            <FormattedMessage
+                                                                      defaultMessage="My trips"
+                                                                      id="unitedapp.components.BookTravel.mytrips"
+                                                                      values={Object {}}
+                                                            />
+                                                            <button
+                                                                      className={undefined}
+                                                                      onClick={[Function]}
+                                                                      role="button"
+                                                            >
+                                                                      <i
+                                                                                aria-hidden="true"
+                                                                                role="presentation"
+                                                                      />
+                                                            </button>
+                                                  </h2>
+                                        </AriaTabPanel-Tab>
+                                        <AriaTabPanel-TabPanel
+                                                  active={false}
+                                                  tabId="tripsTab"
+                                                  tag="section"
+                                        >
+                                                  <Connect(InjectIntl(MyTrips)) />
+                                        </AriaTabPanel-TabPanel>
+                              </AriaTabPanel-TabList>
+                    </AriaTabPanel-Wrapper>
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <BookTravel
+    activeTab="activeTab"
+    airportData={
+        Array [
+            Object {
+              "Airport": Object {
+                "IATACode": "LON",
+                "Name": "London, England",
+                "ShortName": "London, England",
+              },
+            },
+          ]
+    }
+    expanded={true}
+    hideAutocompleteLocationDropdown={[Function]}
+    onChangeModel={[Function]}
+    onCollapseInputSelected={[Function]}
+    onFocusModel={[Function]}
+    onInputSelected={[Function]}
+    onSelectCarPickupLocation={[Function]}
+    onSelectFlightCheckinLoad={[Function]}
+    onSelectFlightDestinationLocation={[Function]}
+    onSelectFlightOriginLocation={[Function]}
+    onSelectFlightStatusDestinationLocation={[Function]}
+    onSelectFlightStatusOriginLocation={[Function]}
+    onSelectMyTripsLoad={[Function]}
+    setAriaLiveMessage={[Function]}
+    setDestinationLocationCode={[Function]}
+    setFlightStatusDestinationLocationCode={[Function]}
+    setFlightStatusOriginLocationCode={[Function]}
+    setOriginLocationCode={[Function]}
+    setTab={[Function]}
+/>,
+}
+`;

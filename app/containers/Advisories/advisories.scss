@@ -1,0 +1,33 @@
+@import "../../styles/tools";
+
+.severe {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: $error-color;
+}
+
+.severeLink {
+  font-size: 14px;
+  color: white;
+}
+
+.warning {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: $modern-gold;
+}
+
+.warningLink {
+  font-size: 14px;
+  color: $black-80;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}

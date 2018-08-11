@@ -1,0 +1,103 @@
+@import "../../styles/tools";
+
+
+.parentContainer {
+  @include grid-parent;
+  border-top: 1px solid $divider-line-color-mobile;
+  border-bottom: 1px solid $divider-line-color-mobile;
+  margin-top: 8px;
+  @media (min-width: $break-point-c) {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-top: 1px solid $divider-line-color-desktop;
+    border-bottom: 1px solid $divider-line-color-desktop;
+  }
+}
+
+.headerStyle {
+  font-size: 12px;
+  color: white;
+  letter-spacing: 1.08px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.departureContainer {
+  @include grid-child(1,7,1,2);
+  text-align: left;
+  margin-bottom: 24px;
+  margin-top: 4px;
+  @media (min-width: $break-point-b) {
+    @include grid-child(1,4,1,2);
+    margin-bottom: 8px;
+  }
+}
+
+.boardingContainer {
+  @include grid-child(9,13,1,2);
+  text-align: left;
+  margin-top: 4px;
+  @media (min-width: $break-point-b) {
+    @include grid-child(5,8,1,2);
+  }
+}
+
+.terminalContainer {
+  @include grid-child(1,7,2,3);
+  text-align: left;
+  @media (min-width: $break-point-b) {
+    @include grid-child(8,11,1,2);
+    margin-left: 32px;
+    margin-top: 4px;
+  }
+}
+
+.gateContainer {
+  @include grid-child(9,13,2,3);
+  @media (min-width: $break-point-b) {
+    @include grid-child(11,13,1,2);
+    text-align: right;
+    margin-top: 4px;
+  }
+}
+
+.assignmentMayChange {
+  @include grid-child(1,13,3,4);
+  font-size: 12px;
+  color: white;
+  line-height: 18px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  @media (min-width: $break-point-b) {
+    @include grid-child(1,13,2,3);
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+}
+
+.details {
+  letter-spacing: 0;
+  color: white;
+  font-size: 32px;
+  @media (min-width: $break-point-c) {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 8px;
+  }
+}
+
+.timePeriodStyle {
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.srOnly {
+  @include visually-hidden;
+  text-transform: none;
+  font-size: .5px;
+  line-height: 0;
+  height: 0;
+}

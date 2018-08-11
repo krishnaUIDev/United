@@ -1,0 +1,680 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AutocompleteLocationDropdown /> render AutocompleteLocationDropdown Component 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div>
+    <div
+        style={
+            Object {
+                "paddingBottom": "10px",
+              }
+        }
+    >
+        <div
+            className=""
+            style={
+                Object {
+                    "marginTop": "0",
+                    "paddingBottom": "0",
+                    "paddingLeft": "8px",
+                  }
+            }
+        >
+            <DefaultConnectedControlText
+                aria-required="true"
+                autoComplete="off"
+                className=""
+                data-required="true"
+                id="bookHotelInput"
+                model="foo"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                placeholder="placeholder"
+                spellCheck="false"
+                tabIndex="0"
+                type="text"
+                validators={
+                    Object {
+                        "isValidInput": [Function],
+                      }
+                }
+            />
+            <label
+                className={undefined}
+                htmlFor="bookHotelInput"
+            >
+                placeholder
+            </label>
+            <div
+                aria-live="polite"
+                className={undefined}
+            />
+            <Modeled(Connect(Errors))
+                messages={
+                    Object {
+                        "isValidInput": "undefined",
+                      }
+                }
+                model="foo"
+                show={[Function]}
+                wrapper={[Function]}
+            />
+        </div>
+        <div
+            className={undefined}
+            id="locationContainer"
+            style={
+                Object {
+                    "display": "inline",
+                    "height": "auto",
+                    "visibility": "visible",
+                  }
+            }
+        >
+            <div
+                className={undefined}
+            >
+                <AutocompleteLocationDropdownItem
+                    ariaLocationTxt={undefined}
+                    bottomLineId=""
+                    bottomLineText=""
+                    displayText=""
+                    firstLineText={undefined}
+                    fullModelName={undefined}
+                    hideDropdown={[Function]}
+                    imgSrc={null}
+                    imgStyle={null}
+                    itemId={undefined}
+                    listLength={1}
+                    locationCode=""
+                    locationTxt={undefined}
+                    locationType="bookHotel"
+                    onItemClick={undefined}
+                    onItemKeyDown={[Function]}
+                    parentModel={undefined}
+                    topLineId="topLineundefined"
+                    useImageIcons="true"
+                />
+            </div>
+            <DefaultConnectedControlButton
+                aria-label="ariaLabel"
+                className={undefined}
+                id="locationListCloseBtn"
+                model=".closeAutoList"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                role="button"
+                tabIndex="0"
+                title="ariaLabel"
+            >
+                <img
+                    alt=""
+                    aria-hidden="true"
+                    role="presentation"
+                    src="IMAGE_MOCK"
+                />
+            </DefaultConnectedControlButton>
+        </div>
+    </div>
+</div>,
+  "nodes": Array [
+    <div>
+      <div
+            style={
+                  Object {
+                        "paddingBottom": "10px",
+                      }
+            }
+      >
+            <div
+                  className=""
+                  style={
+                        Object {
+                              "marginTop": "0",
+                              "paddingBottom": "0",
+                              "paddingLeft": "8px",
+                            }
+                  }
+            >
+                  <DefaultConnectedControlText
+                        aria-required="true"
+                        autoComplete="off"
+                        className=""
+                        data-required="true"
+                        id="bookHotelInput"
+                        model="foo"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        placeholder="placeholder"
+                        spellCheck="false"
+                        tabIndex="0"
+                        type="text"
+                        validators={
+                              Object {
+                                    "isValidInput": [Function],
+                                  }
+                        }
+                  />
+                  <label
+                        className={undefined}
+                        htmlFor="bookHotelInput"
+                  >
+                        placeholder
+                  </label>
+                  <div
+                        aria-live="polite"
+                        className={undefined}
+                  />
+                  <Modeled(Connect(Errors))
+                        messages={
+                              Object {
+                                    "isValidInput": "undefined",
+                                  }
+                        }
+                        model="foo"
+                        show={[Function]}
+                        wrapper={[Function]}
+                  />
+            </div>
+            <div
+                  className={undefined}
+                  id="locationContainer"
+                  style={
+                        Object {
+                              "display": "inline",
+                              "height": "auto",
+                              "visibility": "visible",
+                            }
+                  }
+            >
+                  <div
+                        className={undefined}
+                  >
+                        <AutocompleteLocationDropdownItem
+                              ariaLocationTxt={undefined}
+                              bottomLineId=""
+                              bottomLineText=""
+                              displayText=""
+                              firstLineText={undefined}
+                              fullModelName={undefined}
+                              hideDropdown={[Function]}
+                              imgSrc={null}
+                              imgStyle={null}
+                              itemId={undefined}
+                              listLength={1}
+                              locationCode=""
+                              locationTxt={undefined}
+                              locationType="bookHotel"
+                              onItemClick={undefined}
+                              onItemKeyDown={[Function]}
+                              parentModel={undefined}
+                              topLineId="topLineundefined"
+                              useImageIcons="true"
+                        />
+                  </div>
+                  <DefaultConnectedControlButton
+                        aria-label="ariaLabel"
+                        className={undefined}
+                        id="locationListCloseBtn"
+                        model=".closeAutoList"
+                        onBlur={[Function]}
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        role="button"
+                        tabIndex="0"
+                        title="ariaLabel"
+                  >
+                        <img
+                              alt=""
+                              aria-hidden="true"
+                              role="presentation"
+                              src="IMAGE_MOCK"
+                        />
+                  </DefaultConnectedControlButton>
+            </div>
+      </div>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <AutocompleteLocationDropdown
+        closePanelAriaLabel="ariaLabel"
+        dataToPopulate={
+                Array [
+                        Object {
+                          "foo": "bar",
+                        },
+                      ]
+        }
+        dropdownListFocus={[Function]}
+        getRequestData={[Function]}
+        hideAutocompleteLocation={
+                Immutable.Map {
+                        bookCarOrigin: "hidden",
+                        bookCarDropoff: "hidden",
+                        bookHotel: "visible",
+                        bookFlightOrigin: "hidden",
+                        bookFlightDestination: "hidden",
+                }
+        }
+        hideAutocompleteLocationDropdown={[Function]}
+        inputFieldAriaLabel="ariaLabel"
+        inputFieldPlaceholder="placeholder"
+        inputFieldValue="foo"
+        inputId="bookHotelInput"
+        inputType="text"
+        isAriaRequired="true"
+        isRequired="true"
+        listItemId="fooItem"
+        locationCode="LAX"
+        locationType="bookHotel"
+        mobilePaddingLeft="8px"
+        mobileView={
+                Immutable.Map {
+                        bookCarOrigin: "relative",
+                        bookCarDropoff: "relative",
+                        bookHotel: "relative",
+                        bookFlightOrigin: "relative",
+                        bookFlightDestination: "relative",
+                }
+        }
+        modelName="foo"
+        onArrowKeyDown={[Function]}
+        onFocusModel={[Function]}
+        onLoadAirports={[Function]}
+        onSelectInputItem={[Function]}
+        onSetAutolocationAriaLabel={[Function]}
+        resetDisplayText={[Function]}
+        resetLocationCode={[Function]}
+        updateMobileView={[Function]}
+        useImageIcons="true"
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": AutocompleteLocationDropdown {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "closePanelAriaLabel": "ariaLabel",
+          "dataToPopulate": Array [
+            Object {
+              "foo": "bar",
+            },
+          ],
+          "dropdownListFocus": [Function],
+          "getRequestData": [Function],
+          "hideAutocompleteLocation": Immutable.Map {
+            bookCarOrigin: "hidden",
+            bookCarDropoff: "hidden",
+            bookHotel: "visible",
+            bookFlightOrigin: "hidden",
+            bookFlightDestination: "hidden",
+},
+          "hideAutocompleteLocationDropdown": [Function],
+          "inputFieldAriaLabel": "ariaLabel",
+          "inputFieldPlaceholder": "placeholder",
+          "inputFieldValue": "foo",
+          "inputId": "bookHotelInput",
+          "inputType": "text",
+          "isAriaRequired": "true",
+          "isRequired": "true",
+          "listItemId": "fooItem",
+          "locationCode": "LAX",
+          "locationType": "bookHotel",
+          "mobilePaddingLeft": "8px",
+          "mobileView": Immutable.Map {
+            bookCarOrigin: "relative",
+            bookCarDropoff: "relative",
+            bookHotel: "relative",
+            bookFlightOrigin: "relative",
+            bookFlightDestination: "relative",
+},
+          "modelName": "foo",
+          "onArrowKeyDown": [Function],
+          "onFocusModel": [Function],
+          "onLoadAirports": [Function],
+          "onSelectInputItem": [Function],
+          "onSetAutolocationAriaLabel": [Function],
+          "resetDisplayText": [Function],
+          "resetLocationCode": [Function],
+          "updateMobileView": [Function],
+          "useImageIcons": "true",
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div>
+          <div
+                    style={
+                              Object {
+                                        "paddingBottom": "10px",
+                                      }
+                    }
+          >
+                    <div
+                              className=""
+                              style={
+                                        Object {
+                                                  "marginTop": "0",
+                                                  "paddingBottom": "0",
+                                                  "paddingLeft": "8px",
+                                                }
+                              }
+                    >
+                              <DefaultConnectedControlText
+                                        aria-required="true"
+                                        autoComplete="off"
+                                        className=""
+                                        data-required="true"
+                                        id="bookHotelInput"
+                                        model="foo"
+                                        onBlur={[Function]}
+                                        onChange={[Function]}
+                                        onFocus={[Function]}
+                                        onKeyDown={[Function]}
+                                        placeholder="placeholder"
+                                        spellCheck="false"
+                                        tabIndex="0"
+                                        type="text"
+                                        validators={
+                                                  Object {
+                                                            "isValidInput": [Function],
+                                                          }
+                                        }
+                              />
+                              <label
+                                        className={undefined}
+                                        htmlFor="bookHotelInput"
+                              >
+                                        placeholder
+                              </label>
+                              <div
+                                        aria-live="polite"
+                                        className={undefined}
+                              />
+                              <Modeled(Connect(Errors))
+                                        messages={
+                                                  Object {
+                                                            "isValidInput": "undefined",
+                                                          }
+                                        }
+                                        model="foo"
+                                        show={[Function]}
+                                        wrapper={[Function]}
+                              />
+                    </div>
+                    <div
+                              className={undefined}
+                              id="locationContainer"
+                              style={
+                                        Object {
+                                                  "display": "inline",
+                                                  "height": "auto",
+                                                  "visibility": "visible",
+                                                }
+                              }
+                    >
+                              <div
+                                        className={undefined}
+                              >
+                                        <AutocompleteLocationDropdownItem
+                                                  ariaLocationTxt={undefined}
+                                                  bottomLineId=""
+                                                  bottomLineText=""
+                                                  displayText=""
+                                                  firstLineText={undefined}
+                                                  fullModelName={undefined}
+                                                  hideDropdown={[Function]}
+                                                  imgSrc={null}
+                                                  imgStyle={null}
+                                                  itemId={undefined}
+                                                  listLength={1}
+                                                  locationCode=""
+                                                  locationTxt={undefined}
+                                                  locationType="bookHotel"
+                                                  onItemClick={undefined}
+                                                  onItemKeyDown={[Function]}
+                                                  parentModel={undefined}
+                                                  topLineId="topLineundefined"
+                                                  useImageIcons="true"
+                                        />
+                              </div>
+                              <DefaultConnectedControlButton
+                                        aria-label="ariaLabel"
+                                        className={undefined}
+                                        id="locationListCloseBtn"
+                                        model=".closeAutoList"
+                                        onBlur={[Function]}
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        role="button"
+                                        tabIndex="0"
+                                        title="ariaLabel"
+                              >
+                                        <img
+                                                  alt=""
+                                                  aria-hidden="true"
+                                                  role="presentation"
+                                                  src="IMAGE_MOCK"
+                                        />
+                              </DefaultConnectedControlButton>
+                    </div>
+          </div>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div>
+          <div
+                    style={
+                              Object {
+                                        "paddingBottom": "10px",
+                                      }
+                    }
+          >
+                    <div
+                              className=""
+                              style={
+                                        Object {
+                                                  "marginTop": "0",
+                                                  "paddingBottom": "0",
+                                                  "paddingLeft": "8px",
+                                                }
+                              }
+                    >
+                              <DefaultConnectedControlText
+                                        aria-required="true"
+                                        autoComplete="off"
+                                        className=""
+                                        data-required="true"
+                                        id="bookHotelInput"
+                                        model="foo"
+                                        onBlur={[Function]}
+                                        onChange={[Function]}
+                                        onFocus={[Function]}
+                                        onKeyDown={[Function]}
+                                        placeholder="placeholder"
+                                        spellCheck="false"
+                                        tabIndex="0"
+                                        type="text"
+                                        validators={
+                                                  Object {
+                                                            "isValidInput": [Function],
+                                                          }
+                                        }
+                              />
+                              <label
+                                        className={undefined}
+                                        htmlFor="bookHotelInput"
+                              >
+                                        placeholder
+                              </label>
+                              <div
+                                        aria-live="polite"
+                                        className={undefined}
+                              />
+                              <Modeled(Connect(Errors))
+                                        messages={
+                                                  Object {
+                                                            "isValidInput": "undefined",
+                                                          }
+                                        }
+                                        model="foo"
+                                        show={[Function]}
+                                        wrapper={[Function]}
+                              />
+                    </div>
+                    <div
+                              className={undefined}
+                              id="locationContainer"
+                              style={
+                                        Object {
+                                                  "display": "inline",
+                                                  "height": "auto",
+                                                  "visibility": "visible",
+                                                }
+                              }
+                    >
+                              <div
+                                        className={undefined}
+                              >
+                                        <AutocompleteLocationDropdownItem
+                                                  ariaLocationTxt={undefined}
+                                                  bottomLineId=""
+                                                  bottomLineText=""
+                                                  displayText=""
+                                                  firstLineText={undefined}
+                                                  fullModelName={undefined}
+                                                  hideDropdown={[Function]}
+                                                  imgSrc={null}
+                                                  imgStyle={null}
+                                                  itemId={undefined}
+                                                  listLength={1}
+                                                  locationCode=""
+                                                  locationTxt={undefined}
+                                                  locationType="bookHotel"
+                                                  onItemClick={undefined}
+                                                  onItemKeyDown={[Function]}
+                                                  parentModel={undefined}
+                                                  topLineId="topLineundefined"
+                                                  useImageIcons="true"
+                                        />
+                              </div>
+                              <DefaultConnectedControlButton
+                                        aria-label="ariaLabel"
+                                        className={undefined}
+                                        id="locationListCloseBtn"
+                                        model=".closeAutoList"
+                                        onBlur={[Function]}
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        role="button"
+                                        tabIndex="0"
+                                        title="ariaLabel"
+                              >
+                                        <img
+                                                  alt=""
+                                                  aria-hidden="true"
+                                                  role="presentation"
+                                                  src="IMAGE_MOCK"
+                                        />
+                              </DefaultConnectedControlButton>
+                    </div>
+          </div>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <AutocompleteLocationDropdown
+    closePanelAriaLabel="ariaLabel"
+    dataToPopulate={
+        Array [
+            Object {
+              "foo": "bar",
+            },
+          ]
+    }
+    dropdownListFocus={[Function]}
+    getRequestData={[Function]}
+    hideAutocompleteLocation={
+        Immutable.Map {
+            bookCarOrigin: "hidden",
+            bookCarDropoff: "hidden",
+            bookHotel: "visible",
+            bookFlightOrigin: "hidden",
+            bookFlightDestination: "hidden",
+        }
+    }
+    hideAutocompleteLocationDropdown={[Function]}
+    inputFieldAriaLabel="ariaLabel"
+    inputFieldPlaceholder="placeholder"
+    inputFieldValue="foo"
+    inputId="bookHotelInput"
+    inputType="text"
+    isAriaRequired="true"
+    isRequired="true"
+    listItemId="fooItem"
+    locationCode="LAX"
+    locationType="bookHotel"
+    mobilePaddingLeft="8px"
+    mobileView={
+        Immutable.Map {
+            bookCarOrigin: "relative",
+            bookCarDropoff: "relative",
+            bookHotel: "relative",
+            bookFlightOrigin: "relative",
+            bookFlightDestination: "relative",
+        }
+    }
+    modelName="foo"
+    onArrowKeyDown={[Function]}
+    onFocusModel={[Function]}
+    onLoadAirports={[Function]}
+    onSelectInputItem={[Function]}
+    onSetAutolocationAriaLabel={[Function]}
+    resetDisplayText={[Function]}
+    resetLocationCode={[Function]}
+    updateMobileView={[Function]}
+    useImageIcons="true"
+/>,
+}
+`;

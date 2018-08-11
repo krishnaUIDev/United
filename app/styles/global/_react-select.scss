@@ -1,0 +1,130 @@
+// React-Select overrides
+.Select-menu-outer {
+  position: relative;
+  width: 100%;
+  border-color: $black-60;
+  box-shadow: $box-shadow;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 150em;
+
+  @media screen and (min-width: $break-point-c) {
+    position: absolute;
+    top: -4px;
+    right: -52px;
+    width: 177px;
+  }
+
+  @media screen and (min-width: $break-point-a) and (max-width: $break-point-b) {
+    position: absolute;
+    top: -10px;
+  }
+}
+
+.Select-control {
+  background-color: transparent;
+  border-color: $black-60;
+  height: 57px;
+
+  @media screen and (min-width: $break-point-c) {
+    border-color: transparent;
+    height: $select-input-height;
+  }
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.Select-input {
+  height: 55px;
+  @media screen and (min-width: $break-point-c) {
+    height: $select-input-internal-height;
+  }
+
+  > input { // Fixes bug with Firefox and NVDA and `searchable: {false}` prop crashing browser.
+    text-indent: -9999em;
+    text-shadow : 9999em 0 0 #000;
+    color: transparent; // Fixes bug on iOS tablet/mobile devices which shows a blink of cursor on opening the drop down. https://github.com/JedWatson/react-select/issues/164
+  }
+}
+
+.Select-placeholder,
+.Select--single > .Select-control .Select-value {
+  line-height: 55px;
+  @media screen and (min-width: $break-point-c) {
+    padding-left: 0;
+    line-height: $select-input-internal-height;
+  }
+}
+
+.is-focused:not(.is-open) > .Select-control {
+  border-color: transparent;
+  outline: 1px dotted;
+  outline-color: $modern-gold;
+}
+
+.Select-arrow {
+  @include icon-arrow-down(12px, 12px);
+}
+
+.Select-arrow-zone {
+  position: absolute;
+  top: 35%;
+  right: 10px;
+  display: inline-block;
+
+  @media screen and (min-width: $break-point-c) {
+    position: relative;
+    top: 5%;
+    right: auto;
+    padding-left: 45px;
+    padding-right: 0;
+    margin-top: -5px;
+  }
+}
+
+.Select.is-open > .Select-control .Select-arrow {
+  @include icon-arrow-up(12px, 12px);
+}
+
+.Select.is-open .Select-arrow-zone {
+  margin-top: 0;
+}
+
+.Select-option.is-focused {
+  color: $united-blue;
+}
+
+.Select-option.is-selected {
+  position: relative;
+  color: $united-blue;
+  &:after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 9px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    outline: 1px solid $white;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 13px;
+    top: 20px;
+  }
+}
+.Select-option.is-focused.is-selected {
+  &:after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 9px;
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    outline: 1px solid #F2F9FC;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 13px;
+    top: 20px;
+  }
+}

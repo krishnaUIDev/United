@@ -1,0 +1,487 @@
+@import "../../styles/tools";
+
+.globalHeaderContainer {
+  width: 100%;
+  text-transform: uppercase;
+  position: relative;
+  background-color: transparent;
+  transition: background-color 0.4s;
+  padding: 0 30px;
+
+  @media screen and (min-width: $break-point-d) {
+    padding: 0;
+  }
+
+  &.isExpanded {
+    background-color: $united-blue;
+
+    .bottomMenuContainer {
+      @include horizontal-animation(0);
+      z-index: 998;
+      opacity: 1;
+    }
+
+    .globalBottomNav {
+      display: block;
+      visibility: visible;
+
+      > a[aria-selected="true"] {
+        border-bottom: 2px solid $white;
+      }
+    }
+
+    .headerPanels {
+      @media screen and (min-width: $break-point-c) {
+        @include vertical-animation(0);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.globalHeader {
+  margin: 0 auto 20px;
+  max-width: $site-max-width;
+
+  @media screen and (min-width: $break-point-d) {
+    height: 104px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: inherit;
+    }
+  }
+
+  select {
+    color: white;
+    padding: 0;
+  }
+}
+
+.globalHeaderMenu {
+  margin-top: 15px;
+  text-align: right;
+  text-transform: uppercase;
+  display: block;
+  @include grid-child(7,13,1,2);
+
+  @media screen and (min-width: $break-point-c){
+    @include grid-child(4,13,1,2);
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  select {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  &.logo {
+    @include grid-child(1,7,1,2);
+    text-align: left;
+
+    @media screen and (min-width: $break-point-b){
+      @include grid-child(1,4,1,2);
+    }
+
+    @media screen and (min-width: $break-point-d) {
+      padding-left: 30px;
+    }
+  }
+}
+
+.globalTopNav,
+.globalBottomNav {
+  display: block;
+  @include unstyled-list;
+
+  > li {
+    display: inline-block;
+    color: white;
+    margin: 0 20px 0 0;
+
+    &.loginButtonContainer {
+      @media screen and (min-width: $break-point-d) {
+        margin-right: 0;
+      }
+    }
+
+    &.menuButtonContainer {
+      margin-right: 0;
+      @media screen and (min-width: $break-point-d) {
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+    a, button {
+      font-size: 12px;
+      text-transform: uppercase;
+      padding: 0;
+    }
+  }
+}
+
+ul.globalTopNav {
+  margin-bottom: 16px;
+
+  > li {
+    display: none;
+    visibility: hidden;
+
+    @media screen and (min-width: $break-point-c) {
+      display: inline-block;
+      visibility: visible;
+    }
+
+    &.loginButtonContainer,
+    &.menuButtonContainer {
+      display: inline-block;
+      visibility: visible;
+    }
+  }
+}
+
+.globalBottomNav {
+  @include unstyled-list;
+  text-align: left;
+
+  > a,
+  > div > li {
+    display: block;
+    position: relative;
+  }
+
+  > a {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 40px;
+    display: inline-block;
+    font-size: 14px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.4s;
+
+    &:focus, &:hover {
+      color: $white;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  > div > li {
+    width: 100%;
+    margin: 30px 0;
+
+    > button {
+      font-size: 16px;
+      display: block;
+      width: 100%;
+      text-align: left;
+      text-transform: none;
+
+      &:after {
+        @include icon-arrow-up;
+        content: '';
+        border-color: white;
+        position: absolute;
+        right: 0;
+        top: 8px;
+      }
+    }
+
+    &[aria-selected="true"] {
+      > button:after {
+        @include icon-arrow-down;
+        border-color: white;
+        top: 0;
+      }
+    }
+  }
+
+  @media screen and (min-width: $break-point-d) {
+    display: block;
+    visibility: visible;
+    max-width: $site-max-width;
+    margin: 0 auto;
+    text-align: right;
+    padding: 0 0 0 30px;
+
+    a, button {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    button {
+      padding: 0;
+    }
+  }
+
+  button {
+    padding: 0;
+  }
+}
+
+.bottomMenuContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $united-blue;
+  transition: right 0.4s, opacity 0.2s;
+  padding: 25px;
+  color: white;
+  opacity: 0;
+  text-align: right;
+
+  @media screen and (min-width: 414px) {
+    width: 320px;
+    padding: 40px 46px;
+  }
+
+  @media screen and (min-width: $break-point-d) {
+    top: auto;
+    left: 0;
+    right: auto;
+    background-color: transparent;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transform: none;
+    padding: 0;
+  }
+
+  &.panelAfterOpen {
+    right: 0;
+    opacity: 1;
+    overflow-y: auto;
+  }
+
+  &.panelBeforeClose {
+    right: -100%;
+    opacity: 0;
+  }
+
+  &:focus {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+  }
+
+  .closeButton {
+    padding: 0;
+    width: 20px;
+
+    &:after {
+      clear: both;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    @media screen and (min-width: $break-point-d) {
+      display: none;
+    }
+  }
+}
+
+.inlineIcon {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 8px;
+  margin-top: 4px;
+
+  > div {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.menuButton {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    display: block;
+    border-left: $default-border;
+    height: 32px;
+  }
+
+  img {
+    margin-left: 20px;
+    width: 20px;
+
+    @media screen and (min-width: $break-point-b) {
+      margin-right: 10px;
+    }
+  }
+
+  span {
+    display: none;
+    visibility: hidden;
+
+    @media screen and (min-width: $break-point-b) {
+      display: inline-block;
+      visibility: visible;
+    }
+
+    @media screen and (min-width: $break-point-d) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  @media screen and (min-width: $break-point-d) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.headerPanels {
+  text-align: left;
+
+  @media screen and (min-width: $break-point-d) {
+    @include vertical-animation(-20px);
+    background-color: $united-blue;
+    width: 100%;
+    font-size: 16px;
+    opacity: 0;
+    border-top: 1px solid rgba(255,255,255,.1);
+    transition: transform 0.4s, opacity 0.2s;
+    z-index: -1;
+  }
+
+  h3 {
+    @include eyebrow();
+    color: $sky-blue;
+    font-size: 16px;
+    margin: 0 0 20px;
+  }
+
+  ul {
+    @include unstyled-list;
+  }
+
+  > div {
+    max-width: $site-max-width;
+    margin: 0 auto;
+  }
+
+  .showPanel {
+    @media screen and (min-width: $break-point-d) {
+      padding-top: 35px;
+      padding-bottom: 25px;
+    }
+
+    > div {
+      margin-top: 40px;
+
+      @media screen and (min-width: $break-point-d) {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 85px;
+        margin-top: 0;
+      }
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    a {
+      font-size: 16px;
+      color: $white;
+      text-decoration: none;
+      font-size: 14px;
+
+      &:hover, &:focus {
+        color: $white;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.error {
+  color: white;
+  text-transform: none;
+}
+
+.overlayClass {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  transition: opacity 0.4s ease;
+  z-index: 3;
+
+  @media screen and (min-width: $break-point-b) {
+    background-color: rgba(255, 255, 255, 0.75);
+    opacity: 0;
+
+    &.overlayClassAfterOpen {
+      opacity: 1;
+    }
+
+    &.overlayClassAfterClose {
+      opacity: 0;
+    }
+  }
+}
+
+ul.extraLinks {
+  @include unstyled-list;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  margin-top: 25px;
+  padding-top: 25px;
+  text-align: left;
+
+  li {
+    margin: 30px 0;
+  }
+
+  a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.externalLink {
+  img {
+    padding-left: 5px;
+    margin-top: -3px;
+    opacity: 0.8;
+    transition: opacity 0.4s;
+    height: 10px;
+  }
+
+  &:hover, &:focus {
+    img {
+      opacity: 1;
+    }
+  }
+}
+
+.externalLink {
+  padding-left: 4px;
+}

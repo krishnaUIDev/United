@@ -1,0 +1,153 @@
+@import "../../styles/tools";
+
+
+.parentContainer {
+  @include grid-parent;
+  border-bottom: 1px solid $divider-line-color-mobile;
+  border-top: 1px solid $divider-line-color-mobile;
+  margin-bottom: 4px;
+  @media (min-width: $break-point-c) {
+    border-top: 1px solid $divider-line-color-desktop;
+    border-bottom: 1px solid $divider-line-color-desktop;
+  }
+}
+
+.headerStyle {
+  font-size: 10px;
+  letter-spacing: 0.6px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 8px;
+  @media (min-width: $break-point-b) {
+    font-size: 12px;
+    letter-spacing: 1.08px;
+    opacity: auto;
+    margin-top: 8px;
+  }
+}
+
+.departureHeader {
+  @include grid-child(1,6,1,2);
+  margin-top: 8px;
+}
+
+.timeStyle {
+  font-size: 24px;
+  color: white;
+  letter-spacing: 0;
+  line-height: 32px;
+  text-transform: none;
+}
+
+.scheduledTime {
+  opacity: 0.7;
+  font-size: 12px;
+  color: white;
+  letter-spacing: 0;
+  line-height: 18px;
+  text-transform: none;
+}
+
+.departureTerminalHeader {
+  @include grid-child(7,10,1,2);
+  text-align: left;
+  margin-top: 4px;
+  @media (min-width: $break-point-b) {
+    @include grid-child(1,5,1,2);
+    margin-top: 8px;
+  }
+}
+
+.departureGateHeader {
+  @include grid-child(11,13,1,2);
+  text-align: right;
+  margin-top: 4px;
+  @media (min-width: $break-point-b) {
+    @include grid-child(3,7,1,2);
+    margin-bottom: 8px;
+    border-right: 1px solid $divider-line-color-desktop;
+    text-align: center;
+    margin-left: 32px;
+    margin-top: 8px;
+  }
+}
+
+.arrivalHeader {
+  @include grid-child(1,6,3,4);
+  margin-top: 4px;
+}
+
+.arrivalTerminalHeader {
+  @include grid-child(7,10,3,4);
+  text-align: left;
+  @media (min-width: $break-point-b) {
+    @include grid-child(8,11,1,2);
+    margin-top: 8px;
+  }
+}
+
+.arrivalGateHeaderContainer {
+  @include grid-child(10,13,3,4);
+  text-align: right;
+  @media (min-width: $break-point-b) {
+    @include grid-child(11,13,1,2);
+    margin-top: 8px;
+  }
+  @media (min-width: $break-point-c) {
+    margin-right: 8px;
+  }
+}
+
+.arrivalGateHeader {
+  text-align: right;
+}
+
+.terminalDetails {
+  color: white;
+  text-transform: capitalize;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  @media (min-width: $break-point-b) {
+    width: 100px;
+  }
+}
+
+.gateDetails {
+  color: white;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: none;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.horizontalDivider {
+  @include grid-child(1,13,2,3);
+  height: 1px;
+  opacity: 0.5;
+  background: white;
+  margin-bottom: 8px;
+}
+
+.srOnly {
+  @include visually-hidden;
+  text-transform: none;
+  font-size: .5px;
+  line-height: 0;
+  height: 0;
+}
+
+.gateNotAssigned {
+  font-size: 14px;
+}
+
+.gateAssigned {
+  font-size: 24px;
+}

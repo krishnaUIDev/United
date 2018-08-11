@@ -1,0 +1,77 @@
+@import "../../styles/global/_variables";
+
+.dropdownContainer {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.section {
+  margin-bottom: 16px;
+  margin-top: 0;
+  height: 24px;
+  @media screen and (min-width: $break-point-d) {
+    width: 100%;
+  }
+}
+
+.sectionTitle {
+  color: $black-60;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 26px;
+  &:focus, &:active {
+    outline: 1px dotted $modern-gold;
+  }
+  @media screen and (min-width: $break-point-d) {
+    font-size: 18px;
+  }
+}
+
+.sectionDetail {
+  font-size: 12px;
+}
+
+.incrementerDiv {
+  margin-top: -26px;
+  position: absolute;
+  right: 24px;
+  @media screen and (min-width: $break-point-d) {
+    padding-left: 160px;
+    right: auto;
+  }
+}
+
+input.qty {
+  width: 40px;
+  height: 25px;
+  text-align: center;
+  font-size: 18px;
+  color: $link-blue;
+  letter-spacing: -0.18px;
+  line-height: 1;
+  border: none;
+  padding: 0;
+  &:focus {
+    outline: 1px dotted $modern-gold;
+  }
+}
+
+.qtyplus, .qtyminus {
+  font-size: 18px;
+  color: $link-blue;
+  &:disabled {
+    background: white;
+    color: $black-60;
+  }
+}
+
+
+/* Remove up/down arrows that automatically appear with input="number" */
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}

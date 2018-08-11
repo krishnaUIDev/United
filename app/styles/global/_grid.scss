@@ -1,0 +1,7 @@
+.gridParent {
+  @include grid-parent;
+}
+
+.gridChild {
+  display: flex;
+}

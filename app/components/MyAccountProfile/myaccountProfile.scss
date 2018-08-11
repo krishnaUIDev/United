@@ -1,0 +1,30 @@
+.mainContainer{
+  display: block;
+  max-width: 1136px;
+  width: 100%;
+  //grid-template-columns: repeat(12, 1fr);
+  background-color:white;
+  margin: 0 auto 32px;
+  padding: 0 30px;
+  }
+
+.gridContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 8px);
+  grid-template-rows: 24px 76px 48px 112px 48px 72px;
+}  
+.titleSection{
+  grid-column: 1 / 80;
+  grid-row: 2;
+}
+
+.menuSection{
+  grid-column: 1 / 80;
+  grid-row: 4;
+}
+
+.profileMainDescription{
+  padding: 40px 0px;
+  font-size: 24px;
+  line-height: 32px;
+}

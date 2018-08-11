@@ -1,0 +1,130 @@
+@import "../../styles/tools";
+@import "../../styles/global/forms";
+
+.aboutMeContainer {
+  padding: 0px 48px 0px 32px;
+}
+
+.requiredFields{
+  padding-top: 16px;
+  font-size: 16px;
+}
+
+.subSectionHeading{
+  padding-top: 24px;
+  font-size: 20px;
+}
+.subSectionDescription{
+  padding-top: 16px;
+  font-size: 16px;
+}
+
+.countryForm{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 8px);
+}
+.nationalityFieldContainer{
+  grid-column: 1 / 35;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.countryFieldContainer{
+  grid-column: 1 / 35;
+  padding-bottom: 40px;
+  @media screen and (min-width: $break-point-c) {
+    grid-column: 40 / 74;
+    padding-top: 40px;
+  }
+}
+.dropdownFieldLabel{
+  font-weight: normal;
+  text-transform: none;
+  font-size: 12px;
+  color: #666666;
+  line-height: 13px;
+  padding-bottom: 8px;
+  margin-bottom: 3px;
+  margin-top: 5px;
+}
+.nationalityField{
+  margin-top: 3px;
+  border-bottom: $default-border;
+  @media screen and (min-width: $break-point-c) {
+    margin-top: 0px;
+  }
+}
+.editPersonalLink{
+  grid-column: 1 / 35;
+  padding-top:24px;
+}
+.aboutMeName{
+
+  grid-column: 1 / 37;
+  padding-top:24px;
+}
+.aboutFieldLabel{
+  @extend .floatingLabel;
+}
+.aboutMeLink{
+  @extend .formLink;
+}
+
+.aboutMeDateOfBirth{
+  grid-column: 1 / 20;
+  padding-top:24px;
+  @media screen and (min-width: $break-point-c) {
+    grid-column: 41 / 61;
+  }
+}
+.aboutMeGender{
+  grid-column: 25 / 35;
+  padding-top:24px;
+  @media screen and (min-width: $break-point-c) {
+    grid-column: 65 / 75;
+  }
+
+}
+.aboutMeSaveButtonContainer{
+  grid-column: 1 / 34;
+}
+.aboutMeSaveButton {
+  width: 272px;
+  height: 44px;
+  padding: 0px;
+}
+
+
+:global {
+  .Select-control {
+    border: none;
+  }
+
+  .Select.is-focused > .Select-control {
+    background-color: transparent;
+  }
+
+  .Select--single > .Select-control .Select-value {
+    padding-left: 0;
+  }
+
+  .Select-value-label {
+    font-size: 16px;
+  }
+
+  .Select-multi-value-wrapper {
+    display: inline-block;
+    width: 90%;
+  }
+  .Select-menu-outer {
+    @media screen and (min-width: $break-point-c) {
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: 100%;
+    }
+  }
+  .Select-arrow-zone {
+    width: 10%;
+  }
+}
+

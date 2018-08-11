@@ -1,0 +1,64 @@
+@import "../../styles/tools";
+
+.locationContainer {
+  &:focus {
+    outline-color: $modern-gold;
+  }
+  background: white;
+  z-index: 4;
+  @media screen and (min-width: $break-point-c) {
+    position: absolute;
+    width: 344px;
+    height: auto;
+    max-height: 376px;
+    border: 1px solid $black-60;
+    box-shadow: $box-shadow;
+    border-radius: 3px;
+  }
+}
+
+.locationListCloseBtn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  @media screen and (min-width: $break-point-c) {
+    right: 12px;
+    top: 14px;
+  }
+}
+
+.inputText {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.ariaAlertStyle {
+  color: transparent;
+  height: 1px;
+  width: 1px;
+  font-size: 1px;
+}
+
+.srOnly {
+  @include visually-hidden;
+  text-transform: none;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+}
+
+.inputFieldContainer {
+  margin-bottom: 0;
+}
+
+.locationListDiv {
+  padding-top: 8px;
+  padding-bottom: 24px;
+  @media screen and (min-width: $break-point-c) {
+    width: 99.9%; // cant be 100% or else will cut off border color
+    padding-left: 0px;
+    padding-top: 32px;
+    padding-bottom: 8px;
+  }
+}

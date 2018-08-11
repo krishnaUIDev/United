@@ -1,0 +1,223 @@
+@import "../../styles/global/forms";
+@import "../../styles/tools";
+.myTripsContainer {
+  @include grid-parent;
+}
+
+.tripsHeader {
+  @include grid-child(2, 12, 1, 2);
+  line-height: 32px;
+  font-size: $h5-font-size;
+}
+
+.tripsSegmentContainer {
+  @include grid-child(2, 12, 2, 3);
+  overflow-y: auto;
+  overflow-x: hidden;
+  @media screen and (min-width: $break-point-c) {
+    @include grid-child(1, 14, 2, 3);
+    height: 392px;
+  }
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $black-40;
+  }
+}
+
+.findAnotherTripLink {
+  @include grid-child(2, 8, 3, 4);
+  padding: 16px 0px 0px;
+  @media screen and (min-width: $break-point-c) {
+    @include grid-child(2, 6, 3, 4);
+  }
+}
+
+.findAnotherTripLink, .viewAllTripLink {
+  button {
+    font-size: $body-sm-leading;
+    color: $link-blue;
+    transition: color 0.4s;
+    padding-left: 0;
+    font-size: 14px;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+
+    &:after {
+      @include linkArrow;
+      margin-left: 4px;
+    }
+
+    &:hover:after {
+      border-color: $link-blue;
+    }
+  }
+}
+
+.viewAllTripLink {
+  @include grid-child(2, 8, 4, 5);
+  padding: 8px 0px;
+  @media screen and (min-width: $break-point-c) {
+    @include grid-child(6, 12, 3, 4);
+    padding: 16px 0px;
+  }
+}
+
+.tripsSegment {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  @media screen and (min-width: $break-point-c) {
+    padding: 16px 40px 0px 40px;
+    &:nth-child(odd) {
+      background: $off-white;
+    }
+  }
+  &:first-child {
+    @media screen and (min-width: $break-point-c) {
+      background: $container-gray;
+      margin-top: 24px;
+    }
+  }
+}
+
+.flightSegmentRow {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 15px 0px 15px;
+  background: $white;
+  @media screen and (min-width: $break-point-c) {
+    padding: 8px 0px 0px 0px;
+    background: inherit;
+  }
+}
+
+.departureColumn {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.arrivalColumn {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: right;
+}
+
+.buttonRow {
+  display: flex;
+  flex-direction: row;
+  padding: 16px 15px;
+  background: $white;
+  @media screen and (min-width: $break-point-c) {
+    padding: 16px 0px;
+    background: inherit;
+  }
+}
+
+.tripTo {
+  line-height: 32px;
+  font-size: $mobile-h5-font-size;
+  @media screen and (min-width: $break-point-c) {
+    font-size: $h5-font-size;
+  }
+}
+
+.confirmationNumber {
+  line-height: 24px;
+  font-size: $h6-font-size;
+}
+
+.dateRow {
+  background: $white;
+  margin-top: 8px;
+  padding: 16px 15px 0px 15px;
+  @media screen and (min-width: $break-point-c) {
+    padding: 16px 0px 0px 0px;
+    background: inherit;
+  }
+}
+
+.departureDate {
+  line-height: 24px;
+  font-size: $body-xs-leading;
+  @media screen and (min-width: $break-point-c) {
+    font-size: $body-sm-leading;
+  }
+}
+
+.airportCode {
+  line-height: 40px;
+  font-size: $h4-font-size;
+}
+
+.cityName {
+  line-height: 24px;
+  font-size: $body-sm-leading;
+}
+
+.flightColumn {
+  align-self: center;
+}
+
+.changeSeatsLink, .manageLink {
+  margin-right: 10px;
+  button {
+    padding: 0px;
+    font-size: $body-sm-leading;
+    transition: color 0.4s;
+    text-decoration: underline;
+
+    &:hover:after {
+      border-color: $link-blue;
+    }
+  }
+}
+
+
+.bottomAppImage {
+  @include grid-child(1, 5, 5, 6);
+    margin: 16px 0px 24px 12px;
+}
+
+
+.appTxtStyle {
+  @include grid-child(5, 13, 5, 6);
+  margin: 32px 24px 0px 0px;
+  font-size: $body-sm-text;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+
+.appLinkStyle {
+  position: absolute;
+  font-size: $body-sm-text;
+  letter-spacing: 0;
+  line-height: 9px;
+  margin-top: 16px;
+  right: 32px;
+
+  &:after {
+    @include linkArrow;
+  }
+}
+
+
+.appIcon {
+  height: 112px;
+}
+
+.buttonContainer {
+  padding: 0px;
+  text-align: left;
+  width: 100%;
+  @media screen and (min-width: $break-point-c) {
+    margin-bottom: 1px;
+  }
+}

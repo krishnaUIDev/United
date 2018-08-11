@@ -1,0 +1,148 @@
+@import "../../styles/global/forms";
+@import "../../styles/tools";
+
+
+.fullName {
+  @include grid-child(1, 13, 1, 2);
+  color: $modern-gold;
+  font-size: 18px;
+}
+
+.mpEnrollContainer {
+  @include grid-child(1, 13, 2, 3);
+}
+
+.mileagePlusEnroll {
+  color: white;
+  font-size: 14px;
+  text-decoration: underline;
+  padding: 0;
+  margin-bottom: 8px;
+
+  &:hover,
+  &:focus {
+    color: white;
+  }
+}
+
+.mpNumber {
+  @include grid-child(1, 13, 3, 4);
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.dividerLine {
+  @include grid-child(1, 13, 4, 5);
+  width: 100%;
+  border-bottom: 1px solid rgba(255,255,255, 0.6);
+}
+
+.labelStyle {
+  opacity: 0.7;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.72px;
+}
+
+.infoContent {
+  color: white;
+  font-size: 24px;
+  margin-top: 4px;
+  line-height: 24px;
+  letter-spacing: 0;
+}
+
+.statusLabel {
+  @include grid-child(1, 13, 5, 6);
+}
+
+.statusContent {
+  @include grid-child(1, 13, 6, 7);
+}
+
+.redeemableLabel {
+  @include grid-child(1, 13, 7, 8);
+}
+
+.rmbContent {
+  @include grid-child(1, 13, 8, 9);
+}
+
+.expirationDate {
+  @include grid-child(1, 13, 9, 10);
+  color: white;
+  letter-spacing: 0;
+  font-size: 12px;
+}
+
+.pqmEarned {
+  @include grid-child(1, 13, 10, 11);
+}
+
+.pqsEarned {
+  @include grid-child(1, 13, 11, 12);
+}
+
+.pqdEarned {
+  @include grid-child(1, 13, 12, 13);
+}
+
+.pqdExceeded {
+  @include grid-child(1, 13, 13, 14);
+}
+
+.travelBankBalance {
+  @include grid-child(1, 13, 14, 15);
+}
+
+.gpuRpuCredit {
+  @include grid-child(1, 13, 15, 16);
+}
+
+.adPlaceholderDiv {
+  @include grid-child(1, 13, 16, 17);
+  margin-top: 20px;
+  text-align: center;
+  height: 48px;
+  background: blue;
+  color: white;
+}
+
+.tooltipContainerWithMargin {
+  margin-top: 16px;
+  position: relative;
+}
+
+.tooltipContainer {
+  position: relative;
+}
+
+.tooltipLabelStyle {
+  opacity: 0.7;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.72px;
+  &:focus {
+    outline: 1px dotted $modern-gold;
+  }
+  @media screen and (min-width: $break-point-c) {
+   font-size: 11.5px;
+  }
+}
+
+.gpuContainer {
+  margin-top: 8px;
+}
+
+.rpuContainer {
+  margin-top: 4px;
+}

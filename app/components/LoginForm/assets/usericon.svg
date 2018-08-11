@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="13px" viewBox="0 0 12 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>User Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="NAV" transform="translate(-1285.000000, -9.000000)" fill="#FFFFFF">
+            <g transform="translate(0.000000, 2.000000)" id="Group-5">
+                <g transform="translate(215.000000, 7.000000)">
+                    <g id="Meta">
+                        <g id="User-Icon" transform="translate(1070.000000, 0.000000)">
+                            <path d="M10,12.999995 L12,12.999995 L12,10.999995 C12,8.23857124 9.76142375,5.99999499 7,5.99999499 L7,5.99999499 L5,5.99999499 L5,5.99999499 C2.23857625,5.99999499 -3.38176876e-16,8.23857124 0,10.999995 L0,10.999995 L0,12.999995 L2,12.999995 L2,11.0000117 C2,9.34315745 3.34314575,8.0000117 5,8.0000117 L7,8.0000117 L7,8.0000117 C8.65685425,8.0000117 10,9.34315745 10,11.0000117 L10,12.999995 Z" id="Rectangle-18"></path>
+                            <path d="M6,8 C3.790861,8 2,6.209139 2,4 C2,1.790861 3.790861,0 6,0 C8.209139,0 10,1.790861 10,4 C10,6.209139 8.209139,8 6,8 Z M6,6 C7.1045695,6 8,5.1045695 8,4 C8,2.8954305 7.1045695,2 6,2 C4.8954305,2 4,2.8954305 4,4 C4,5.1045695 4.8954305,6 6,6 Z" id="Oval-2"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

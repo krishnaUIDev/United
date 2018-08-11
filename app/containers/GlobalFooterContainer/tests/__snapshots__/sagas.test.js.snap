@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getFooterData Saga should call the footerLoadingError action if the response errors with status 403 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getFooterData Saga should call the footerLoadingError action if the response errors with status 403 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getFooterData Saga should call the footerLoadingError action if the response errors with status 403 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/home/headerFooter",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer 1234abc",
+          "Content-Type": "application/json",
+        },
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getFooterData Saga should dispatch the footerLoaded action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getFooterData Saga should dispatch the footerLoaded action if it requests the data successfully 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getFooterData Saga should dispatch the footerLoaded action if it requests the data successfully 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/home/headerFooter",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer 1234abc",
+          "Content-Type": "application/json",
+        },
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;

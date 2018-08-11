@@ -1,0 +1,92 @@
+@import "../../styles/tools";
+@import "../../styles/global/forms";
+
+.timeoutModalContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 272px;
+  height: 312px;
+  box-shadow: 2px 5px 10px 2px rgba(0,0,0,0.10);
+  @media screen and (min-width: $break-point-c) {
+    width: 464px;
+    height: auto;
+  }
+}
+
+.inactiveModalContainer {
+  @extend .timeoutModalContainer;
+  height: 384px;
+  @media screen and (min-width: $break-point-c) {
+    height: auto;
+  }
+}
+
+.header {
+  margin-top: 16px;
+  color: black;
+  font-size: 20px;
+  line-height: 24px;
+  @media screen and (min-width: $break-point-c) {
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+}
+
+.body {
+  margin-left: 16px;
+  margin-right: 16px;
+  color: black;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.buttonContainer {
+  text-align: center;
+
+  .primaryButton {
+    width: 240px;
+    margin-top: 16px;
+    @media screen and (min-width: $break-point-c) {
+      width: 192px;
+      float: right;
+      margin-right: 16px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.exclamationIcon {
+  margin-left: 16px;
+  margin-right: 8px;
+  padding-bottom: 8px;
+}
+
+.headerTxtStyle {
+  &:focus {
+    outline: 1px dotted $modern-gold;
+  }
+}
+
+.overlayClass {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  transition: opacity 0.4s ease;
+  z-index: 4;
+  background-color: rgba(255, 255, 255, 0.75);
+  opacity: 0;
+
+  &.overlayClassAfterOpen {
+    opacity: 1;
+  }
+
+  &.overlayClassAfterClose {
+    opacity: 0;
+  }
+
+}

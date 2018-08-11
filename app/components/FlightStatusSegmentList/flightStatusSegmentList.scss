@@ -1,0 +1,264 @@
+@import "../../styles/global/forms";
+@import "../../styles/tools";
+.flightStatusListContainer {
+  @include grid-parent;
+}
+
+.flightStatusLabel {
+  @include grid-child(2, 12, 1, 2);
+  font-size: $h5-font-size;
+  line-height: 32px;
+  &:focus {
+    outline: 1px dotted $modern-gold;
+  }
+}
+
+.dateLabel {
+  @include grid-child(2, 12, 2, 3);
+  font-size: $h6-font-size;
+}
+
+.multiSegmentLabel {
+  @include grid-child(2, 12, 3, 4);
+  padding-top: 12px;
+  color: $premier-blue;
+  font-size: $h6-font-size;
+}
+
+.buttonContainer {
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  margin: 2px;
+  padding-right: 2px;
+  &:focus {
+    outline: 2px dotted $modern-gold;
+  }
+  @media (min-width: $break-point-c) {
+    box-shadow: $box-shadow;
+    margin-left: 0px;
+    margin-right: 0px;
+    &:last-child {
+      margin-bottom: 4px;
+    }
+    background: $white;
+    &:nth-child(odd) {
+      background: $off-white;
+    }
+  }
+}
+
+.selectedBorder {
+  border-right: 8px solid $united-blue;
+}
+
+.notSelectedBorder {
+  border-right: 8px solid transparent;
+}
+
+.segmentBlock {
+  @include grid-child(2, 12, 4, 5);
+  height: 363px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: $white;
+  margin-top: 24px;
+  @media (min-width: $break-point-c) {
+    @include grid-child(1, 13, 4, 5); //  margin-top: 12px;
+  }
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $black-40;
+  }
+}
+
+.segmentData {
+  @media (min-width: $break-point-c) {
+    margin-right: 16px;
+  }
+}
+
+.segmentDetail {
+  display: flex;
+  flex-direction: row;
+  padding: 24px 12px;
+  @media (min-width: $break-point-c) {
+    padding: 24px 42px;
+  }
+}
+
+.departureColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.arrivalColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.flightColumn {
+  align-self: center;
+  text-align: center;
+}
+
+.horizontalLine {
+  border: 0.5px solid #979797;
+  margin: 0px 12px;
+}
+
+.departureLabel {
+  text-transform: uppercase;
+  font-size: $h6-font-size;
+  color: $premier-blue;
+  letter-spacing: 1.08px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.time {
+  font-size: $h5-font-size;
+  color: $premier-blue;
+  line-height: 32px;
+}
+
+.airportCode {
+  font-size: $h4-font-size;
+  color: $premier-blue;
+  line-height: 40px;
+  padding: 4px 0px;
+}
+
+.airportShorthand {
+  font-size: $h6-font-size;
+  color: $premier-blue;
+  line-height: 24px;
+}
+
+.viewDetailBtn {
+  font-size: $link-font-size;
+  color: $primary-link-default-secondary-color;
+  z-index: 1;
+  button {
+    padding-right: 0px;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+
+    &:after {
+      @include linkArrow;
+      margin-bottom: 2px;
+    }
+
+    &:hover:after {
+      border-color: white;
+    }
+  }
+}
+
+.newFlightStatusSearch {
+  @include grid-child(2, 12, 5, 6);
+  font-size: $font-size-base;
+  color: $primary-link-default-primary-color;
+  letter-spacing: 0;
+  margin: 15px 0px;
+  line-height: 24px;
+  font-weight: bold;
+
+  button {
+    padding: 0;
+    color: $united-blue;
+    transition: color 0.4s;
+
+    &:hover,
+    &:focus {
+      color: $link-blue;
+      text-decoration: underline;
+    }
+
+    &:after {
+      @include linkArrow;
+    }
+
+    &:hover:after {
+      border-color: $link-blue;
+    }
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  text-align: center;
+  margin-left: 5px;
+  img {
+    margin: 0;
+    width: 20px;
+    padding-bottom: 1px;
+  }
+}
+
+.flightIcon {
+  display: inline-block;
+  text-align: center;
+  img {
+    margin: 0;
+    width: 24px;
+    padding-bottom: 1px;
+  }
+}
+
+.bottomAppImage {
+  @include grid-child(1, 5, 6, 7);
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+
+.appTxtStyle {
+  @include grid-child(5, 13, 6, 7);
+  margin-right: 24px;
+  margin-top: 16px;
+  font-size: 12px;
+  color: #001C4B; // TODO: check this color when css is updated
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.appLinkStyle {
+  position: absolute;
+  font-size: 12px;
+  color: $link-blue;
+  letter-spacing: 0;
+  line-height: 9px;
+  margin-top: 16px;
+  right: 32px;
+}
+
+
+.appIcon {
+  height: 112px;
+}
+
+.modalOpenDisplay {
+  display: none;
+}
+
+.modalClosedDisplay {
+  display: inline;
+}
+
+.srOnly {
+  @include visually-hidden;
+  text-transform: none;
+  font-size: .5px;
+  line-height: 0;
+  height: 0;
+}

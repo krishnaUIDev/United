@@ -1,0 +1,66 @@
+@import "../../styles/tools";
+
+.gridParent {
+  @include grid-parent;
+}
+
+.panelModal {
+  width: 100%;
+  overflow-y: auto;
+  height: 100%;
+  background: $link-blue;
+}
+
+.rightPanelContainer {
+  @include grid-child(1,13,1,2);
+  @media (min-width: $break-point-c) {
+    @include grid-child(1,13,1,1);
+    margin-right: 8px;
+  }
+  @media (min-width: $break-point-d) {
+    @include grid-child(1,13,1,1);
+  }
+}
+
+.passengerContainer {
+  margin-bottom: 8px;
+  border-top: 1px solid $divider-line-color-mobile;
+  @media (min-width: $break-point-c) {
+    border-top: 1px solid $divider-line-color-desktop;
+  }
+}
+
+.passengerHeader {
+  font-size: 12px;
+  color: white;
+  letter-spacing: 1.08px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 4px;
+}
+
+.passengerNames {
+  font-size: 16px;
+  color: white;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 4px;
+}
+
+.viewSeatsLink {
+  float: right;
+  font-size: 16px;
+  color: white;
+  margin-top: 8px;
+  line-height: 16px;
+  text-decoration: underline;
+}
+
+.srOnly {
+  @include visually-hidden;
+  text-transform: none;
+  font-size: .5px;
+  line-height: 0;
+  height: 0;
+}

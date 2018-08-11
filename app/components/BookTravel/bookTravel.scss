@@ -1,0 +1,286 @@
+@import "../../styles/tools";
+
+.srOnly {
+  @include visually-hidden;
+  text-transform: none;
+}
+
+.bookTravel {
+  display: block;
+  position: relative;
+  width: 100%;
+  overflow-y: auto;
+
+  @media (min-width: $break-point-c) {
+    overflow: visible;
+    width: 405px;
+    height: 496px;
+    background-color: white;
+    background: $white;
+    box-shadow: 0 12px 34px 0 rgba(0,0,0,0.2);
+    border-radius: $border-radius;
+    transition: width 0.4s, height 0.4s;
+  }
+
+  @media (min-width: $break-point-c) {
+    width: 498px;
+    height: 528px;
+  }
+
+  &.expanded {
+    @media screen and (min-width: $break-point-c) {
+      width: 100%;
+      height: 531px;
+
+      ul.travelNav {
+        width: 496px;
+      }
+    }
+
+    @media screen and (min-width: $break-point-d) {
+      width: 100%;
+      max-width: 752px;
+      height: 616px;
+    }
+  }
+}
+
+.mobileTabArrow {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+
+  > i {
+    position: absolute;
+    display: block;
+    width: 14px;
+    height: 14px;
+    right: 24px;
+    top: 17px;
+    border: solid $premier-blue;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  @media (min-width: $break-point-c) {
+    display: none;
+  }
+}
+
+.travelNavContainer {
+  width: 100%;
+  background-color: $black-10;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+
+  section {
+    background-color: #F7F7F7;
+    padding: 30px 24px;
+    width: 100%;
+    text-align: left;
+
+    @media (min-width: $break-point-c) {
+      position: absolute;
+      left: 0;
+      padding: 20px 35px 35px;
+      background-color: white;
+    }
+  }
+}
+
+ul section:nth-of-type(2), ul section:nth-of-type(3), ul section:nth-of-type(4) {
+  form {
+    padding: 20px 35px 35px;
+  }
+  padding: 20px 0px 0px 0px;
+}
+
+ul.travelNav {
+  @include unstyled-list;
+  width: 100%;
+
+  @media screen and (min-width: $break-point-d) {
+    width: 498px;
+  }
+
+  h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    display: inline-block;
+  }
+
+  > li {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: $default-border;
+    text-align: left;
+    font-size: 16px;
+    color: $black-60;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    &[aria-selected="true"] {
+      background-color: white;
+
+      @media (min-width: $break-point-c) {
+        border-top: 4px solid $link-blue;
+
+        &:last-of-type {
+          border-top-right-radius: $border-radius;
+        }
+      }
+
+      .mobileTabArrow {
+        height: 57px;
+
+        > i {
+          -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+          margin-top: 5px;
+        }
+      }
+
+      > section {
+        display: block;
+      }
+
+      h2 {
+        color: #002244;
+      }
+    }
+
+    @media (min-width: $break-point-c) {
+      display: inline-block;
+      position: static;
+      width: 25%;
+      height: 64px;
+      border-bottom: none;
+      border-top: 4px solid transparent;
+      background-color: transparent;
+      text-align: center;
+      padding: 0;
+
+      &:first-child,
+      &.active + li {
+        border-left: none;
+      }
+
+      &:first-child {
+        border-top-left-radius: $border-radius;
+      }
+
+      &:last-child {
+        border-top-right-radius: $border-radius;
+      }
+
+      &.active {
+        background-color: white;
+        color: $premier-blue;
+      }
+
+      &[aria-selected="false"] {
+        border-right: 1px solid $black-20;
+      }
+
+      &[aria-selected="false"]:last-of-type {
+        border-right: none;
+      }
+    }
+
+    h2 {
+      line-height: 56px;
+    }
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 24px;
+
+  @media (min-width: $break-point-c) {
+    display: none;
+  }
+
+  img {
+    margin: 0;
+    width: 20px;
+    padding-bottom: 4px;
+  }
+}
+
+.flightContent {
+  .icon img {
+    width: 30px;
+  }
+}
+
+.bookMenu {
+  ul {
+    @include unstyled-list;
+    border-bottom: $default-border;
+
+    > li {
+      display: inline-block;
+      text-align: center;
+
+      a, button {
+        text-transform: uppercase;
+        font-size: 10px;
+        color: $black-60;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      img {
+        display: none;
+        @media screen and (min-width: $break-point-c) {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.closeButton {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+
+  &:after {
+    clear: both;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline-color: $modern-gold;
+  }
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}

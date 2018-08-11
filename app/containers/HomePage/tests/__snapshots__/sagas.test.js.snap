@@ -1,0 +1,1113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[` 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "PUT": Object {
+    "action": Object {
+      "retry": true,
+      "searchString": "ord",
+      "type": "unitedapp/App/LOAD_AIRPORTS",
+    },
+    "channel": null,
+  },
+}
+`;
+
+exports[` 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[` 4`] = `undefined`;
+
+exports[` 5`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[` 6`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[` 7`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[` 8`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`[object Object] 1`] = `undefined`;
+
+exports[`getAirports Saga should call the airportsLoadingError action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getAirports Saga should call the airportsLoadingError action if the response errors 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getAirports Saga should call the airportsLoadingError action if the response errors 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getAirports Saga should call the airportsLoadingError action if the response errors 4`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/airports/lookup/ewr",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer 1234abc",
+          "Content-Type": "application/json",
+        },
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getAirports Saga should dispatch the loadAirports action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getAirports Saga should dispatch the loadAirports action if it requests the data successfully 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getAirports Saga should dispatch the loadAirports action if it requests the data successfully 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getAirports Saga should dispatch the loadAirports action if it requests the data successfully 4`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/airports/lookup/ewr",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer 1234abc",
+          "Content-Type": "application/json",
+        },
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getCarLocations Saga should call the carLocationsLoadingError action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getCarLocations Saga should call the carLocationsLoadingError action if the response errors 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "https://www.rentalcars.com/FTSAutocomplete.do?solrIndex=fts_en&solrRows=10&solrTerm=undefined",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getCarLocations Saga should dispatch the carLocationsLoaded action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getCarLocations Saga should dispatch the carLocationsLoaded action if it requests the data successfully 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "https://www.rentalcars.com/FTSAutocomplete.do?solrIndex=fts_en&solrRows=10&solrTerm=undefined",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getFlightCheckin Saga call isLogged In should call the flightCheckinLoadingError action if the response errors with status 403 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getFlightCheckin Saga call isLogged In should call the flightCheckinLoadingError action if the response errors with status 403 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getFlightCheckin Saga call isLogged In should call the flightCheckinLoadingError action if the response errors with status 403 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getFlightCheckin Saga call isLogged In should call the flightCheckinLoadingError action if the response errors with status 403 4`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/user/trips/checkin",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer 1234abc",
+          "Content-Type": "application/json",
+        },
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getFlightCheckin Saga call isLogged In should dispatch the flightCheckinLoaded action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getFlightCheckin Saga call isLogged In should dispatch the flightCheckinLoaded action if it requests the data successfully 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getFlightCheckin Saga call isLogged In should dispatch the flightCheckinLoaded action if it requests the data successfully 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getFlightCheckin Saga call isLogged In should dispatch the flightCheckinLoaded action if it requests the data successfully 4`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/user/trips/checkin",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer 1234abc",
+          "Content-Type": "application/json",
+        },
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getFlightStatus Saga calls 707/2017-12-30 should call the flightStatusLoadingError action if the response errors with status 403 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getFlightStatus Saga calls 707/2017-12-30 should call the flightStatusLoadingError action if the response errors with status 403 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getFlightStatus Saga calls 707/2017-12-30 should call the flightStatusLoadingError action if the response errors with status 403 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/flight/status/707/undefined",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer 1234abc",
+          "Content-Type": "application/json",
+        },
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getFlightStatus Saga calls 707/2017-12-30 should dispatch the flightStatusLoaded action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getFlightStatus Saga calls 707/2017-12-30 should dispatch the flightStatusLoaded action if it requests the data successfully 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getFlightStatus Saga calls 707/2017-12-30 should dispatch the flightStatusLoaded action if it requests the data successfully 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/flight/status/707/undefined",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer 1234abc",
+          "Content-Type": "application/json",
+        },
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getFlightStatus Saga calls 707/2017-12-30/ORD/DEN should call the flightStatusLoadingError action if the response errors with status 403 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getFlightStatus Saga calls 707/2017-12-30/ORD/DEN should call the flightStatusLoadingError action if the response errors with status 403 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getFlightStatus Saga calls 707/2017-12-30/ORD/DEN should call the flightStatusLoadingError action if the response errors with status 403 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/flight/status/707/undefined/ORD/DEN",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer 1234abc",
+          "Content-Type": "application/json",
+        },
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getFlightStatus Saga calls 707/2017-12-30/ORD/DEN should dispatch the flightStatusLoaded action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getFlightStatus Saga calls 707/2017-12-30/ORD/DEN should dispatch the flightStatusLoaded action if it requests the data successfully 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getFlightStatus Saga calls 707/2017-12-30/ORD/DEN should dispatch the flightStatusLoaded action if it requests the data successfully 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/flight/status/707/undefined/ORD/DEN",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer 1234abc",
+          "Content-Type": "application/json",
+        },
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getHotelLocations Saga should call the hotelLocationsLoadingError action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getHotelLocations Saga should call the hotelLocationsLoadingError action if the response errors 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/extapi/hotels/1/suggest/v1.3/json?locale=en_GB&boostConfig=config-boost-9&excludeLpa=false&query=undefined",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getHotelLocations Saga should dispatch the hotelLocationsLoaded action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getHotelLocations Saga should dispatch the hotelLocationsLoaded action if it requests the data successfully 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/extapi/hotels/1/suggest/v1.3/json?locale=en_GB&boostConfig=config-boost-9&excludeLpa=false&query=undefined",
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getMyTrips Saga call isLogged In should call the myTripsLoadingError action if the response errors with status 403 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getMyTrips Saga call isLogged In should call the myTripsLoadingError action if the response errors with status 403 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getMyTrips Saga call isLogged In should call the myTripsLoadingError action if the response errors with status 403 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getMyTrips Saga call isLogged In should call the myTripsLoadingError action if the response errors with status 403 4`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/user/trips",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer 1234abc",
+          "Content-Type": "application/json",
+        },
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getMyTrips Saga call isLogged In should dispatch the myTripsLoaded action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getMyTrips Saga call isLogged In should dispatch the myTripsLoaded action if it requests the data successfully 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getMyTrips Saga call isLogged In should dispatch the myTripsLoaded action if it requests the data successfully 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getMyTrips Saga call isLogged In should dispatch the myTripsLoaded action if it requests the data successfully 4`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/user/trips",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer 1234abc",
+          "Content-Type": "application/json",
+        },
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getRefreshTokenData Saga should call the tokenRefreshError action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getRefreshTokenData Saga should call the tokenRefreshError action if the response errors 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/token/refresh",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer undefined",
+          "Content-Type": "application/json",
+        },
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getRefreshTokenData Saga should dispatch the tokenRefreshed action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getRefreshTokenData Saga should dispatch the tokenRefreshed action if it requests the data successfully 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/token/refresh",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer undefined",
+          "Content-Type": "application/json",
+        },
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getSignIn Saga should call the signInLoadingError action if the response errors with invalid Status 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getSignIn Saga should call the signInLoadingError action if the response errors with invalid Status 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getSignIn Saga should call the signInLoadingError action if the response errors with invalid Status 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/user/signIn",
+      Object {
+        "data": Object {
+          "isEncrypted": undefined,
+          "password": "password",
+          "username": "myusername",
+        },
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer 1234abc",
+          "Content-Type": "application/json",
+        },
+        "method": "post",
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getSignIn Saga should call the signInLoadingError action if the response errors with status 403 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getSignIn Saga should call the signInLoadingError action if the response errors with status 403 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getSignIn Saga should call the signInLoadingError action if the response errors with status 403 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/user/signIn",
+      Object {
+        "data": Object {
+          "isEncrypted": undefined,
+          "password": "password",
+          "username": "myusername",
+        },
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer 1234abc",
+          "Content-Type": "application/json",
+        },
+        "method": "post",
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getSignIn Saga should call the signInLoadingError action if the response errors with status 423 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getSignIn Saga should call the signInLoadingError action if the response errors with status 423 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getSignIn Saga should call the signInLoadingError action if the response errors with status 423 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/user/signIn",
+      Object {
+        "data": Object {
+          "isEncrypted": undefined,
+          "password": "password",
+          "username": "myusername",
+        },
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer 1234abc",
+          "Content-Type": "application/json",
+        },
+        "method": "post",
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getSignIn Saga should dispatch the signInLoaded action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getSignIn Saga should dispatch the signInLoaded action if it requests the data successfully 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getSignIn Saga should dispatch the signInLoaded action if it requests the data successfully 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/user/signIn",
+      Object {
+        "data": Object {
+          "isEncrypted": undefined,
+          "password": "password",
+          "username": "myusername",
+        },
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer 1234abc",
+          "Content-Type": "application/json",
+        },
+        "method": "post",
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getSignIn Saga should use redirectUrl if response status is 202 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getSignIn Saga should use redirectUrl if response status is 202 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`getSignIn Saga should use redirectUrl if response status is 202 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/user/signIn",
+      Object {
+        "data": Object {
+          "isEncrypted": undefined,
+          "password": "password",
+          "username": "myusername",
+        },
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Authorization": "bearer 1234abc",
+          "Content-Type": "application/json",
+        },
+        "method": "post",
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getToken Saga expired invalid token should start task to watch for TOKEN_ANON action 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getToken Saga no token should start task to watch for TOKEN_ANON action 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getTokenData Saga should call the pnrLoadingError action if the response errors 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/token/anonymous",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Content-Type": "application/json",
+        },
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`getTokenData Saga should dispatch the tokenLoaded action if it requests the data successfully 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [
+      "/api/token/anonymous",
+      Object {
+        "headers": Object {
+          "Accept": "application/json",
+          "Accept-Language": "en-US",
+          "Content-Type": "application/json",
+        },
+        "timeout": 20000,
+      },
+    ],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`handleApiErrors Saga with Error Status 401 should dispatch the LoadAirports action if the retry count is less than threshold 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`handleApiErrors Saga with Error Status 401 should dispatch the LoadAirports action if the retry count is less than threshold 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "CALL": Object {
+    "args": Array [],
+    "context": null,
+    "fn": [Function],
+  },
+}
+`;
+
+exports[`handleApiErrors Saga with Error Status 401 should dispatch the LoadAirports action if the retry count is less than threshold 3`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "PUT": Object {
+    "action": Object {
+      "retry": true,
+      "searchString": "ord",
+      "type": "unitedapp/App/LOAD_AIRPORTS",
+    },
+    "channel": null,
+  },
+}
+`;
+
+exports[`handleApiErrors Saga with Error Status 401 should not dispatch any action if the retry count is greater than threshold 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`handleApiErrors Saga with Error Status 401 should not dispatch any action if the retry count is greater than threshold 2`] = `undefined`;
+
+exports[`handleApiErrors Saga with Error Status 503 should dispatch the LoadAirports action if the retry count is less than threshold 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`handleApiErrors Saga with Error Status 503 should dispatch the LoadAirports action if the retry count is less than threshold 2`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "PUT": Object {
+    "action": Object {
+      "retry": true,
+      "searchString": "ord",
+      "type": "unitedapp/App/LOAD_AIRPORTS",
+    },
+    "channel": null,
+  },
+}
+`;
+
+exports[`handleApiErrors Saga with Error Status 503 should not dispatch any action if the retry count is greater than threshold 1`] = `
+Object {
+  "@@redux-saga/IO": true,
+  "SELECT": Object {
+    "args": Array [],
+    "selector": [Function],
+  },
+}
+`;
+
+exports[`handleApiErrors Saga with Error Status 503 should not dispatch any action if the retry count is greater than threshold 2`] = `undefined`;

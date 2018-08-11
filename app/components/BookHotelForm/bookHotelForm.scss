@@ -1,0 +1,321 @@
+@import "../../styles/tools";
+@import "../../styles/global/forms";
+
+
+.srOnly {
+  @include visually-hidden;
+  text-transform: none;
+  font-size: 0;
+  line-height: 0;
+}
+
+.bookHotelForm {
+  padding-top: 34px;
+  @include grid-parent;
+  grid-gap: 0;
+
+  :global {
+    .Select-control {
+      border: none;
+    }
+
+    .Select.is-focused > .Select-control {
+      background-color: transparent;
+    }
+
+    .Select--single > .Select-control .Select-value {
+      padding-left: 0;
+    }
+
+    .Select-value-label {
+      display: block;
+      font-size: 32px;
+      transition: color 0.4s;
+      padding-top: 8px;
+
+      &:hover {
+        color: $link-blue !important;
+      }
+    }
+
+    .Select-multi-value-wrapper {
+      display: inline-block;
+      width: 90%;
+      padding-top: 10px;
+      margin-bottom: 5px;
+    }
+
+    .Select-menu-outer {
+      @media screen and (min-width: $break-point-c) {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+      }
+    }
+    .Select-arrow-zone {
+      width: 10%;
+      padding-left: 0;
+    }
+  }
+
+  input[type="checkbox"] {
+    margin-right: 10px;
+
+    + label {
+      text-transform: none;
+    }
+  }
+
+  .topPanel {
+    @include grid-child(1,13,1,1);
+    @include grid-parent;
+    grid-gap: 0;
+  }
+
+  .bottomPanel {
+    @include grid-child(1,13,2,2);
+    @include grid-parent;
+  }
+
+  .topPanel, .bottomPanel {
+    > div:first-child {
+      @include grid-child(1,13,1,2);
+      @media screen and (min-width: $break-point-c) {
+        @include grid-child(1,7,1,2);
+      }
+    }
+
+    > div:last-child {
+      @include grid-child(1,13,2,2);
+      @media screen and (min-width: $break-point-c) {
+        @include grid-child(7,13,1,2);
+        padding-left: 16px;
+      }
+    }
+  }
+
+  .hotelRoomContainer {
+    margin-bottom: 30px;
+  }
+
+  .primaryButton {
+    @include grid-child(1,13,4,4);
+
+    @media screen and (min-width: $break-point-c) {
+      @include grid-child(1,4,3,3);
+    }
+  }
+}
+
+.bookCalendar {
+  display: block;
+  position: relative;
+  padding-bottom: 25px;
+  margin-bottom: 10px;
+  line-height: 1;
+
+  label {
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  &:hover {
+    label {
+      color: $link-blue;
+    }
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  text-align: center;
+  margin-left: 5px;
+
+  img {
+    margin: 0;
+    width: 20px;
+    padding-bottom: 4px;
+  }
+}
+
+.pickupContainer {
+  position: fixed;
+  background: #F7F7F7;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  display: inline;
+  z-index: 3;
+
+  @media screen and (min-width: $break-point-c) {
+    background: white;
+    overflow: visible;
+    padding-bottom: 10px;
+    z-index: auto;
+  }
+}
+
+.dateContainer {
+  width: 100%;
+}
+
+.hotelOptions {
+  @include grid-child(1,13,3,4);
+  margin-top: 8px;
+  margin-bottom: 32px;
+  list-style-type: none;
+  padding: 0;
+  z-index: 0;
+  > li {
+    display: block;
+
+    @media screen and (min-width: $break-point-c) {
+      float: right;
+      text-align: right;
+      width: 135px;
+    }
+  }
+  @media screen and (min-width: $break-point-c) {
+    @include grid-child(10,13,3,3);
+  }
+}
+
+.roomsLabelHotel {
+  margin-bottom: 6px;
+  padding-bottom: 1px;
+}
+
+.hotelTravelersContainer {
+  width: 100%;
+}
+
+.roomField {
+  margin-top: 3px;
+  position: relative;
+
+  @media screen and (min-width: $break-point-c) {
+    margin-top: 0px;
+  }
+
+  &:hover {
+    color: $link-blue;
+    label {
+      color: $link-blue;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    border-bottom: $default-border;
+    transition: border-color 0.4s;
+  }
+
+  &:hover:after {
+    border-bottom: 2px solid $link-blue;
+  }
+}
+
+.flightIcon {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  width: 35px;
+  opacity: 0.3;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.hotelImg {
+  padding-top: 3px;
+  opacity: 0.3;
+}
+
+.geoImg {
+  position: absolute;
+  left: 30%;
+  top: -1px;
+}
+
+.bookHotelPassengersDiv {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.hotelPassengersModal {
+  position: fixed;
+  top: 0;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.bookWithMilesLabel {
+  padding-top: 2px;
+}
+
+.passengerDropdownContainerHotel {
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  &:focus {
+    outline: 1px dotted $modern-gold;
+  }
+  @media screen and (min-width: $break-point-d) {
+    width: 331px;
+    height: 146px;
+    position: relative;
+    box-shadow: $box-shadow;
+    border: 1px solid $black-60;
+    border-radius: 3px;
+    top: -$sliding-input-bottom-padding;
+  }
+}
+
+.ariaSelection {
+  position: absolute;
+  line-height: 0px;
+  width: 1px;
+  color: transparent;
+  font-size: 1px;
+  &:focus {
+    outline: transparent;
+  }
+}
+
+.passengersA {
+  margin-top: 64px;
+  padding-left: 24px;
+  border-top: 1px solid #C8C8C8;
+  padding-top: 24px;
+  @media screen and (min-width: $break-point-d) {
+    margin-top: 16px;
+    width: 300px;
+    height: 130px;
+    bottom: 16px;
+    border-radius: 3px;
+    border-top: none;
+  }
+}
+
+
+.invisible {
+  @include visually-hidden;
+}

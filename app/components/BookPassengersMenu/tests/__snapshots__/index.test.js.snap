@@ -1,0 +1,618 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BookPassengersMenu /> render BookPassengersMenu Component 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    aria-label="Passengers"
+    id="incrementerContainer"
+    style={
+        Object {
+            "display": "none",
+          }
+    }
+>
+    <BookPassengersSection
+        currentAmount={2}
+        decrementTabIndex={undefined}
+        disableIndividualSections={undefined}
+        id="Adults (18-64)"
+        index="0"
+        individualMaxLimit={undefined}
+        maxLimit={undefined}
+        maxRemaining={NaN}
+        minValueIsOne={undefined}
+        minusBtnDisabled={false}
+        modelName="booking.passengersToBook['Adults (18-64)']"
+        numberOfTravelersTotal={undefined}
+        onQuantityClick={[Function]}
+        onQuantityInputFocus={[Function]}
+        onTextInput={[Function]}
+        parentModel={undefined}
+        plusBtnDisabled={false}
+        sectionDetail="(18-64)"
+        sectionTitle="Adults"
+    />
+    <BookPassengersSection
+        currentAmount={0}
+        decrementTabIndex={undefined}
+        disableIndividualSections={undefined}
+        id="Seniors (65+)"
+        index="1"
+        individualMaxLimit={undefined}
+        maxLimit={undefined}
+        maxRemaining={NaN}
+        minValueIsOne={undefined}
+        minusBtnDisabled={false}
+        modelName="booking.passengersToBook['Seniors (65+)']"
+        numberOfTravelersTotal={undefined}
+        onQuantityClick={[Function]}
+        onQuantityInputFocus={[Function]}
+        onTextInput={[Function]}
+        parentModel={undefined}
+        plusBtnDisabled={false}
+        sectionDetail="(65+)"
+        sectionTitle="Seniors"
+    />
+    <BookPassengersSection
+        currentAmount={3}
+        decrementTabIndex={undefined}
+        disableIndividualSections={undefined}
+        id="Infants (under 2)"
+        index="2"
+        individualMaxLimit={undefined}
+        maxLimit={undefined}
+        maxRemaining={NaN}
+        minValueIsOne={undefined}
+        minusBtnDisabled={false}
+        modelName="booking.passengersToBook['Infants (under 2)']"
+        numberOfTravelersTotal={undefined}
+        onQuantityClick={[Function]}
+        onQuantityInputFocus={[Function]}
+        onTextInput={[Function]}
+        parentModel={undefined}
+        plusBtnDisabled={false}
+        sectionDetail="(under 2)"
+        sectionTitle="Infants"
+    />
+    <BookPassengersSection
+        currentAmount={1}
+        decrementTabIndex={undefined}
+        disableIndividualSections={undefined}
+        id="Infants on lap"
+        index="3"
+        individualMaxLimit={undefined}
+        maxLimit={undefined}
+        maxRemaining={NaN}
+        minValueIsOne={undefined}
+        minusBtnDisabled={false}
+        modelName="booking.passengersToBook['Infants on lap']"
+        numberOfTravelersTotal={undefined}
+        onQuantityClick={[Function]}
+        onQuantityInputFocus={[Function]}
+        onTextInput={[Function]}
+        parentModel={undefined}
+        plusBtnDisabled={false}
+        sectionDetail=""
+        sectionTitle="Infants on lap"
+    />
+</div>,
+  "nodes": Array [
+    <div
+      aria-label="Passengers"
+      id="incrementerContainer"
+      style={
+            Object {
+                  "display": "none",
+                }
+      }
+>
+      <BookPassengersSection
+            currentAmount={2}
+            decrementTabIndex={undefined}
+            disableIndividualSections={undefined}
+            id="Adults (18-64)"
+            index="0"
+            individualMaxLimit={undefined}
+            maxLimit={undefined}
+            maxRemaining={NaN}
+            minValueIsOne={undefined}
+            minusBtnDisabled={false}
+            modelName="booking.passengersToBook['Adults (18-64)']"
+            numberOfTravelersTotal={undefined}
+            onQuantityClick={[Function]}
+            onQuantityInputFocus={[Function]}
+            onTextInput={[Function]}
+            parentModel={undefined}
+            plusBtnDisabled={false}
+            sectionDetail="(18-64)"
+            sectionTitle="Adults"
+      />
+      <BookPassengersSection
+            currentAmount={0}
+            decrementTabIndex={undefined}
+            disableIndividualSections={undefined}
+            id="Seniors (65+)"
+            index="1"
+            individualMaxLimit={undefined}
+            maxLimit={undefined}
+            maxRemaining={NaN}
+            minValueIsOne={undefined}
+            minusBtnDisabled={false}
+            modelName="booking.passengersToBook['Seniors (65+)']"
+            numberOfTravelersTotal={undefined}
+            onQuantityClick={[Function]}
+            onQuantityInputFocus={[Function]}
+            onTextInput={[Function]}
+            parentModel={undefined}
+            plusBtnDisabled={false}
+            sectionDetail="(65+)"
+            sectionTitle="Seniors"
+      />
+      <BookPassengersSection
+            currentAmount={3}
+            decrementTabIndex={undefined}
+            disableIndividualSections={undefined}
+            id="Infants (under 2)"
+            index="2"
+            individualMaxLimit={undefined}
+            maxLimit={undefined}
+            maxRemaining={NaN}
+            minValueIsOne={undefined}
+            minusBtnDisabled={false}
+            modelName="booking.passengersToBook['Infants (under 2)']"
+            numberOfTravelersTotal={undefined}
+            onQuantityClick={[Function]}
+            onQuantityInputFocus={[Function]}
+            onTextInput={[Function]}
+            parentModel={undefined}
+            plusBtnDisabled={false}
+            sectionDetail="(under 2)"
+            sectionTitle="Infants"
+      />
+      <BookPassengersSection
+            currentAmount={1}
+            decrementTabIndex={undefined}
+            disableIndividualSections={undefined}
+            id="Infants on lap"
+            index="3"
+            individualMaxLimit={undefined}
+            maxLimit={undefined}
+            maxRemaining={NaN}
+            minValueIsOne={undefined}
+            minusBtnDisabled={false}
+            modelName="booking.passengersToBook['Infants on lap']"
+            numberOfTravelersTotal={undefined}
+            onQuantityClick={[Function]}
+            onQuantityInputFocus={[Function]}
+            onTextInput={[Function]}
+            parentModel={undefined}
+            plusBtnDisabled={false}
+            sectionDetail=""
+            sectionTitle="Infants on lap"
+      />
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <BookPassengersMenu
+        arrayIndexs={
+                Array [
+                        "0",
+                        "1",
+                        "2",
+                        "3",
+                      ]
+        }
+        fullArray={
+                Array [
+                        "Seniors (65+)",
+                        "Infants (under 2)",
+                        "Infants on lap",
+                      ]
+        }
+        ids={
+                Array [
+                        "Adults (18-64)",
+                        "Seniors (65+)",
+                        "Infants (under 2)",
+                        "Infants on lap",
+                      ]
+        }
+        infantTitleA="Infants (under 2)"
+        infantTitleB="Infants on lap"
+        onChangeModel={[Function]}
+        onChangePassenger={[Function]}
+        onDisableTravelerButtons={[Function]}
+        onQuantityClick={[Function]}
+        onQuantityInputFocus={[Function]}
+        passengersToBook={
+                Immutable.Map {
+                        Adults (18-64): 2,
+                        Seniors (65+): 0,
+                        Infants (under 2): 3,
+                        Infants on lap: 1,
+                        Children (15-17): 0,
+                        Children (12-14): 0,
+                        Children (5-11): 0,
+                        Children (2-4): 0,
+                }
+        }
+        sectionDetail={
+                Array [
+                        "(18-64)",
+                        "(65+)",
+                        "(under 2)",
+                        "",
+                      ]
+        }
+        sectionTitle={
+                Array [
+                        "Adults",
+                        "Seniors",
+                        "Infants",
+                        "Infants on lap",
+                      ]
+        }
+        toDisableBtns={
+                Immutable.Map {
+                        plusBtn: false,
+                        minusBtn: false,
+                }
+        }
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": BookPassengersMenu {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "arrayIndexs": Array [
+            "0",
+            "1",
+            "2",
+            "3",
+          ],
+          "fullArray": Array [
+            "Seniors (65+)",
+            "Infants (under 2)",
+            "Infants on lap",
+          ],
+          "ids": Array [
+            "Adults (18-64)",
+            "Seniors (65+)",
+            "Infants (under 2)",
+            "Infants on lap",
+          ],
+          "infantTitleA": "Infants (under 2)",
+          "infantTitleB": "Infants on lap",
+          "onChangeModel": [Function],
+          "onChangePassenger": [Function],
+          "onDisableTravelerButtons": [Function],
+          "onQuantityClick": [Function],
+          "onQuantityInputFocus": [Function],
+          "passengersToBook": Immutable.Map {
+            Adults (18-64): 2,
+            Seniors (65+): 0,
+            Infants (under 2): 3,
+            Infants on lap: 1,
+            Children (15-17): 0,
+            Children (12-14): 0,
+            Children (5-11): 0,
+            Children (2-4): 0,
+},
+          "sectionDetail": Array [
+            "(18-64)",
+            "(65+)",
+            "(under 2)",
+            "",
+          ],
+          "sectionTitle": Array [
+            "Adults",
+            "Seniors",
+            "Infants",
+            "Infants on lap",
+          ],
+          "toDisableBtns": Immutable.Map {
+            plusBtn: false,
+            minusBtn: false,
+},
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          aria-label="Passengers"
+          id="incrementerContainer"
+          style={
+                    Object {
+                              "display": "none",
+                            }
+          }
+>
+          <BookPassengersSection
+                    currentAmount={2}
+                    decrementTabIndex={undefined}
+                    disableIndividualSections={undefined}
+                    id="Adults (18-64)"
+                    index="0"
+                    individualMaxLimit={undefined}
+                    maxLimit={undefined}
+                    maxRemaining={NaN}
+                    minValueIsOne={undefined}
+                    minusBtnDisabled={false}
+                    modelName="booking.passengersToBook['Adults (18-64)']"
+                    numberOfTravelersTotal={undefined}
+                    onQuantityClick={[Function]}
+                    onQuantityInputFocus={[Function]}
+                    onTextInput={[Function]}
+                    parentModel={undefined}
+                    plusBtnDisabled={false}
+                    sectionDetail="(18-64)"
+                    sectionTitle="Adults"
+          />
+          <BookPassengersSection
+                    currentAmount={0}
+                    decrementTabIndex={undefined}
+                    disableIndividualSections={undefined}
+                    id="Seniors (65+)"
+                    index="1"
+                    individualMaxLimit={undefined}
+                    maxLimit={undefined}
+                    maxRemaining={NaN}
+                    minValueIsOne={undefined}
+                    minusBtnDisabled={false}
+                    modelName="booking.passengersToBook['Seniors (65+)']"
+                    numberOfTravelersTotal={undefined}
+                    onQuantityClick={[Function]}
+                    onQuantityInputFocus={[Function]}
+                    onTextInput={[Function]}
+                    parentModel={undefined}
+                    plusBtnDisabled={false}
+                    sectionDetail="(65+)"
+                    sectionTitle="Seniors"
+          />
+          <BookPassengersSection
+                    currentAmount={3}
+                    decrementTabIndex={undefined}
+                    disableIndividualSections={undefined}
+                    id="Infants (under 2)"
+                    index="2"
+                    individualMaxLimit={undefined}
+                    maxLimit={undefined}
+                    maxRemaining={NaN}
+                    minValueIsOne={undefined}
+                    minusBtnDisabled={false}
+                    modelName="booking.passengersToBook['Infants (under 2)']"
+                    numberOfTravelersTotal={undefined}
+                    onQuantityClick={[Function]}
+                    onQuantityInputFocus={[Function]}
+                    onTextInput={[Function]}
+                    parentModel={undefined}
+                    plusBtnDisabled={false}
+                    sectionDetail="(under 2)"
+                    sectionTitle="Infants"
+          />
+          <BookPassengersSection
+                    currentAmount={1}
+                    decrementTabIndex={undefined}
+                    disableIndividualSections={undefined}
+                    id="Infants on lap"
+                    index="3"
+                    individualMaxLimit={undefined}
+                    maxLimit={undefined}
+                    maxRemaining={NaN}
+                    minValueIsOne={undefined}
+                    minusBtnDisabled={false}
+                    modelName="booking.passengersToBook['Infants on lap']"
+                    numberOfTravelersTotal={undefined}
+                    onQuantityClick={[Function]}
+                    onQuantityInputFocus={[Function]}
+                    onTextInput={[Function]}
+                    parentModel={undefined}
+                    plusBtnDisabled={false}
+                    sectionDetail=""
+                    sectionTitle="Infants on lap"
+          />
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div
+          aria-label="Passengers"
+          id="incrementerContainer"
+          style={
+                    Object {
+                              "display": "none",
+                            }
+          }
+>
+          <BookPassengersSection
+                    currentAmount={2}
+                    decrementTabIndex={undefined}
+                    disableIndividualSections={undefined}
+                    id="Adults (18-64)"
+                    index="0"
+                    individualMaxLimit={undefined}
+                    maxLimit={undefined}
+                    maxRemaining={NaN}
+                    minValueIsOne={undefined}
+                    minusBtnDisabled={false}
+                    modelName="booking.passengersToBook['Adults (18-64)']"
+                    numberOfTravelersTotal={undefined}
+                    onQuantityClick={[Function]}
+                    onQuantityInputFocus={[Function]}
+                    onTextInput={[Function]}
+                    parentModel={undefined}
+                    plusBtnDisabled={false}
+                    sectionDetail="(18-64)"
+                    sectionTitle="Adults"
+          />
+          <BookPassengersSection
+                    currentAmount={0}
+                    decrementTabIndex={undefined}
+                    disableIndividualSections={undefined}
+                    id="Seniors (65+)"
+                    index="1"
+                    individualMaxLimit={undefined}
+                    maxLimit={undefined}
+                    maxRemaining={NaN}
+                    minValueIsOne={undefined}
+                    minusBtnDisabled={false}
+                    modelName="booking.passengersToBook['Seniors (65+)']"
+                    numberOfTravelersTotal={undefined}
+                    onQuantityClick={[Function]}
+                    onQuantityInputFocus={[Function]}
+                    onTextInput={[Function]}
+                    parentModel={undefined}
+                    plusBtnDisabled={false}
+                    sectionDetail="(65+)"
+                    sectionTitle="Seniors"
+          />
+          <BookPassengersSection
+                    currentAmount={3}
+                    decrementTabIndex={undefined}
+                    disableIndividualSections={undefined}
+                    id="Infants (under 2)"
+                    index="2"
+                    individualMaxLimit={undefined}
+                    maxLimit={undefined}
+                    maxRemaining={NaN}
+                    minValueIsOne={undefined}
+                    minusBtnDisabled={false}
+                    modelName="booking.passengersToBook['Infants (under 2)']"
+                    numberOfTravelersTotal={undefined}
+                    onQuantityClick={[Function]}
+                    onQuantityInputFocus={[Function]}
+                    onTextInput={[Function]}
+                    parentModel={undefined}
+                    plusBtnDisabled={false}
+                    sectionDetail="(under 2)"
+                    sectionTitle="Infants"
+          />
+          <BookPassengersSection
+                    currentAmount={1}
+                    decrementTabIndex={undefined}
+                    disableIndividualSections={undefined}
+                    id="Infants on lap"
+                    index="3"
+                    individualMaxLimit={undefined}
+                    maxLimit={undefined}
+                    maxRemaining={NaN}
+                    minValueIsOne={undefined}
+                    minusBtnDisabled={false}
+                    modelName="booking.passengersToBook['Infants on lap']"
+                    numberOfTravelersTotal={undefined}
+                    onQuantityClick={[Function]}
+                    onQuantityInputFocus={[Function]}
+                    onTextInput={[Function]}
+                    parentModel={undefined}
+                    plusBtnDisabled={false}
+                    sectionDetail=""
+                    sectionTitle="Infants on lap"
+          />
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <BookPassengersMenu
+    arrayIndexs={
+        Array [
+            "0",
+            "1",
+            "2",
+            "3",
+          ]
+    }
+    fullArray={
+        Array [
+            "Seniors (65+)",
+            "Infants (under 2)",
+            "Infants on lap",
+          ]
+    }
+    ids={
+        Array [
+            "Adults (18-64)",
+            "Seniors (65+)",
+            "Infants (under 2)",
+            "Infants on lap",
+          ]
+    }
+    infantTitleA="Infants (under 2)"
+    infantTitleB="Infants on lap"
+    onChangeModel={[Function]}
+    onChangePassenger={[Function]}
+    onDisableTravelerButtons={[Function]}
+    onQuantityClick={[Function]}
+    onQuantityInputFocus={[Function]}
+    passengersToBook={
+        Immutable.Map {
+            Adults (18-64): 2,
+            Seniors (65+): 0,
+            Infants (under 2): 3,
+            Infants on lap: 1,
+            Children (15-17): 0,
+            Children (12-14): 0,
+            Children (5-11): 0,
+            Children (2-4): 0,
+        }
+    }
+    sectionDetail={
+        Array [
+            "(18-64)",
+            "(65+)",
+            "(under 2)",
+            "",
+          ]
+    }
+    sectionTitle={
+        Array [
+            "Adults",
+            "Seniors",
+            "Infants",
+            "Infants on lap",
+          ]
+    }
+    toDisableBtns={
+        Immutable.Map {
+            plusBtn: false,
+            minusBtn: false,
+        }
+    }
+/>,
+}
+`;

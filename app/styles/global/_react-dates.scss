@@ -1,0 +1,396 @@
+// AirBnb react-dates styles override
+
+.DateRangePicker,
+.SingleDatePicker,
+.DateRangePicker_picker,
+.SingleDatePicker_picker {
+  width: 100%;
+  border: none;
+  line-height: 1;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    border-bottom: $default-border;
+    transition: border-color 0.4s;
+  }
+
+  &:hover:after {
+    border-bottom: 2px solid $link-blue;
+  }
+
+  &.DateRangePicker_picker__portal {
+    z-index: 999;
+  }
+
+  &.DateRangePicker_picker__directionLeft,
+  &.SingleDatePicker_picker__directionLeft {
+    top: 0 !important;
+
+    @media screen and (min-width: $break-point-c) {
+      left: -350px !important;
+    }
+  }
+
+  &.DateRangePicker_picker__directionLeft,
+  &.SingleDatePicker_picker__directionLeft {
+    @media screen and (min-width: $break-point-c) {
+      top: 68px !important;
+    }
+  }
+
+  .DateInput {
+    padding-bottom: 0;
+    vertical-align: bottom;
+  }
+
+  .DateInput_input {
+    font-weight: normal;
+    border-bottom: none;
+    padding-bottom: 0;
+
+    &:valid {
+      border-bottom: none;
+    }
+
+    &.DateInput_input__hasInput {
+      color: $premier-blue;
+    }
+
+    &.DateInput_input__focused,
+    &.DateInput_input__focused.DateInput_input__hasInput,
+    &:focus {
+      background-color: transparent;
+      color: #005FA7;
+      outline: 1px dotted $modern-gold;
+    }
+
+    &:hover {
+      color: #005FA7;
+    }
+  }
+
+  .CalendarDay_container {
+    border-color: transparent;
+
+    &.CalendarDay__blocked_out_of_range, &.CalendarDay__blocked_out_of_range:hover{
+      border-color: transparent !important;
+    }
+    &.CalendarDay__selected,
+    &.CalendarDay__selected.CalendarDay__hovered_span,
+    &.CalendarDay__selected_span:active,
+    &.CalendarDay__selected_span:hover {
+      background-color: $premier-blue !important;
+      border-color: transparent !important;
+    }
+
+    &.CalendarDay__selected_span {
+      background-color: #EEF2F9 !important;
+      border-color: transparent !important;
+      color: black;
+    }
+
+    &.CalendarDay__hovered_span {
+      background-color: #EEF2F9;
+      border-color: transparent;
+      color: black;
+      &:hover {
+        background-color: $premier-blue !important;
+        color: white;
+
+        + .CalendarDay__selected_span {
+          color: black;
+        }
+      }
+
+    }
+
+    &:hover {
+      background-color: $premier-blue;
+      border-color: transparent !important;
+      color: white;
+    }
+  }
+
+  .DayPicker__horizontal {
+    box-shadow: $box-shadow !important;
+    border: 1px solid $black-60;
+    border-radius: 5px;
+
+    @media screen and (min-width: $break-point-c) {
+      width: 668px !important;
+      padding: 0 25px;
+    }
+
+
+    /* https://css-tricks.com/snippets/css/media-queries-for-standard-devices */
+    /* Landscape iPhone 5, 5S, 5C, 5SE, 6, 6S, 7, and 8 */
+    @media only screen
+      and (min-width: 320px)
+      and (max-width: 667px)
+      and (orientation: landscape) {
+      width: 368px !important; // if displaying 1 month on iPhone
+      margin-left: -184px !important;
+      padding: 0 25px;
+    }
+
+    /* Landscape iPhone 6+, 7+, 8+, and X */    
+    @media only screen
+      and (min-width: 668px)
+      and (max-width: 812px)
+      and (orientation: landscape) {
+      width: 668px !important; // if displaying 2 months on iPhone
+      margin-left: -334px !important;
+      padding: 0 25px;
+    }
+
+  }
+
+  .DayPicker_weekHeader_li {
+    font-weight: bold;
+    color: black;
+  }
+
+  .DayPickerNavigation_button__horizontal {
+    top: 138px !important;
+  }
+
+  .DayPickerNavigation_leftButton__horizontal {
+    left: -13px !important;
+  }
+
+  .DayPickerNavigation_rightButton__horizontal {
+    right: -13px !important;
+  }
+
+  .CalendarMonth_caption {
+    text-align: left;
+    padding-left: 8px;
+  }
+
+  .DateRangePickerInput, .DateInput {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+
+.DayPickerNavigation_button__vertical {
+  &:first-child > span {
+    margin-left: 25px;
+  }
+  &:last-child > span {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+  }
+}
+
+///// DATE RANGE STYLES ONLY /////
+.DateRangePicker {
+  .DateRangePickerInput {
+    width: 100%;
+    line-height: 1;
+
+    @media screen and (min-width: $break-point-b){
+      width: 65%;
+    }
+
+    @media screen and (min-width: $break-point-c){
+      width: 100%;
+    }
+
+    &.DateRangePickerInput__withBorder {
+      border: none;
+    }
+  }
+
+  .DateInput {
+    width: auto;
+    max-width: 49%;
+    padding-top: 0;
+
+    &:first-child {
+      padding-right: 8px;
+
+      .DateInput_input {
+        padding-left: 0;
+        text-align: right;
+
+        &::-webkit-input-placeholder {
+          text-align: left;
+        }
+
+        &::-moz-placeholder {
+          text-align: left;
+        }
+
+        &:-ms-input-placeholder {
+          text-align: left;
+        }
+      }
+    }
+
+    &:last-child {
+      padding-right: 0;
+      padding-left: 8px;
+      .DateInput_input {
+        padding-left: 0;
+      }
+    }
+
+    .DateInput_input {
+      width: auto;
+      font-size: 21px;
+      padding-bottom: 4px;
+      line-height: 1;
+      height: 50px;
+
+      &::-webkit-input-placeholder {
+        font-size: 29px;
+      }
+
+      &::-moz-placeholder {
+        font-size: 29px;
+      }
+
+      &:-ms-input-placeholder {
+        font-size: 29px;
+      }
+
+      @media screen and (min-width: $break-point-b) {
+        font-size: 32px;
+
+        &::-webkit-input-placeholder {
+          font-size: $h3-font-size;
+        }
+
+        &::-moz-placeholder {
+          font-size: $h3-font-size;
+        }
+
+        &:-ms-input-placeholder {
+          font-size: $h3-font-size;
+        }
+
+        &:focus::-webkit-input-placeholder,
+        &:hover::-webkit-input-placeholder {
+          color: $black-80;
+        }
+
+        &:focus::-moz-placeholder,
+        &:hover::-moz-placeholder {
+          color: $black-80;
+        } /* FF 19+ */
+
+        &:focus:-ms-input-placeholder,
+        &:hover:-ms-input-placeholder {
+          color: $black-80;
+        } /* IE 10+ */
+      }
+
+      @media screen and (min-width: $break-point-c) {
+        font-size: 25px;
+        padding-bottom: 0;
+        line-height: 1;
+      }
+    }
+
+    &:before {
+      top: 61px !important;
+    }
+
+    &:after {
+      top: 63px !important;
+    }
+  }
+
+  .DateRangePickerInput_arrow {
+    position: relative;
+    width: 2%;
+    height: 5px;
+    content: "-";
+    &:after {
+      content: "-";
+      display: inline-block;
+      position: absolute;
+      top: -30px;
+      left: 0;
+      font-size: 24px;
+      line-height: 1;
+    }
+  }
+
+  .DateRangePickerInput_arrow_svg {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.SingleDatePicker {
+  margin-top: 4px;
+  padding-bottom: 1px;
+
+  .SingleDatePickerInput {
+    background-color: transparent;
+    border-color: transparent;
+    line-height: 1;
+    border-width: 0;
+  }
+  .DateInput {
+    width: 100%;
+    padding-left: 0;
+
+    .DateInput_input { // This is also placeholder text styling
+      padding-left: 0;
+      margin-top: -5px;
+      padding-bottom: 3px;
+    }
+  }
+}
+
+#infoPanel {
+  font-size: 12px;
+  color: #001D48;
+  height: 0;
+  display: block;
+  transition: height 0.4s;
+  overflow: hidden;
+  line-height: 1.5;
+  &.keyboardUser {
+    padding: 5px 30px 25px;
+    height: 102px;
+  }
+}
+
+.DateRangePicker_closeButton_svg {
+  fill: black !important;
+}
+
+.DateInput_fangStroke {
+  stroke: $black-60 !important;
+}
+
+// @NOTE copy of react-dates."SingleDatePicker_closeButton" class 
+.SingleDatePicker__close {
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  cursor: pointer;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  z-index: 1002;
+}
+.SingleDatePicker_closeButton_svg, .SingleDatePicker__close-icon {
+  height: 15px;
+  width: 15px;
+  fill: black;
+}

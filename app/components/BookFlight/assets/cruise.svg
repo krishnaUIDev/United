@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon Boat</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="01-Desktop-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="07-Booker---Expanded" transform="translate(-429.000000, -235.000000)">
+            <g id="BOOKER-BIG" transform="translate(112.000000, 128.000000)">
+                <g id="Subnavigation" transform="translate(48.000000, 105.000000)">
+                    <g id="Icon-Boat" transform="translate(269.000000, 2.000000)">
+                        <rect id="Rectangle-2" fill="#001D48" x="3.33333333" y="4" width="13.3333333" height="6.66666667" rx="2"></rect>
+                        <polygon id="Rectangle-38" fill="#001D48" points="0 10.6666667 10.1205433 6.66666667 20 10.6666667 16.6666667 20 3.33333333 20"></polygon>
+                        <rect id="Rectangle-40" fill="#001D48" x="6.66666667" y="0" width="6.66666667" height="2.66666667"></rect>
+                        <polygon id="Rectangle-22" fill="#FFFFFF" points="0 10.4882676 10 6.66666667 10 8.20356913 0 12"></polygon>
+                        <polygon id="Rectangle-22" fill="#FFFFFF" transform="translate(15.000000, 9.333333) scale(-1, 1) translate(-15.000000, -9.333333) " points="10 10.4882676 20 6.66666667 20 8.20356913 10 12"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

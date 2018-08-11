@@ -1,0 +1,294 @@
+@import "../../styles/tools";
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: white;
+  box-shadow: 0 0 0px 1000px #001D48 inset !important;
+}
+
+.srOnly {
+  @include visually-hidden;
+  text-transform: none;
+  font-size: 0.5px;
+  line-height: 0;
+}
+
+.inputFieldGroup {
+  display: block;
+  position: relative;
+  padding-top: 18px;
+  padding-bottom: $sliding-input-bottom-padding;
+  margin-bottom: $sliding-input-bottom-padding;
+
+  @media screen and (min-width: $break-point-c) {
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.noLabel {
+    padding-top: 0;
+  }
+
+  label.slidingInputLabel {
+    position: absolute;
+    display: block;
+    -webkit-transform: translate3d(0px, -68px, 0px);
+    transform: translate3d(0px, -68px, 0px);
+    transition: color 0.4s;
+    color: $premier-blue;
+
+    &:focus {
+      outline: 1px dotted $modern-gold;
+    }
+  }
+
+  .inputField {
+    position: relative;
+
+    &.passwordInput {
+      padding-right: 40px;
+    }
+
+    &[value=""] + label.slidingInputLabel {
+      @media screen and (min-width: $break-point-c) {
+        opacity: 0;
+        transition: opacity 0.8s, transform 0.4s;
+        -webkit-transform: translate3d(0px, -80px, 0px);
+        transform: translate3d(0px, -80px, 0px);
+      }
+    }
+
+    @media screen and (min-width: $break-point-c) {
+      &:focus,
+      &:hover {
+        + label.slidingInputLabel {
+          opacity: 1;
+          color: $premier-blue;
+          -webkit-transform: translate3d(0, -68px, 0);
+          transform: translate3d(0, -68px, 0);
+        }
+      }
+    }
+
+    &:focus,
+    &:hover {
+      outline-color: transparent;
+      color: $link-blue;
+      border-color: $link-blue;
+
+      + label.slidingInputLabel {
+        color: $link-blue;
+      }
+    }
+  }
+
+  > .inputError {
+    label {
+      color: $error-red;
+    }
+
+    .inputField {
+      color: $error-red;
+      border-color: $error-red;
+
+      &::-webkit-input-placeholder {
+        color: $error-red;
+      }
+
+      &::-moz-placeholder {
+        color: $error-red;
+      } /* FF 19+ */
+
+      &:-ms-input-placeholder {
+        color: $error-red;
+      } /* IE 10+ */
+    }
+  }
+}
+
+.customInputStyle {
+  @extend .inputFieldGroup;
+  margin-bottom: 0px;
+}
+
+.inputFieldErrorMsg {
+  position: absolute;
+  bottom: 0;
+  color: $error-color;
+  letter-spacing: 0;
+  font-size: 11px;
+  line-height: 1.5;
+  padding: 0;
+
+  @media screen and (min-width: $break-point-c) {
+    font-size: 10px;
+  }
+
+  @media screen and (min-width: $break-point-d) {
+    font-size: 11px;
+  }
+}
+
+.customErrorMsg {
+  @extend .inputFieldErrorMsg;
+  position: relative;
+}
+
+// INVERSEDARK
+
+.inputFieldGroup.inverseDark {
+  padding-top: 15px;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: $break-point-d) {
+    overflow: hidden;
+    padding-bottom: 32px;
+    margin-bottom: 5px;
+  }
+
+  &:last-child {
+    margin-top: 15px;
+  }
+
+  label.slidingInputLabel {
+    color: rgba(255,255,255,0.7);
+    text-transform: none;
+    transform: translate3d(0px, -50px, 0px);
+    -webkit-transform: translate3d(0px, -50px, 0px);
+
+    @media screen and (min-width: $break-point-d) {
+      transform: translate3d(0px, -70px, 0px);
+      -webkit-transform: translate3d(0px, -70px, 0px);
+    }
+  }
+
+  .inputField {
+    color: rgba(255,255,255,0.7);
+    border-bottom: 1px solid #C3C3C3;
+    padding-left: 10px;
+    outline-color: transparent;
+
+    &:focus, &:hover {
+      color: white;
+      border-color: white;
+      + label {
+        color: white;
+      }
+    }
+
+    &:valid {
+      color: rgba(255,255,255,0.7);
+      border-color: white;
+
+      + label.slidingInputLabel {
+        color: rgba(255,255,255,0.7);
+      }
+      &:focus,
+      &:hover {
+        color: white;
+        border-color: rgba(255,255,255,0.7);
+
+        + label.slidingInputLabel {
+          color: white;
+        }
+      }
+    }
+
+    @media screen and (min-width: $break-point-a) {
+      font-size: 21.4px;
+
+      &:focus,
+      &.blur {
+        &::-webkit-input-placeholder {
+          color: transparent;
+        }
+
+        &::-moz-placeholder {
+          color: transparent;
+        } /* FF 19+ */
+
+        &:-ms-input-placeholder {
+          color: transparent;
+        } /* IE 10+ */
+
+        + label.slidingInputLabel {
+          opacity: 1;
+          transform: translate3d(0, -56px, 0);
+          -webkit-transform: translate3d(0, -56px, 0);
+        }
+      }
+    }
+
+    &.mileagePlusInput {
+      text-transform: uppercase;
+      &::-webkit-input-placeholder {
+        text-transform: none;
+      }
+
+      &::-moz-placeholder {
+        text-transform: none;
+      } /* FF 19+ */
+
+      &:-ms-input-placeholder {
+        text-transform: none;
+      } /* IE 10+ */
+    }
+
+    &.passwordInput {
+      padding-right: 40px;
+    }
+  }
+
+  @media (min-width: $break-point-d) {
+    font-size: 24px;
+  }
+
+  .inputFieldErrorMsg {
+    bottom: 0;
+    font-size: 11px;
+    text-transform: none;
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    padding-left: 4px;
+
+    @media (min-width: $break-point-d) {
+      bottom: -10px;
+      margin: 16px 0;
+    }
+  }
+}
+
+.makeuppercase {
+  text-transform: uppercase;
+  &::-webkit-input-placeholder {
+    text-transform: none;
+  }
+
+  &::-moz-placeholder {
+    text-transform: none;
+  } /* FF 19+ */
+
+  &:-ms-input-placeholder {
+    text-transform: none;
+  } /* IE 10+ */
+}
+
+.makeWordsuppercase {
+  text-transform: capitalize;
+  &::-webkit-input-placeholder {
+    text-transform: none;
+  }
+
+  &::-moz-placeholder {
+    text-transform: none;
+  } /* FF 19+ */
+
+  &:-ms-input-placeholder {
+    text-transform: none;
+  } /* IE 10+ */
+}

@@ -1,0 +1,34 @@
+.ualbtn, .btn-primary, a.ualbtn:visited, a.btn-primary:visited, .btn {
+    max-width: 100%;
+    width: 272px;
+    height: 44px;
+    line-height: 24pxrem;
+    //padding: 0rem 1.5rem;
+    font-size: 16px;
+}
+
+.ualbtn, .ancbtn, .btn-primary, .btn {
+    display: inline-block;
+    text-align: center;
+    font-family: "open-sans", "Helvetica Neue", Helvetica, Calibri, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
+    background-color: #EDB72B;
+    border: none;
+    text-decoration: none;
+    color: #000;
+    box-sizing: border-box;
+    box-shadow: 0rem 0.0625rem 0.125rem #666;
+}
+.ualbtn.ualbtn-tertiary{
+    color: #fff;
+    background-color: #2172ba;
+
+}
+
+button {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+body{
+    font-weight: 400;
+}

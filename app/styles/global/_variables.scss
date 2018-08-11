@@ -1,0 +1,150 @@
+// Colors
+$united-blue: #003964;
+$cool-grey: #d4d4d0;
+$platinum-grey: #7c848a;
+$sky-blue: #62a9e3;
+$premier-blue: #002244;
+$modern-gold: #edb72b;
+$link-blue: #2172ba;
+$container-gray: #f2f2f2;
+$error-red: #cd202c;
+
+$black: #000000;
+$black-80: #333333;
+$black-60: #666666;
+$black-40: #999999;
+$black-20: #cccccc;
+$black-10: #e6e6e6;
+
+$white: #FFFFFF;
+$off-white: #F7F7F7;
+
+$body-bg: $united-blue;
+
+// Buttons
+$button-border-radius: 2px;
+$button-font-size: 16px;
+$button-desktop-height: 56px;
+$button-mobile-height: 52px;
+$button-line-height: 22px;
+$button-desktop-width: 160px;
+$button-box-shadow: -1px 1px 1px 0 $black-60;
+$button-disabled-bg-color: $black-10;
+$button-disabled-text-color: $black-40;
+
+$primary-button-bg-color: $link-blue;
+$primary-button-text-color: $white;
+$primary-button-border: 1px solid $link-blue;
+$primary-button-hover-border: 1px solid #003057;
+
+$secondary-button-bg-color: $modern-gold;
+$secondary-button-text-color: $black;
+$secondary-button-border: 1px solid $modern-gold;
+$secondary-button-hover-border: 1px solid $united-blue;
+
+$primary-link-default-primary-color: #2172BA;
+$primary-link-default-secondary-color: #084893;
+
+$error-color: $error-red;
+
+$input-field-border-opacity: 0.5;
+$input-field-border-color: rgba(195,195,195, $input-field-border-opacity);
+$input-field-text-color: $link-blue;
+$input-field-entered-text-color: #001A40;
+
+$rounded-button-primary-color: #D3D3D3;
+$rounded-button-primary-hover-color: $black-60;
+
+$low-level-alert-text-color: $black-60;
+
+$dropdown-content-hover-background-color: #EEF2F9;
+$dropdown-text-color: $premier-blue;
+
+$divider-line-color-mobile: rgba(255, 255, 255, 0.5);
+$divider-line-color-desktop: rgba(255, 255, 255, 0.25);
+$box-shadow: -1px 1px 1px 0px $black-80;
+
+// Text Styling
+$font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+$letter-spacing-base: 0;
+$font-size-retina-base: $font-size-base;
+
+$body-font-family: $font-family;
+$body-text: $font-size-base;
+
+$body-large-text: 18px;
+$body-large-leading: 32px;
+
+$body-sm-text: 12px;
+$body-sm-leading: 16px;
+
+$body-xs-text: 10px;
+$body-xs-leading: 14px;
+
+$link-font-size: 14px;
+$link-leading: 24px;
+
+$border-color: $black-10;
+$default-border: 1px solid $border-color;
+
+$border-radius: 4px;
+
+$h1-font-size: 48px;
+$h2-font-size: 40px;
+$h3-font-size: 32px;
+$h4-font-size: 32px;
+$h5-font-size: 24px;
+$h6-font-size: 14px;
+
+$mobile-h5-font-size: 20px;
+
+$dropdown-content-line-height: 40px;
+$primary-button-text-padding: 48px;
+
+// Media Query Break Points (px & em)
+$site-max-width: 1136px;
+
+$break-point-a: 320px;
+$break-point-b: 768px;
+$break-point-c: 944px;
+$break-point-d: 1186px; // max width + 25px padding
+
+// React-select overrides
+$select-input-border-color: transparent;
+$select-input-border-focus: $border-color;
+$select-text-color: $premier-blue;
+$select-padding-vertical: 15px;
+$select-padding-horizontal: 25px;
+$select-option-selected-bg: white;
+
+// Padding
+$sliding-input-bottom-padding: 20px;
+
+// Carousel variables (container/CarouselContainer/carousel.scss)
+$dot-base-size: 10px;
+$dot-padding: 0.9em;
+$dot-active-padding: 0.7em;
+$button-size: 2.4em;
+
+$dot-color: #FFF;
+
+$dot-padding-large: 2.1em;
+$dot-active-padding-large: 1.9em;
+$button-size-large: 4.8em;
+
+
+// Activity merge Variables
+
+$break-point-a-px: 320px;
+$break-point-b-px: 400px;
+$break-point-d-px: 608px;
+$break-point-c-px: 76px;
+$break-point-i-px: 856px;
+$break-point-g-px: 1025px;
+$break-point-e-px: 767px;
+
+
+$section-outer-marging-a: 24px;
+$section-outer-marging-g: 115px;

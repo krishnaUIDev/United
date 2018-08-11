@@ -1,0 +1,183 @@
+@import "../../styles/tools";
+
+.bookFlightContent {
+  position: relative;
+  overflow: visible;
+}
+
+.tabListWrapper {
+  position: relative;
+  overflow-y: hidden;
+  height: 30px;
+
+  @media screen and (min-width: $break-point-b) {
+    height: 35px;
+    overflow: inherit;
+  }
+
+  @media screen and (min-width: $break-point-d) {
+    height: 70px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.bookFlightMenu {
+  @include unstyled-list;
+  line-height: 1;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 50px;
+  -webkit-overflow-scrolling: touch;
+
+  @media screen and (min-width: $break-point-c) {
+    padding-bottom: 0;
+    overflow-x: inherit;
+  }
+
+  &::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    display: none !important;
+  }
+
+  > li, a {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    margin: 0 30px 0 0;
+    padding-bottom: 10px;
+    line-height: 1;
+    border-bottom: 1px solid transparent;
+    color: $black-60;
+    transition: color 0.4s, opacity 0.4s;
+    text-decoration: none;
+
+    @media screen and (min-width: $break-point-b) {
+      padding: 0 3% 15px;
+      text-align: center;
+      margin-right: 0;
+    }
+
+    @media screen and (min-width: $break-point-c) {
+      padding: 0 16px 15px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: $premier-blue;
+
+      .icon {
+        opacity: 1;
+      }
+    }
+
+    button {
+      padding: 0;
+    }
+
+    h3 {
+      display: block;
+      padding: 0;
+      margin: 0;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+
+  > li {
+    &[aria-selected="true"],
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+      border-bottom: 2px solid $link-blue;
+
+      h3 {
+        color: $premier-blue;
+      }
+
+      .icon {
+        opacity: 1;
+      }
+    }
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  > a {
+    &:hover {
+      .icon {
+        opacity: 1;
+      }
+    }
+  }
+
+  @media screen and (min-width: $break-point-c) {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+
+.icon {
+  display: none;
+  visibility: hidden;
+
+  @media screen and (min-width: $break-point-d) {
+    position: relative;
+    display: block;
+    visibility: visible;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    opacity: 0.3;
+    transition: opacity 0.4s;
+
+    > img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 35px;
+      height: auto;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.hotelButton img {
+  width: 30px;
+}
+
+.carButton img {
+  width: 35px;
+}
+
+.cruiseButton img {
+  width: 20px;
+}
+
+.vacationButton img {
+  width: 24px;
+}

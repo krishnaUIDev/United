@@ -1,0 +1,899 @@
+@import "../../styles/tools";
+.selContainer {
+  width:33%;
+  display: inline-block;
+  .Select-placeholder{
+    color: #002244 !important;
+  }
+}
+:global {
+  .Select-placeholder{
+    color: #002244;
+  }
+}
+.activitiesView{
+  margin-top: 4em;
+}
+.expand-rows{
+  cursor: pointer;
+}
+
+.helpOption {
+  margin-top: 3px;
+  margin-bottom: 30px;
+  padding-bottom: 8px;
+
+  @media screen and (min-width: $break-point-c) {
+    margin-top: 0px;
+  }
+
+  label {
+    margin-bottom: 3px;
+    margin-top: 5px;
+    transition: color 0.4s;
+
+    @media screen and (min-width: $break-point-c) {
+      padding-bottom: 1px;
+    }
+  }
+
+  &:hover {
+    label {
+      color: $link-blue;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 96%;
+    height: 2px;
+    border-bottom: $default-border;
+    transition: border-color 0.4s;
+  }
+
+  &:hover:after {
+    border-bottom: 2px solid $link-blue;
+  }
+}
+
+body{
+  min-width: 320px;
+  font-weight: 400;
+  position:inherit;  
+}
+* {
+  margin: 0;
+  padding: 0;
+  //width:14em;
+}
+
+/*  .activity-button::after {
+  right: 0 !important;
+}   */
+.dropDownContainer {
+  width: 27%;
+  position: relative;
+  padding-top: 16px;
+  display: inline-block;
+}
+.activity-header{
+  font-size: 20px;
+  padding:0.5em 0;
+  font-weight: 600;
+}
+  .color{
+    color:#2172BA;
+  }
+
+.pad-left{
+  padding-left:1em;
+}
+.optionhide{
+  display:none;
+}
+.linkfont{
+  font-size:18px;
+}
+.activity-button{
+  position: relative;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  background-color: inherit;
+  line-height: inherit;
+  color: inherit;
+  overflow: hidden;
+  background: none;
+  border: none;
+  text-align: inherit;
+  width: auto;
+  float: right;
+  padding: 0px;
+}
+.activity-button::after {
+  background-position: -2.45rem -9.175rem;
+  display: inline-block;
+  line-height: 0.875rem;
+  vertical-align: text-top;
+  background-image: url('styles/assets/ualmain.png');
+  background-repeat: no-repeat;
+  background-color: transparent;
+  margin-top: 0.0625rem;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  position: static;
+  top:2.3rem;
+  right: -3em;
+  width: 2.05rem;
+  height: 1.75rem;
+}
+
+#sanserif-font{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+.activity-button-expanded{
+  position: relative;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  background-color: inherit;
+  line-height: inherit;
+  color: inherit;
+  overflow: hidden;
+  background: none;
+  border: none;
+  text-align: inherit;
+  width: auto;
+  float: right;
+  padding: 0px;
+}
+ .activity-button-expanded::after {
+  background-position: -2.40rem -10.725rem;
+  display: inline-block;
+  line-height: 0.875rem;
+  vertical-align: text-top;
+  background-image: url('styles/assets/ualmain.png');
+  background-repeat: no-repeat;
+  background-color: transparent;
+  margin-top: 0.0625rem;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  position: absolute;
+  top:2.3rem;
+  right: -3em;
+  width: 2.05rem;
+  height: 1.75rem;
+  position: static;
+}
+.myaccount-list{
+  padding: 1em 0;
+  font-size: 18px;
+  display: inline-block;
+  li{
+    margin:0 20px;
+    padding:0;
+    font-size: 1px;
+    z-index:1;
+    cursor: pointer;
+  }
+  li:first-child {
+    margin-left:20px;
+    margin-right: 0;
+    }
+}
+
+//Desktop view
+@media (min-width: $break-point-g-px + 1) {
+  .helpOption{
+    position: relative;
+    margin-top: 3px;
+    margin-bottom: 30px;
+  }
+  .helpOption {
+    position: relative;
+  }
+  .daterange{
+    width:16em;
+  }
+  .statementDropdown{
+    width:16em;
+    margin-left: -3em;
+  }
+  .quicklinksDropdown{
+    width:21em;
+    margin-left: 3.4em;
+  }
+  .wrapper{
+    display: grid;
+    float:right;
+  }
+  .myaccount-list{
+    padding: 1em 0;
+    font-size: 18px;
+    display: inline-block;
+    ul
+    { 
+    overflow-x:hidden;
+    white-space:nowrap; 
+    height: 1em;
+    width: 100%;
+    } 
+  
+    li
+  { 
+  display:inline; 
+  }     
+    li{
+      margin:0 20px;
+      padding:0;
+    }
+    li:first-child {
+      margin-left:-15px;
+      margin-right: 0;
+      }
+  }
+ 
+ :global {
+    .Select-value-label {
+      font-size: 16px;
+      transition: color 0.4s;
+  
+      &:hover {
+        color: $link-blue !important;
+      }
+    }
+  
+    .Select-multi-value-wrapper {
+      display: inline-block;
+      width: 85%;
+    }
+    .Select-menu-outer {
+      @media screen and (min-width: $break-point-c) {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+      }
+    }
+    .Select-arrow-zone {
+      width: 10%;
+      padding-left: 15px;
+    }
+  
+    .Select-control {
+      border: none;
+    }
+  
+    .Select.is-focused > .Select-control {
+      background-color: transparent;
+    }
+  
+    .Select--single > .Select-control .Select-value {
+      padding-left: 0;
+    }
+  } 
+   
+
+  .alignment{
+    width:28em;
+  }
+  .activityMiles:nth-child(6){
+  width:138px;
+  }
+  .activity-description{
+    width: 100%;
+    margin-left: 15%;
+    font-size: 18px;
+  }
+  .activities-columns {
+    display: grid;
+    grid-template-columns: 54% 9% 9% 10% 11% 13%;
+    font-size:16px;
+    font-weight: 600;
+    span{
+      font-weight: bolder;
+      font-size:16px;
+      font-family: sans-serif;
+    }
+  }
+  .float-right{
+    float: right;
+  }
+  .activityContainer {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 15% 43% 10% 9% 10% 13%;
+    padding: 1em 0;
+    font-size: 18px;
+    font-weight: 400;
+    border-top: 1px solid #666666;
+  }
+
+}
+
+.main-container{
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.info-group
+{
+    display: inline-block;
+    vertical-align: middle;
+   margin-left: 60%;
+}
+
+.info-tooltip {
+    border: none;
+    position: relative;
+    overflow: visible;
+}
+
+button.info-tooltip:hover{
+    background-position: -18.7rem -5.0rem;
+}
+
+[class^="info-tooltip"]{
+    display: inline-block;
+    line-height: 0.875rem;
+    vertical-align: text-top;
+    background-image: url(styles/assets/ualmain.png);
+    background-position: -21.3rem -5.0rem;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin-top: -1.5em;
+    width: 24px;
+    height: 24px;
+}
+.text{
+  font-weight: bold;
+}
+
+
+button:-moz-focusring {
+  outline: 2px dotted #2172BA;
+}
+
+:-moz-focusring {
+  outline: 2px dotted #2172BA;
+}
+
+a:hover,a:active, a:focus{
+  outline: 1px dotted #2172BA ;
+}
+
+.myaccount-header-section{
+  margin: 24px $section-outer-marging-a 0px;
+}
+.myaccount-main-section{
+  margin: 24px $section-outer-marging-a 40;
+}
+.visuallyHidden{
+  border: 0;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+option:focus{
+  background-color:gray;
+}
+
+.float-right{
+  float:right;
+
+}
+.help-option{
+  float:right;
+}
+.showDiv{
+  display: block;
+}
+
+.hideDiv{
+  display: none;
+}
+.activity-description{
+  width: 100%;
+  margin-left: 15%;
+  font-size: 18px;
+}
+
+@media (min-width: 1075px) {
+  .help-option{
+    float:right;
+  }
+  .myaccount-header-section{
+    margin: 20px $section-outer-marging-g;
+  }
+  .myaccount-main-section{
+    margin: 40px $section-outer-marging-g 48px;
+  }
+  .global-header-section{
+    //margin: 20px $section-outer-marging-g;
+  }
+  .main-container{
+    margin: 0 auto;
+  }
+  .myaccount-main-section{
+    margin: 40px $section-outer-marging-g 48px;
+  }
+}
+@media  (max-width: 768px){
+  .accordion-margin {
+    margin: 16px 0 0 10px;
+  }
+  .help-option{
+    float:none;
+  }
+
+ /* .floating-label-section select{
+    width:228px !important;
+  }*/
+
+}
+
+//Tablet view
+
+//@media  (min-width: $break-point-c-px) and (max-width: $break-point-g-px ) {
+  @media  (min-width: 768px) and (max-width: 1024px ) {
+    .helpOption {
+      position: relative;
+      margin-top: 3px;
+      margin-bottom: 30px;
+    }
+    .daterange{
+      width:14em;
+      margin-left: -0.1em;
+    }
+    .statementDropdown{
+      width:15em;
+      margin-left: 0em;
+    }
+    .quicklinksDropdown{
+      width:14em;
+      margin-left: 0.5em;
+    }
+    .wrapper{
+      display: grid;
+      float:right;
+    }
+    .myaccount-list{
+      padding: 1em 0;
+      font-size: 18px;
+      display: inline-block;
+      ul
+      { 
+      overflow-x:hidden;
+      white-space:nowrap; 
+      height: 1em;
+      width: 100%;
+      } 
+    
+      li
+    { 
+    display:inline; 
+    }     
+      li{
+        margin:0 20px;
+        padding:0;
+      }
+      li:first-child {
+        margin-left:20px;
+        margin-right: 0;
+        }
+    }
+    :global {
+      .Select-value-label {
+        font-size: 16px;
+        transition: color 0.4s;
+    
+        &:hover {
+          color: $link-blue !important;
+        }
+      }
+      .Select-placeholder{
+        padding-left:0px;
+      }
+      .Select-multi-value-wrapper {
+        display: inline-block;
+        width: 85%;
+      }
+      .Select-menu-outer {
+        @media screen and (min-width: $break-point-c) {
+          position: absolute;
+          top: 50px;
+          right: 0;
+          width: 100%;
+        }
+      }
+      .Select-arrow-zone {
+        width: 10%;
+        padding-left: 15px;
+      }
+    
+      .Select-control {
+        border: none;
+      }
+    
+      .Select.is-focused > .Select-control {
+        background-color: transparent;
+      }
+    
+      .Select--single > .Select-control .Select-value {
+        padding-left: 0;
+      }
+    }
+  .floating-label-section select{
+    width:228px !important;
+  }
+  .accordion-margin {
+    margin: 16px -3% 2px 4%;
+  }
+  .dropdownfont{
+    font-size: 13.1px;
+    position: absolute;
+  }
+  .activity-description{
+    width: 100%;
+    margin-left: 22%;
+    font-size: 18px;
+  }
+  .activities-columns {
+    display: grid;
+    display: inline-block;
+    grid-template-columns: auto auto auto auto auto;
+    font-size:16px;
+    font-weight: 600;
+    padding-bottom:20px;
+    span:not(.activityMiles) {
+      display: none;
+      font-family: sans-serif;
+    }
+  }
+  .help-option{
+    float:none;
+  }
+  .activityContainer {
+    display: grid;
+    list-style: none;
+    //grid-template-columns: 120px 412px 0px 0px 0px 125px;
+    grid-template-columns: 22% 57% 10% 10% 9% 13%;
+    border-top: 1px solid #666666;
+    padding: 1em 0;
+    font-size: 18px;
+    font-weight: 400;
+    span:not(.activityMiles) {
+      display: none;
+    }
+    .activityMiles:nth-child(6) {
+        width:132px !important;
+    }
+  }
+  .awardMiles{
+    padding-left:33em;
+    padding-right:60px;
+    display:block;
+  }
+  .dropDownContainer {
+    width: 26%;
+    position: relative;
+    padding-top: 16px;
+    margin-right: 5%;
+    display: inline-block;
+  }
+}
+
+/* @media (min-width: width 320px) and (max-width:767px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+ *///Mobile view
+//@media  (min-width: $break-point-a-px) and (max-width: $break-point-c-px ) {
+  @media  (min-width: 320px) and (max-width: 767px ) {
+    .selContainer {
+      padding-bottom:80px;
+      padding:40px 0;
+      width:100%;
+      display: inline-block;
+      padding-top: 87px;
+      padding-left: 12px;
+      width: 339px;
+    }
+    .helpOption {
+      position: absolute;
+      margin-top: 3px;
+      margin-bottom: 30px;
+      padding-left: 10px;
+      width: 337px;
+    }
+    :global {
+      .Select-value-label {
+        font-size: 16px;
+        transition: color 0.4s;
+    
+        &:hover {
+          color: $link-blue !important;
+        }
+      }
+      .Select-placeholder{
+        padding-left:2px;
+      }
+      .Select-multi-value-wrapper {
+        display: inline-block;
+        width: 85%;
+      }
+      .Select-menu-outer {
+        @media screen and (min-width: $break-point-c) {
+          position: absolute;
+          top: 50px;
+          right: 0;
+          width: 100%;
+        }
+      }
+      .Select-arrow-zone {
+        width: 10%;
+        padding-left: 15px;
+      }
+    
+      .Select-control {
+        border: none;
+      }
+    
+      .Select.is-focused > .Select-control {
+        background-color: transparent;
+      }
+    
+      .Select--single > .Select-control .Select-value {
+        padding-left: 0;
+      }
+    }
+   .wrapper{
+    display: grid;
+  }
+  .alignment{
+    width:17em;
+  }
+  .wrapper{
+    display: grid;
+    padding-left:38%;
+    margin-top: 21px;
+    margin-bottom: -35px;
+    padding-bottom: 38px;
+  }
+  .myaccount-list{
+    padding: 1em 0;
+    font-size: 18px;
+    display: inline-block;
+    ul
+    { 
+    overflow-x:hidden;
+    white-space:nowrap; 
+    height: 1em;
+    width: 100%;
+    } 
+    .box3{
+      display:none;
+    }
+    .box4{
+      display:none;
+    }
+  }
+  .box5{
+    display:inline-block;
+  }
+  .float-right{
+    float:none;
+  }
+
+
+  .dropDownContainer {
+    width:100%;
+    position: relative;
+    padding-top: 16px;
+    display: block;
+  }
+  .activity-description{
+    width: 100%;
+    margin-left: 4%;
+    font-size: 18px;
+  }
+  .floating-label-section select{
+    width:273px !important;
+  }
+  .boxes {
+    display: grid;
+    display: -ms-inline-grid;
+  }
+  .box1 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .box2 {
+    grid-column: 1;
+    grid-row: 1;
+    width:230px;
+  }
+  .h2{
+    margin-top: 0px;
+  }
+  .awardMiles{
+    display:none;
+  }
+  .myaccount-list li{float:none;}
+  .myaccount-list{text-align:center}
+
+  .floating-label-section.accordion-margin.float-right{ float:none;}
+  .myaccount-list h3{
+    width:14em;
+  }
+  h3{
+    margin-top: 24px;
+    font-size: 22px;
+  }
+
+  .myaccountpromotion{
+      display: none;
+  }
+  .accordion-margin{
+    margin:0px 60px 12px 0px;
+  }
+  
+  .activities-columns {
+    display: grid;
+    display: inline-block;
+    grid-template-columns: auto auto auto auto auto;
+    font-size:16px;
+    font-weight: 600;
+    span:not(.activityMiles) {
+      display: none;
+      font-family: sans-serif;
+    }
+  }
+  .activityContainer {
+    display: grid;
+    list-style: none;
+    //grid-template-columns: 120px 412px 0px 0px -1px 125px;
+    grid-template-columns: -1% 40% 10% 10% 9% 13%;
+    border-top: 1px solid #666666;
+    padding: 1em 0;
+    font-size: 18px;
+    font-weight: 400;
+    span:not(.activityMiles) {
+      display: none;
+    }
+    .activityMiles:nth-child(6) {
+        width:300px !important;
+    }
+  }
+}
+
+// IE
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .activityContainer span {
+    display: -ms-grid;
+  }
+  .activityContainer span.box1{
+    width:12%;
+  }
+  .activityContainer span.box2{
+    width:43%
+  }
+  .activity-miles-pqm {
+    display:inline-flex;
+    width: 9%;
+
+  }
+  .activity-miles-pqs {
+    display:inline-flex;
+    width: 9%;
+
+  }
+  .activity-miles-pqd {
+    display:inline-flex;
+    width: 9%;
+
+  }
+  activity-miles{
+    width:13%;
+  }
+  .wrapper{
+    display: grid;
+    padding-left:0%;
+    margin-top: -10px;
+  }
+
+  .activities-columns{
+    span{
+      display:inline-block;
+      &.title{
+        width: 54%;
+      }
+      &.pqm{
+        width:9%;
+      }
+      &.pqs{
+        width:9%;
+      }
+      &.pqd{
+        width:10%;
+      }
+      &.awardMile{
+        width:11%;
+      }
+    }
+
+  }
+
+
+}
+
+// target for IE Edge
+@supports (-ms-accelerator:true) {
+  .activityContainer span {
+    display: -ms-grid;
+  }
+  .activityContainer span.box1{
+    width:12%;
+  }
+  .activityContainer span.box2{
+    width:43%
+  }
+  .activity-miles-pqm {
+    width: 9%;
+  }
+  .activity-miles-pqs {
+    width: 9%;
+  }
+  .activity-miles-pqd {
+    width: 9%;
+  }
+  activity-miles{
+    width:13%;
+  }
+  .wrapper{
+    display: grid;
+    padding-left:0%;
+    margin-top: -11px;
+  }
+  #column{width:33%;}
+
+  .activities-columns{
+    display: -ms-grid;
+    span{
+      display:inline-block;
+      &.title{
+        width: 54%;
+      }
+      &.pqm{
+        width:9%;
+      }
+      &.pqs{
+        width:9%;
+      }
+      &.pqd{
+        width:10%;
+      }
+      &.awardMile{
+        width:11%;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,628 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<BookPassengers /> render BookPassengers Component 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div
+    className={undefined}
+    id="dropdownContainer"
+    onBlur={[Function]}
+    tabIndex="0"
+>
+    <div>
+        <span
+            aria-label="Select number and types of travelers panel opened, use the up or down arrow to increase or decrease number of travelers, or enter the number of travelers in each passenger type."
+            className={undefined}
+            id={undefined}
+            tabIndex={0}
+        >
+            Select number and types of travelers panel opened, use the up or down arrow to increase or decrease number of travelers, or enter the number of travelers in each passenger type.
+        </span>
+        <div
+            className={undefined}
+            id="passengersSectionA"
+        >
+            <BookPassengersMenu
+                arrayIndexs={undefined}
+                containsInfants={undefined}
+                decrementTabIndex={-1}
+                disableIndividualSections={undefined}
+                fullArray={
+                    Array [
+                        "Seniors (65+)",
+                        "Infants (under 2)",
+                        "Infants on lap",
+                        "Children (15-17)",
+                        "Children (12-14)",
+                        "Children (5-11)",
+                        "Children (2-4)",
+                      ]
+                }
+                id="passengersA"
+                ids={
+                    Array [
+                        "Seniors (65+)",
+                        "Infants (under 2)",
+                        "Infants on lap",
+                      ]
+                }
+                individualMaxLimit=""
+                infantTitleA={undefined}
+                infantTitleB={undefined}
+                maxLimit={undefined}
+                minValueIsOne={undefined}
+                modelDefaultToOne={undefined}
+                modelName=".passengers"
+                numberOfTravelersTotal={undefined}
+                onChangeModel={[Function]}
+                onChangePassenger={[Function]}
+                onDisableTravelerButtons={[Function]}
+                onFocusModel={undefined}
+                onQuantityInputFocus={[Function]}
+                parentModel={undefined}
+                passengerModelObject={undefined}
+                passengersToBook={undefined}
+                sectionDetail={undefined}
+                sectionTitle={undefined}
+                showTravelerMenu={undefined}
+                toDisableBtns={undefined}
+            />
+        </div>
+        
+        
+        <button
+            aria-label="Clear all selections"
+            className={undefined}
+            id="clearPassengers"
+            onClick={[Function]}
+            role="button"
+            tabIndex="0"
+        >
+            Clear
+        </button>
+        <div
+            className={undefined}
+        >
+            <button
+                aria-label="Apply"
+                className={undefined}
+                id="applyPassengersBtn"
+                onClick={[Function]}
+                role="button"
+            >
+                Apply
+            </button>
+        </div>
+    </div>
+    <button
+        aria-label="Close panel"
+        className={undefined}
+        id="passengersCloseBtn"
+        onClick={[Function]}
+        role="button"
+        tabIndex="0"
+        title="Close panel"
+    >
+        <img
+            alt=""
+            aria-hidden="true"
+            role="presentation"
+            src="IMAGE_MOCK"
+        />
+    </button>
+</div>,
+  "nodes": Array [
+    <div
+      className={undefined}
+      id="dropdownContainer"
+      onBlur={[Function]}
+      tabIndex="0"
+>
+      <div>
+            <span
+                  aria-label="Select number and types of travelers panel opened, use the up or down arrow to increase or decrease number of travelers, or enter the number of travelers in each passenger type."
+                  className={undefined}
+                  id={undefined}
+                  tabIndex={0}
+            >
+                  Select number and types of travelers panel opened, use the up or down arrow to increase or decrease number of travelers, or enter the number of travelers in each passenger type.
+            </span>
+            <div
+                  className={undefined}
+                  id="passengersSectionA"
+            >
+                  <BookPassengersMenu
+                        arrayIndexs={undefined}
+                        containsInfants={undefined}
+                        decrementTabIndex={-1}
+                        disableIndividualSections={undefined}
+                        fullArray={
+                              Array [
+                                    "Seniors (65+)",
+                                    "Infants (under 2)",
+                                    "Infants on lap",
+                                    "Children (15-17)",
+                                    "Children (12-14)",
+                                    "Children (5-11)",
+                                    "Children (2-4)",
+                                  ]
+                        }
+                        id="passengersA"
+                        ids={
+                              Array [
+                                    "Seniors (65+)",
+                                    "Infants (under 2)",
+                                    "Infants on lap",
+                                  ]
+                        }
+                        individualMaxLimit=""
+                        infantTitleA={undefined}
+                        infantTitleB={undefined}
+                        maxLimit={undefined}
+                        minValueIsOne={undefined}
+                        modelDefaultToOne={undefined}
+                        modelName=".passengers"
+                        numberOfTravelersTotal={undefined}
+                        onChangeModel={[Function]}
+                        onChangePassenger={[Function]}
+                        onDisableTravelerButtons={[Function]}
+                        onFocusModel={undefined}
+                        onQuantityInputFocus={[Function]}
+                        parentModel={undefined}
+                        passengerModelObject={undefined}
+                        passengersToBook={undefined}
+                        sectionDetail={undefined}
+                        sectionTitle={undefined}
+                        showTravelerMenu={undefined}
+                        toDisableBtns={undefined}
+                  />
+            </div>
+            
+            
+            <button
+                  aria-label="Clear all selections"
+                  className={undefined}
+                  id="clearPassengers"
+                  onClick={[Function]}
+                  role="button"
+                  tabIndex="0"
+            >
+                  Clear
+            </button>
+            <div
+                  className={undefined}
+            >
+                  <button
+                        aria-label="Apply"
+                        className={undefined}
+                        id="applyPassengersBtn"
+                        onClick={[Function]}
+                        role="button"
+                  >
+                        Apply
+                  </button>
+            </div>
+      </div>
+      <button
+            aria-label="Close panel"
+            className={undefined}
+            id="passengersCloseBtn"
+            onClick={[Function]}
+            role="button"
+            tabIndex="0"
+            title="Close panel"
+      >
+            <img
+                  alt=""
+                  aria-hidden="true"
+                  role="presentation"
+                  src="IMAGE_MOCK"
+            />
+      </button>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <BookPassengers
+        acceptableFocus={
+                Array [
+                        "Adults",
+                        "Seniors",
+                        "Infants",
+                        "Children",
+                        "clearPassengers",
+                        "passengersCloseBtn",
+                        "passengersCloseBtn",
+                        "dropdownContainer",
+                        "applyPassengersBtn",
+                        "bookPassengersLegend",
+                      ]
+        }
+        arrayA={
+                Array [
+                        "Seniors (65+)",
+                        "Infants (under 2)",
+                        "Infants on lap",
+                      ]
+        }
+        arrayB={
+                Array [
+                        "Children (15-17)",
+                        "Children (12-14)",
+                        "Children (5-11)",
+                        "Children (2-4)",
+                      ]
+        }
+        fullArray={
+                Array [
+                        "Seniors (65+)",
+                        "Infants (under 2)",
+                        "Infants on lap",
+                        "Children (15-17)",
+                        "Children (12-14)",
+                        "Children (5-11)",
+                        "Children (2-4)",
+                      ]
+        }
+        onChangeModel={[Function]}
+        onChangePassenger={[Function]}
+        onClick={[Function]}
+        onDisableTravelerButtons={[Function]}
+        onPassengerInputClick={[Function]}
+        onSetActiveField={[Function]}
+/>,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": BookPassengers {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "acceptableFocus": Array [
+            "Adults",
+            "Seniors",
+            "Infants",
+            "Children",
+            "clearPassengers",
+            "passengersCloseBtn",
+            "passengersCloseBtn",
+            "dropdownContainer",
+            "applyPassengersBtn",
+            "bookPassengersLegend",
+          ],
+          "arrayA": Array [
+            "Seniors (65+)",
+            "Infants (under 2)",
+            "Infants on lap",
+          ],
+          "arrayB": Array [
+            "Children (15-17)",
+            "Children (12-14)",
+            "Children (5-11)",
+            "Children (2-4)",
+          ],
+          "fullArray": Array [
+            "Seniors (65+)",
+            "Infants (under 2)",
+            "Infants on lap",
+            "Children (15-17)",
+            "Children (12-14)",
+            "Children (5-11)",
+            "Children (2-4)",
+          ],
+          "onChangeModel": [Function],
+          "onChangePassenger": [Function],
+          "onClick": [Function],
+          "onDisableTravelerButtons": [Function],
+          "onPassengerInputClick": [Function],
+          "onSetActiveField": [Function],
+        },
+        "refs": Object {},
+        "state": Object {
+          "decrementTabIndex": -1,
+        },
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div
+          className={undefined}
+          id="dropdownContainer"
+          onBlur={[Function]}
+          tabIndex="0"
+>
+          <div>
+                    <span
+                              aria-label="Select number and types of travelers panel opened, use the up or down arrow to increase or decrease number of travelers, or enter the number of travelers in each passenger type."
+                              className={undefined}
+                              id={undefined}
+                              tabIndex={0}
+                    >
+                              Select number and types of travelers panel opened, use the up or down arrow to increase or decrease number of travelers, or enter the number of travelers in each passenger type.
+                    </span>
+                    <div
+                              className={undefined}
+                              id="passengersSectionA"
+                    >
+                              <BookPassengersMenu
+                                        arrayIndexs={undefined}
+                                        containsInfants={undefined}
+                                        decrementTabIndex={-1}
+                                        disableIndividualSections={undefined}
+                                        fullArray={
+                                                  Array [
+                                                            "Seniors (65+)",
+                                                            "Infants (under 2)",
+                                                            "Infants on lap",
+                                                            "Children (15-17)",
+                                                            "Children (12-14)",
+                                                            "Children (5-11)",
+                                                            "Children (2-4)",
+                                                          ]
+                                        }
+                                        id="passengersA"
+                                        ids={
+                                                  Array [
+                                                            "Seniors (65+)",
+                                                            "Infants (under 2)",
+                                                            "Infants on lap",
+                                                          ]
+                                        }
+                                        individualMaxLimit=""
+                                        infantTitleA={undefined}
+                                        infantTitleB={undefined}
+                                        maxLimit={undefined}
+                                        minValueIsOne={undefined}
+                                        modelDefaultToOne={undefined}
+                                        modelName=".passengers"
+                                        numberOfTravelersTotal={undefined}
+                                        onChangeModel={[Function]}
+                                        onChangePassenger={[Function]}
+                                        onDisableTravelerButtons={[Function]}
+                                        onFocusModel={undefined}
+                                        onQuantityInputFocus={[Function]}
+                                        parentModel={undefined}
+                                        passengerModelObject={undefined}
+                                        passengersToBook={undefined}
+                                        sectionDetail={undefined}
+                                        sectionTitle={undefined}
+                                        showTravelerMenu={undefined}
+                                        toDisableBtns={undefined}
+                              />
+                    </div>
+                    
+                    
+                    <button
+                              aria-label="Clear all selections"
+                              className={undefined}
+                              id="clearPassengers"
+                              onClick={[Function]}
+                              role="button"
+                              tabIndex="0"
+                    >
+                              Clear
+                    </button>
+                    <div
+                              className={undefined}
+                    >
+                              <button
+                                        aria-label="Apply"
+                                        className={undefined}
+                                        id="applyPassengersBtn"
+                                        onClick={[Function]}
+                                        role="button"
+                              >
+                                        Apply
+                              </button>
+                    </div>
+          </div>
+          <button
+                    aria-label="Close panel"
+                    className={undefined}
+                    id="passengersCloseBtn"
+                    onClick={[Function]}
+                    role="button"
+                    tabIndex="0"
+                    title="Close panel"
+          >
+                    <img
+                              alt=""
+                              aria-hidden="true"
+                              role="presentation"
+                              src="IMAGE_MOCK"
+                    />
+          </button>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div
+          className={undefined}
+          id="dropdownContainer"
+          onBlur={[Function]}
+          tabIndex="0"
+>
+          <div>
+                    <span
+                              aria-label="Select number and types of travelers panel opened, use the up or down arrow to increase or decrease number of travelers, or enter the number of travelers in each passenger type."
+                              className={undefined}
+                              id={undefined}
+                              tabIndex={0}
+                    >
+                              Select number and types of travelers panel opened, use the up or down arrow to increase or decrease number of travelers, or enter the number of travelers in each passenger type.
+                    </span>
+                    <div
+                              className={undefined}
+                              id="passengersSectionA"
+                    >
+                              <BookPassengersMenu
+                                        arrayIndexs={undefined}
+                                        containsInfants={undefined}
+                                        decrementTabIndex={-1}
+                                        disableIndividualSections={undefined}
+                                        fullArray={
+                                                  Array [
+                                                            "Seniors (65+)",
+                                                            "Infants (under 2)",
+                                                            "Infants on lap",
+                                                            "Children (15-17)",
+                                                            "Children (12-14)",
+                                                            "Children (5-11)",
+                                                            "Children (2-4)",
+                                                          ]
+                                        }
+                                        id="passengersA"
+                                        ids={
+                                                  Array [
+                                                            "Seniors (65+)",
+                                                            "Infants (under 2)",
+                                                            "Infants on lap",
+                                                          ]
+                                        }
+                                        individualMaxLimit=""
+                                        infantTitleA={undefined}
+                                        infantTitleB={undefined}
+                                        maxLimit={undefined}
+                                        minValueIsOne={undefined}
+                                        modelDefaultToOne={undefined}
+                                        modelName=".passengers"
+                                        numberOfTravelersTotal={undefined}
+                                        onChangeModel={[Function]}
+                                        onChangePassenger={[Function]}
+                                        onDisableTravelerButtons={[Function]}
+                                        onFocusModel={undefined}
+                                        onQuantityInputFocus={[Function]}
+                                        parentModel={undefined}
+                                        passengerModelObject={undefined}
+                                        passengersToBook={undefined}
+                                        sectionDetail={undefined}
+                                        sectionTitle={undefined}
+                                        showTravelerMenu={undefined}
+                                        toDisableBtns={undefined}
+                              />
+                    </div>
+                    
+                    
+                    <button
+                              aria-label="Clear all selections"
+                              className={undefined}
+                              id="clearPassengers"
+                              onClick={[Function]}
+                              role="button"
+                              tabIndex="0"
+                    >
+                              Clear
+                    </button>
+                    <div
+                              className={undefined}
+                    >
+                              <button
+                                        aria-label="Apply"
+                                        className={undefined}
+                                        id="applyPassengersBtn"
+                                        onClick={[Function]}
+                                        role="button"
+                              >
+                                        Apply
+                              </button>
+                    </div>
+          </div>
+          <button
+                    aria-label="Close panel"
+                    className={undefined}
+                    id="passengersCloseBtn"
+                    onClick={[Function]}
+                    role="button"
+                    tabIndex="0"
+                    title="Close panel"
+          >
+                    <img
+                              alt=""
+                              aria-hidden="true"
+                              role="presentation"
+                              src="IMAGE_MOCK"
+                    />
+          </button>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <BookPassengers
+    acceptableFocus={
+        Array [
+            "Adults",
+            "Seniors",
+            "Infants",
+            "Children",
+            "clearPassengers",
+            "passengersCloseBtn",
+            "passengersCloseBtn",
+            "dropdownContainer",
+            "applyPassengersBtn",
+            "bookPassengersLegend",
+          ]
+    }
+    arrayA={
+        Array [
+            "Seniors (65+)",
+            "Infants (under 2)",
+            "Infants on lap",
+          ]
+    }
+    arrayB={
+        Array [
+            "Children (15-17)",
+            "Children (12-14)",
+            "Children (5-11)",
+            "Children (2-4)",
+          ]
+    }
+    fullArray={
+        Array [
+            "Seniors (65+)",
+            "Infants (under 2)",
+            "Infants on lap",
+            "Children (15-17)",
+            "Children (12-14)",
+            "Children (5-11)",
+            "Children (2-4)",
+          ]
+    }
+    onChangeModel={[Function]}
+    onChangePassenger={[Function]}
+    onClick={[Function]}
+    onDisableTravelerButtons={[Function]}
+    onPassengerInputClick={[Function]}
+    onSetActiveField={[Function]}
+/>,
+}
+`;

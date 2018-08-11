@@ -1,0 +1,1156 @@
+@import "../../styles/tools";
+@import "../../styles/global/forms";
+
+.activityDescriptionShow{
+  display:inline-block;
+}
+
+
+.tooltip {
+  &:before {
+      border: 1.9px solid #51a7e5;
+      border-radius: 50%;
+      color: #08c;
+      background: transparent;
+    }
+}
+.tooltipContainerWithMargin {
+  margin-top: -10px;
+  margin-left: -10px;
+}
+.tooltipContainers {
+  @include grid-child(2, 13, 4, 5);
+  margin-left: 8px;
+  margin-bottom: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+/* Tooltip text */
+.tooltiptext {
+  position: absolute;
+  background-color: white;
+  color: black;
+  text-align: left;
+  padding: 10px 15px 0px 10px;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.30);
+  font-size: 12px;
+  width: 150px;
+  left: 70px;
+  bottom: 178%;
+  > p:first-child {
+    margin-top: 0;
+  }
+
+  a {
+    font-size: 12px;
+  }
+}
+
+.arrowStyle {
+  content: "";
+  position: absolute;
+  top: 98%; // need it to be slightly above the tooltip border so that we dont see the box-shadow
+  border-left: 10px;
+  border-right: 10px;
+  border-top: 18px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+/* Tooltip arrows */
+
+.tooltipArrow::after {
+  @extend .arrowStyle;
+  left: 72px;
+}
+
+.noTooltipTop {
+  top: -2px;
+  @media screen and (min-width: $break-point-c) {
+    top: 0px;
+  }
+}
+
+
+.infoContent {
+  color: white;
+  font-size: 24px;
+  margin-top: 4px;
+  line-height: 24px;
+  letter-spacing: 0;
+  &:focus {
+    outline: 1px dotted $modern-gold;
+  }
+}
+
+.tooltipLink {
+  position: relative;
+  bottom: 6px;
+}
+
+.show{
+  display:inline;
+  position: relative;
+}
+
+.hide{
+  display:none;
+}
+
+.formattedMsg{
+  display: inline-block;
+}
+:focus {
+  outline: 2px solid rgb(180, 220, 238) !important;
+}
+div[role=combobox]:focus {
+ outline : none !important;
+}
+
+span:focus {
+  outline: none !important;
+  // border: 1px solid 2172BA !important;
+}
+.dropDownContainer {
+  width: 27%;
+  position: relative;
+  padding-top: 16px;
+  display: inline-block;
+}
+.activity-header{
+  font-size: 20px;
+  padding:0.5em 0;
+  font-weight: 600;
+
+ }
+ .activity-header-span{
+   margin-bottom:10px;
+   display:block;
+ }
+  .color{
+    color:#2172BA;
+  }
+
+.Traveler{
+  margin-left: -15%;
+}
+.textsize{
+  display:inline-block;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.activityContainer{
+  cursor:pointer;
+}
+.no-cursor{
+  // cursor:pointer;
+  pointer-events: none;
+}
+
+.color{
+  color:#2172BA;
+}
+
+.showDiv{
+  display: block;
+}
+
+.hideDiv{
+  display: none;
+}
+.activity-description{
+  width: 100%;
+  margin-left: 15%;
+  font-size: 18px;
+}
+.pad-left{
+  padding-left: 2.1em;
+}
+.optionhide{
+  display:none;
+}
+.activity-miles{
+  text-align: right;
+  width:130px;
+}
+
+.activity-button{
+  position: relative;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  background-color: inherit;
+  line-height: inherit;
+  color: inherit;
+  overflow: hidden;
+  background: none;
+  border: none;
+  text-align: inherit;
+  width: auto;
+  float: right;
+  padding: 0px;
+}
+.activity-button::after {
+  background-position: -0.8rem -6rem;
+  display: inline-block;
+  line-height: 0.875rem;
+  vertical-align: text-top;
+  background-image: url('styles/assets/ualmain.png');
+  background-repeat: no-repeat;
+  background-color: transparent;
+  margin-top: 0.0625rem;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  top:2.3rem;
+  right: -3em;
+  width: 1.75rem;
+  height: 0.75rem;
+  position: static;
+
+}
+.activity-button-expanded{
+  position: relative;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  background-color: inherit;
+  line-height: inherit;
+  color: inherit;
+  overflow: hidden;
+  background: none;
+  border: none;
+  text-align: inherit;
+  width: auto;
+  float: right;
+  padding: 0px;
+}
+.activity-button-expanded::after {
+  background-position: -0.8rem -7rem;
+  display: inline-block;
+  line-height: 0.875rem;
+  vertical-align: text-top;
+  background-image: url('styles/assets/ualmain.png');
+  background-repeat: no-repeat;
+  background-color: transparent;
+  margin-top: 0.0625rem;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  top:2.3rem;
+  right: -3em;
+  width: 1.75rem;
+  height: 0.75rem;
+  position: static;
+}
+
+#sanserif-font{
+  font-family: sans-serif;
+  font-weight: bold;font-size: 15px;
+  padding-bottom: 20px;
+}
+
+
+
+
+//Desktop view
+@media (min-width: $break-point-g-px ) {
+  .tooltipTop {
+  
+    @media screen and (min-width: $break-point-c) {
+      top: 5px;
+    }
+  }
+  .activityDescriptionShow{
+    display:inline-block;
+  }
+  .activityTypeA{
+    display: none;
+  }
+  .activityTYpeV{
+    display: inline-block;
+  }
+  .activityMiles:nth-child(6){
+    width:141px;
+  }
+  .columnsTab{
+    display:none;
+  }
+  .activities-columns {
+    display: grid;
+    grid-template-columns: 56% 9% 10% 9% 12% 14%;
+    font-size:16px;
+    font-weight: 500;
+    margin-bottom: 2em;
+    span{
+      font-weight: bolder;
+      font-size:16px;
+    }
+  }
+  .float-right{
+    float: right;
+  }
+
+  .activityContainer {
+
+    list-style: none;
+    display: grid;
+    grid-template-columns: 15% 44% 10% 9% 5% 12% 4%;
+    padding: 1em 0;
+    font-size: 18px;
+    font-weight: 400;
+    border-top: 1px solid #666666;
+  }
+
+}
+
+.main-container{
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+.promotinal{
+  background-color: #2172BA;
+  color: #fff;
+  font-weight: 400px;
+  width:955px;
+  height: 100px;
+  padding: 25px;
+  text-align: center;
+  font-size: 34px;
+  margin: 40px 0 40px 99px;
+}
+
+.info-group
+{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 40px;
+}
+
+
+.totalMilesTooTip{
+  margin-left: 11.8em;
+  margin-top:-37px;
+}
+
+button.info-tooltip:hover{
+  background-position: -11.8rem -3.0rem;
+}
+
+.tooltipContainers {
+  @include grid-child(2, 13, 4, 5);
+  margin-left: 8px;
+  margin-bottom: 24px;
+}
+.tooltipContainerWithMargins {
+  margin-top: -44px;
+  margin-left: 18px;
+  position: relative;
+}
+
+[class^="info-tooltip"]{
+  display: inline-block;
+  line-height: 0.875rem;
+  vertical-align: text-top;
+  background-image: url('styles/assets/ualmain.png');
+  background-position: -21.3rem -5.0rem;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  margin-top: -1.5em;
+  width: 24px;
+  height: 24px;
+}
+
+.text{
+  font-weight: bold;
+}
+
+button:-moz-focusring {
+  outline: 2px dotted #2172BA;
+}
+
+:-moz-focusring {
+  outline: 2px dotted #2172BA;
+}
+
+a:hover,a:active, a:focus{
+  outline: 1px dotted #2172BA ;
+}
+
+.myaccount-header-section{
+  margin: 24px $section-outer-marging-a 0px;
+}
+.myaccount-main-section{
+  margin: 24px $section-outer-marging-a 40;
+}
+.visuallyHidden{
+  border: 0;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+option:focus{
+  background-color:gray;
+}
+.myaccount-list{
+  padding: 1em 0;
+  font-size: 18px;
+  text-align: right;
+  li{
+    margin:0 20px;
+    padding:0;
+    float: none;
+  }
+  li:first-child {
+    margin-left:20px;
+    margin-right: 0;
+  }
+}
+.float-right{
+  float:right;
+
+}
+.help-option{
+  float:right;
+}
+
+@media (min-width: 1075px) {
+  .help-option{
+    float:right;
+  }
+  .myaccount-header-section{
+    margin: 20px $section-outer-marging-g;
+  }
+  .myaccount-main-section{
+    margin: 40px $section-outer-marging-g 48px;
+  }
+  .global-header-section{
+    //margin: 20px $section-outer-marging-g;
+  }
+  .main-container{
+    margin: 0 auto;
+  }
+  .myaccount-main-section{
+    margin: 40px $section-outer-marging-g 48px;
+  }
+}
+@media  (max-width: 768px){
+  .activityDescriptionShow{
+    display:none;
+  }
+  .activityTypeA{
+    display: inline-block;
+  }
+  .activityTYpeV{
+    display: inline-block;
+  }
+  .accordion-margin {
+    margin: 16px 0 0 10px;
+  }
+  .help-option{
+    float:none;
+  }
+  .awardMiles{
+    padding-left:37em !important;
+  }
+
+  .activityContainer {
+    grid-template-columns: 22% 50% 10% 15% 10% 17% 10% !important;
+  }
+
+  #mile{
+    display: block!important;
+  }
+
+  /* .floating-label-section select{
+     width:228px !important;
+   }*/
+
+}
+
+
+//Tablet view
+
+//@media  (min-width: $break-point-c-px) and (max-width: $break-point-g-px ) {
+@media  (min-width: 768px) and (max-width: 1024px ) {
+ .no-cursor{
+    pointer-events: all;
+  }
+  
+.tooltipContainers {
+  @include grid-child(2, 13, 4, 5);
+  margin-left: 8px;
+  margin-bottom: 24px;
+}
+.tooltipContainerWithMargins {
+  margin-top: -44px;
+  margin-left: 275px;
+  position: relative;
+}
+.questionMarkToolTips {
+  &:before {
+    content: '?';
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-weight: bold;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-left: 8px;
+    border: 1.9px solid #51a7e5;
+    border-radius: 50%;
+    color: #08c;
+    background: transparent;
+  }
+}
+
+  .activityDescriptionShow{
+    display:none;
+  }
+  .loc{
+    padding-bottom: 20px;
+  }
+  .activityTypeV{
+    display: inline-block;
+  }
+  .Traveler{
+    margin-left: -22%;
+  }
+  .activityTypeA{
+    display: inline-block;
+  }
+  .activity-description{
+    margin-left:22%;
+  }
+  .floating-label-section select{
+    width:228px !important;
+  }
+  .accordion-margin {
+    margin: 16px -3% 2px 4%;
+  }
+  .dropdownfont{
+    font-size: 13px;
+    position: absolute;
+  }
+  .activities-columns {
+    display: block;
+    grid-template-columns: auto auto auto auto auto;
+    font-size:15px;
+    font-weight: 510;
+    padding-bottom:20px;
+    span.pqs, span.pqd, span.pqm {
+      display: none;
+    }
+    span{
+      &.activityMiles {
+        margin-left: -720px;
+        padding-left: 0;
+        float: right;
+        margin-right: 0.3em;
+      }
+
+    }
+  }
+  .promotinal{
+     display:none;
+  }
+  .help-option{
+    float:none;
+  }
+  .activityContainer {
+    display: grid;
+    list-style: none;
+    //grid-template-columns: 120px 412px 0px 0px 0px 125px;
+    grid-template-columns: 22% 58% 10% 8% 10% 12% 6%;
+    border-top: 1px solid #666666;
+    padding: 1em 1px;
+    font-size: 18px;
+    font-weight: 400;
+    span:not(.activityMiles) {
+      display:none;
+    }
+    .activityMiles:nth-child(6) {
+      width:132px !important;
+    }
+  }
+  .awardMiles{
+    padding-left:52em;
+    padding-right:60px;
+    display:block;
+  }
+  .awardMiles{
+    padding-bottom: 15px;
+    margin-left: 17px;
+    margin-top: 11px;
+  }
+  .dropDownContainer {
+    position: relative;
+    padding-top: 16px;
+    margin-right: 4%;
+    display: inline-block;
+  }
+}
+
+/* @media (min-width: width 320px) and (max-width:767px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+
+*///Mobile view
+//@media  (min-width: $break-point-a-px) and (max-width: $break-point-c-px ) {
+@media  (min-width: 320px) and (max-width: 767px ) {
+
+  .tooltipContainers {
+    @include grid-child(2, 13, 4, 5);
+    margin-left: 8px;
+    margin-bottom: 24px;
+  }
+  .tooltipContainerWithMargins {
+    margin-top: -44px;
+    margin-left: 240px;
+    position: relative;
+  }
+  .questionMarkToolTips {
+    &:before {
+      content: '?';
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      font-weight: bold;
+      width: 20px;
+      height: 20px;
+      font-size: 12px;
+      font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+      line-height: 1.4;
+      margin-top: 15px;
+      margin-left: 18px;
+      border: 1.9px solid #51a7e5;
+      border-radius: 50%;
+      color: #08c;
+      background: transparent;
+    }
+  }
+
+ .no-cursor{
+    pointer-events: all;
+  }
+  .Traveler{
+    margin-left: -3%;
+  }
+  .textsize{
+    font-size: 26px;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+  .loc{
+    padding-bottom: 20px;
+  }
+  .activity-header{
+    font-size:22px;
+    padding:1em 18.2px;
+  }
+  .activityDescriptionShow{
+    display:none;
+  }
+  .activityTypeA{
+    display: inline-block;
+  }
+  .activityMiles{
+    text-align: left;
+    padding-left:1px;
+  }
+  .activity-miles{
+    font-size: 15px
+  }
+  .promotinal{
+    display:none;
+ }
+  .activityContainer{
+    grid-template: none !important;
+  }
+  .activity-description{
+    margin-left:13px;
+    font-size:16px;
+  }
+ h5.wrapper{
+    display: block;
+    font-size: 1.5em;
+    margin-top: 44px;
+    padding-left: 16px;
+  }
+
+  p.wrapper{
+    span{
+      font-size: 0.8em;
+    }
+  }
+
+  .box3 {
+    grid-column: 1;
+    grid-row: 5;
+    width:200px;
+  }
+  /*.box4 {
+    grid-column: 1;
+    grid-row: 3;
+    width:200px;
+  }*/
+  .box5{
+    grid-column: 1;
+    grid-row: 4;
+    width:256px;
+    border-bottom-width: 0px;
+    padding-bottom: 20px;
+
+  }
+  .float-right{
+    float:none;
+  }
+
+  .dropDownContainer {
+    width:100%;
+    position: relative;
+    padding-top: 16px;
+    display: block;
+  }
+  .floating-label-section select{
+    width:273px !important;
+  }
+  .boxes {
+    display: grid;
+    display: -ms-inline-grid;
+  }
+  .box1 {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 15px;
+  }
+  .box2 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .expand-button{
+    text-align: right;
+  }
+  .h2{
+    margin-top: 0px;
+  }
+  .awardMiles{
+    display:none;
+  }
+
+  .myaccount-list li{float:none;}
+  .myaccount-list{text-align:center}
+
+  .floating-label-section.accordion-margin.float-right{ float:none;}
+  .myaccount-list h3{
+    width:14em;
+  }
+  .h3{
+    margin-top: 24px;
+    font-size: 24px;
+    padding: 43px 20px 0px 19px;
+  }
+
+  .myaccount-promotion{
+    display: none;
+  }
+  .accordion-margin{
+    margin:0px 60px 12px 0px;
+  }
+  .myaccount-list li:nth-child(1){
+    display: none;
+  }
+  .myaccount-list li:nth-child(2){
+    display: none;
+  }
+  .activities-columns {
+    display: grid;
+    display: inline-block;
+    grid-template-columns: auto auto auto auto auto;
+    font-size:20px;
+    font-weight: 500;
+    padding-left: 15px;
+    padding: 0em 17px;
+    span.pqs, span.pqd, span.pqm {
+      display: none;
+    }
+  }
+  .activityContainer {
+    display: grid;
+    list-style: none;
+    //grid-template-columns: 120px 412px 0px 0px -1px 125px;
+    grid-template-columns: -1% 40% 10% 10% 9% 13%;
+    border-top: 1px solid #666666;
+    padding: 1em 0;
+    font-size: 17px;
+    font-weight: 400;
+    padding-left: 14px;
+    padding-right: 18px;
+    span:not(.activityMiles) {
+      display: none;
+    }
+    .activityMiles:nth-child(6) {
+      width:274px !important;
+    }
+  }
+}
+
+
+// IE view
+@media all and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .activityContainer span {
+    display: inline-block;
+  }
+  /* Tooltip text */
+.tooltiptext {
+  position: absolute;
+  background-color: white;
+  color: black;
+  text-align: left;
+  padding: 10px 15px 0px 10px;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.30);
+  font-size: 12px;
+  width: 150px;
+  left: 70px;
+  bottom: 178%;
+  > p:first-child {
+    margin-top: 0;
+  }
+
+  a {
+    font-size: 12px;
+  }
+}
+.tooltipTop {
+  
+  // @media screen and (min-width: $break-point-c) {
+    top: -7px;
+  // }
+}
+.tooltipContainerWithMargin {
+  margin-top: -28px;
+  margin-left: -10px;
+}
+
+  .imag .btn {
+    background: #f8b701;
+    border-radius: 2px;
+    width: 95px;
+    height: 29px;
+    position: relative;
+    bottom: 31px;
+    right: 0px;
+    margin-top: -105px;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .activity-button-expanded{
+    position: relative;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 400;
+    background-color: inherit;
+    line-height: inherit;
+    color: inherit;
+    overflow: hidden;
+    background: none;
+    border: none;
+    text-align: inherit;
+    width: auto;
+    float: right;
+    padding: 0px;
+    left:573px;
+    bottom:23px;
+  }
+
+
+  .activity-button{
+    position: relative;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 400;
+    background-color: inherit;
+    line-height: inherit;
+    color: inherit;
+    overflow: hidden;
+    background: none;
+    border: none;
+    text-align: inherit;
+    width: auto;
+    float: right;
+    padding: 0px;
+    left:538px;
+    bottom:23px;
+  }
+  .activity-miles {
+    text-align: right;
+    margin-right:48px;
+    float: right;
+    padding-left: 10px;
+    width: 123px;
+    position: relative;
+    bottom: 20px;
+  }
+
+  .activityContainer span.box1{
+    width:18%;
+    margin-left: 15%;
+  }
+  .activityContainer span.box2{
+    width:51%;
+    padding-left:64px;
+  }
+  .activity-miles-pqm {
+    width: 9%;
+  }
+  .activity-miles-pqs {
+    width: 9%;
+
+  }
+
+  #sanserif-font:nth-child(2){
+    margin-left: 2px;
+  }
+  .activity-miles-pqd {
+    width: 9%;
+
+  }
+  activity-miles{
+    width:13%;
+  }
+  
+  .activities-columns{
+    span{
+      display:inline-block;
+      padding-left:3px;
+      .info-group{
+        margin-left:5px;
+        margin-top:25px;
+      }
+      &.title{
+        width: 54%;
+      }
+      &.pqm{
+        display: inline-flex;
+        width:9%;
+       margin-left: 70px;
+      }
+      &.pqs{
+        display: inline-flex;
+        width:9%;
+      }
+      &.pqd{
+        display: inline-flex;
+        width:10%;
+        margin-right:24px;
+      }
+      &.awardMiles{
+        margin-left: -33px;
+        width:11%;
+        display:inline;
+        padding-left: 6px;
+      }
+    }
+    .activityContainer {
+      display: grid;
+      list-style: none;
+      //grid-template-columns: 120px 412px 0px 0px -1px 125px;
+      grid-template-columns: -1% 40% 10% 10% 9% 13%;
+      border-top: 1px solid #666666;
+      padding: 0.6em 0;
+      font-size: 17px;
+      font-weight: 400;
+      padding-left: 14px;
+      padding-right: 18px;
+      span:not(.activityMiles) {
+        display: none;
+      }
+      .activityMiles:nth-child(6) {
+        width:274px !important;
+      }
+    }
+  }
+
+}
+//target for IE edge
+@supports (-ms-accelerator:true) {
+  /* Tooltip text */
+.tooltiptext {
+  position: absolute;
+  background-color: white;
+  color: black;
+  text-align: left;
+  padding: 10px 15px 0px 10px;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.30);
+  font-size: 12px;
+  width: 150px;
+  left: 70px;
+  bottom: 178%;
+  > p:first-child {
+    margin-top: 0;
+  }
+
+  a {
+    font-size: 12px;
+  }
+}
+.tooltipTop {
+  
+  @media screen and (min-width: $break-point-c) {
+    top: -7px;
+  }
+}
+.tooltipContainerWithMargin {
+  margin-top: -43px;
+  margin-left: 12px;
+  position: relative;
+}
+  .tooltipContainers {
+    @include grid-child(2, 13, 4, 5);
+    margin-left: -30px;
+    margin-bottom: 24px;
+    margin-top:25px;
+  }
+  .totalMilesTooTip{
+    margin-left: 13.6em !important;
+    margin-top:-70px !important;
+  }
+
+  .activityContainer span {
+    display: inline-block;
+  }
+  .activityContainer span.box1{
+    width:12%;
+  }
+  .activityContainer span.box2{
+    width:49%;
+    padding-left: 56px;
+  }
+  .activity-miles-pqm {
+    width: 9%;
+  }
+  .activity-miles-pqs {
+    width: 9%;
+  }
+  .activity-miles-pqd {
+    width: 15%;
+  }
+  activity-miles{
+    width:11%;
+  }
+  .activity-miles {
+    text-align: right;
+    margin-right:86px;
+    float: right;
+    padding-left: 10px;
+    width: 123px;
+    position: relative;
+    bottom: 20px;
+  }
+  .activity-button-expanded{
+    position: relative;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 400;
+    background-color: inherit;
+    line-height: inherit;
+    color: inherit;
+    overflow: hidden;
+    background: none;
+    border: none;
+    text-align: inherit;
+    width: auto;
+    float: right;
+    padding: 0px;
+    left:615px;
+    bottom:23px;
+  }
+
+
+  .activity-button{
+    position: relative;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 400;
+    background-color: inherit;
+    line-height: inherit;
+    color: inherit;
+    overflow: hidden;
+    background: none;
+    border: none;
+    text-align: inherit;
+    width: auto;
+    float: right;
+    padding: 0px;
+    left:545px;
+    bottom:23px;
+  }
+
+  .activities-columns{
+    span{
+      display:inline-block;
+      padding-left:10px;
+      padding-top: 8px;
+      .info-group{
+        margin-left:5px;
+        margin-top:25px;
+      }
+      &.title{
+        width: 54%;
+      }
+      &.pqm{
+      display: inline-flex;
+        width:9%;
+        margin-left:14px;
+      }
+      &.pqs{
+      display: inline-flex;
+        width:9%;
+      }
+      &.pqd{
+      display: inline-flex;
+        width:10%;
+      }
+      &.awardMiles{
+        width:14%;
+        padding-left: 10px;
+      }
+    }
+
+  }
+  .activityContainer {
+    display: grid;
+    list-style: none;
+    //grid-template-columns: 120px 412px 0px 0px -1px 125px;
+    grid-template-columns: -1% 40% 10% 10% 9% 13%;
+    border-top: 1px solid #666666;
+    padding: 0.8em 0;
+    font-size: 17px;
+    font-weight: 400;
+    padding-left: 14px;
+    padding-right: 18px;
+    .activityMiles:nth-child(6) {
+      width:273px !important;
+    }
+  }
+}

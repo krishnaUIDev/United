@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import "../../node_modules/react-select/scss/select"; // React-select vars
+
+@import "global/variables";
+@import "global/mixins";
+@import "global/grid";
+@import "global/globals";
+
+// Components and overrides
+:global {
+  @import "../../node_modules/react-select/scss/control";
+  @import "../../node_modules/react-select/scss/menu";
+  @import "../../node_modules/react-select/scss/mixins";
+  @import "../../node_modules/react-select/scss/multi";
+  @import "../../node_modules/react-select/scss/spinner";
+  @import "global/react-select";
+  @import "global/react-dates";
+  @import "global/react-modal";
+
+  .eyebrow {
+    @include eyebrow;
+  }
+
+  .visuallyHidden {
+    @include visually-hidden();
+  }
+}

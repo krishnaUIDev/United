@@ -1,0 +1,275 @@
+@import "../../styles/tools";
+
+
+.parentContainer {
+  @include grid-parent;
+  border-top: 1px solid $divider-line-color-mobile;
+  @media (min-width: $break-point-c) {
+    border-top: 1px solid $divider-line-color-desktop;
+  }
+}
+
+.headerStyle {
+  color: $white; // TODO: check this color when css is updated
+  text-transform: uppercase;
+  font-weight: bold;
+  @media (min-width: $break-point-b) {
+    font-size: 12px;
+    letter-spacing: 1.08px;
+    margin-bottom: 10px;
+  }
+}
+
+.departureHeader {
+  @include grid-child(1,7,1,2);
+  margin-top: 8px;
+}
+
+.arrivalHeader {
+  @include grid-child(7,13,1,2);
+  text-align: right;
+  margin-top: 8px;
+  @media (min-width: $break-point-c) {
+    margin-right: 8px;
+  }
+}
+
+.dates {
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 11px;
+  color: white;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  @media (min-width: $break-point-b) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  @media (min-width: $break-point-c) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  @media (min-width: $break-point-d) {
+    margin-bottom: 8px;
+  }
+}
+
+.departureDate {
+  @include grid-child(1,5,1,2);
+  text-align: left;
+  @media (min-width: $break-point-b) {
+    @include grid-child(1,5,2,3);
+  }
+}
+
+.arrivalDate {
+  @include grid-child(9,13,1,2);
+  text-align: right;
+  @media (min-width: $break-point-b) {
+    @include grid-child(9,13,2,3);
+  }
+  @media (min-width: $break-point-c) {
+    margin-right: 8px;
+  }
+}
+
+.time {
+  color: white;
+  @media (min-width: $break-point-b) {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: -32px; // to counter the space added from the flight image icon
+  }
+  @media (min-width: $break-point-c) {
+    margin-top: -40px; // to counter the space added from the flight image icon
+  }
+}
+
+.departureTime {
+  @media (min-width: $break-point-b) {
+    text-align: left;
+    @include grid-child(1,5,3,4);
+  }
+}
+
+.tripIcon {
+  @include grid-child(5,9,2,3);
+  text-align: center;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.flightDurationTime {
+  color: white;
+  text-align: center;
+  &:focus {
+    outline: 1px dotted $modern-gold;
+  }
+  @media (min-width: $break-point-c) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.arrivalTime {
+  text-align: right;
+  @media (min-width: $break-point-b) {
+    @include grid-child(9,13,3,4);
+  }
+  @media (min-width: $break-point-c) {
+    margin-right: 8px;
+  }
+}
+
+.scheduled {
+  color: $white;
+  @media (min-width: $break-point-b) {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 4px;
+  }
+  @media (min-width: $break-point-c) {
+    margin-top: -4px;
+    margin-bottom: 12px;
+  }
+}
+
+.departureScheduled {
+  @media (min-width: $break-point-b) {
+    @include grid-child(1,5,4,5);
+    text-align: left;
+  }
+}
+
+.arrivalScheduled {
+  text-align: right;
+  @media (min-width: $break-point-b) {
+    @include grid-child(9,13,4,5);
+  }
+  @media (min-width: $break-point-c) {
+    margin-right: 8px;
+  }
+}
+
+.airportCode {
+  font-size: 24px;
+  line-height: 24px;
+  color: white;
+  letter-spacing: 0;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  @media (min-width: $break-point-b) {
+    margin-top: 24px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  @media (min-width: $break-point-c) {
+    margin-top: 0px;
+  }
+}
+
+.departureAirportCode {
+  @include grid-child(1,5,2,3);
+  margin-right: 8px;
+  margin-bottom: 8px;
+  @media (min-width: $break-point-b) {
+    @include grid-child(1,4,5,6);
+    margin-left: 4px;
+  }
+}
+
+.departureAirportContainer {
+  @media (min-width: $break-point-b) {
+    position: relative;
+    left: 0;
+    text-align: center;
+  }
+}
+
+.departureTemperatureIcon {
+  @include grid-child(1,2,3,4);
+  text-align: center;
+  margin-bottom: 2px;
+  @media (min-width: $break-point-b) {
+    @include grid-child(3,4,5,6);
+    margin-top: 24px;
+    margin-bottom: auto;
+  }
+  @media (min-width: $break-point-c) {
+    @include grid-child(3,6,5,6);
+    margin-top: 0px;
+  }
+}
+
+.arrivalAirportCode {
+  @include grid-child(9,13,2,3);
+  text-align: right;
+  margin-bottom: 8px;
+  @media (min-width: $break-point-b) {
+    @include grid-child(10,12,5,6);
+    text-align: center;
+  }
+  @media (min-width: $break-point-c) {
+    @include grid-child(8,11,5,6);
+  }
+  @media (min-width: $break-point-d) {
+    margin-left: 12px;
+  }
+}
+
+.arrivalTemperatureIcon {
+  @include grid-child(10,13,3,4);
+  text-align: right;
+  @media (min-width: $break-point-b) {
+    @include grid-child(10,13,5,6);
+    margin-top: 24px;
+  }
+  @media (min-width: $break-point-c) {
+    margin-right: 16px;
+    margin-top: 0px;
+  }
+}
+
+.city {
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 13px;
+  color: white;
+  font-weight: none;
+  @media (min-width: $break-point-b) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.temperature {
+  color: white;
+  font-size: 16px;
+  line-height: 27px;
+  @media (min-width: $break-point-b) {
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  @media (min-width: $break-point-c) {
+    margin-bottom: auto;
+  }
+}
+
+.arrivalTempImg {
+  margin-right: 2px;
+}
+
+.timePeriodStyle {
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+
+.srOnly {
+  @include visually-hidden;
+  text-transform: none;
+  font-size: .5px;
+  line-height: 0;
+  height: 0;
+}

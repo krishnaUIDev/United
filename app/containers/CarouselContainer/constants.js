@@ -1,0 +1,11 @@
+export const LOAD_CAROUSEL_SLIDES = 'unitedapp/App/LOAD_CAROUSEL_SLIDES';
+export const LOAD_CAROUSEL_SLIDES_SUCCESS = 'unitedapp/App/LOAD_CAROUSEL_SLIDES_SUCCESS';
+export const LOAD_CAROUSEL_SLIDES_ERROR = 'unitedapp/App/LOAD_CAROUSEL_SLIDES_ERROR';
+export const CAROUSEL_NEXT_SLIDE = 'unitedapp/App/CAROUSEL_NEXT_SLIDE';
+export const CAROUSEL_PREV_SLIDE = 'unitedapp/App/CAROUSEL_PREV_SLIDE';
+export const CAROUSEL_GOTO_SLIDE = 'unitedapp/App/CAROUSEL_GOTO_SLIDE';
+export const CAROUSEL_AUTO_START = 'unitedapp/App/CAROUSEL_AUTO_START';
+export const CAROUSEL_AUTO_PAUSE = 'unitedapp/App/CAROUSEL_AUTO_PAUSE';
+export const CAROUSEL_AUTO_NEXT_SLIDE = 'unitedapp/App/CAROUSEL_AUTO_NEXT_SLIDE';
+export const CAROUSEL_AUTO_PREV_SLIDE = 'unitedapp/App/CAROUSEL_AUTO_PREV_SLIDE';
+export const MAX_SLIDES = 4;
